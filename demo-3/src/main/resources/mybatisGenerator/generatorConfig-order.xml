@@ -18,7 +18,7 @@
 		</javaTypeResolver>
 		
 		<!-- 实体类所存放位置 -->
-		<javaModelGenerator targetPackage="com.datangedu.cn.model.xd"
+		<javaModelGenerator targetPackage="com.datangedu.cn.model.xd.order"
 			targetProject="${project}">
 			<!-- enableSubPackages:是否让schema作为包的后缀 -->
 			<property name="enableSubPackages" value="false" /> 

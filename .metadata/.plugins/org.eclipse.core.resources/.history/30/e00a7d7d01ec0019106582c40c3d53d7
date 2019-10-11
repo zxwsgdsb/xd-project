@@ -18,7 +18,7 @@
 		</javaTypeResolver>
 		
 		<!-- 实体类所存放位置 -->
-		<javaModelGenerator targetPackage="com.datangedu.cn.model.xd.service_product"
+		<javaModelGenerator targetPackage="com.datangedu.cn.model.xd"
 			targetProject="${project}">
 			<!-- enableSubPackages:是否让schema作为包的后缀 -->
 			<property name="enableSubPackages" value="false" /> 
@@ -37,7 +37,7 @@
 			</javaClientGenerator>
 			
 		<!-- 配置表信息 -->   
-		<table tableName="service_product">
+		<table tableName="shopping">
 			<!-- <columnOverride column="???" property="???" /> -->
 		</table>
 	</context>
