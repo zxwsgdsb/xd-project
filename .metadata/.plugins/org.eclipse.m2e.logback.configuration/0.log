@@ -1084,3 +1084,20 @@
 2019-10-16 13:46:11,629 [Worker-14: Launching demo-3 - Demo3Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\zxw\xd-project\demo-3\src\test\resources
 >>>>>>> 信达项目初始化
 2019-10-16 15:17:09,413 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-10-16 16:13:06,122 [Worker-33: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:demo-xd:0.0.1-SNAPSHOT @ G:\zxw\xd-project\demo-3\pom.xml.
+2019-10-16 16:13:06,349 [Worker-34: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:demo-xd:0.0.1-SNAPSHOT @ G:\zxw\xd-project\demo-3\pom.xml.
+2019-10-16 16:13:07,109 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.alibaba:druid:jar:1.1.19 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2019-10-16 16:13:07,161 [Worker-33: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.alibaba:druid:jar:1.1.19 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2019-10-16 16:13:08,552 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-16 16:13:08,561 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-16 16:13:08,599 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 110 resources
+2019-10-16 16:13:08,866 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-16 16:13:08,867 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\zxw\xd-project\demo-3\src\test\resources
+2019-10-16 16:13:12,427 [Worker-34: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:demo-xd:0.0.1-SNAPSHOT @ G:\zxw\xd-project\demo-3\pom.xml.
+2019-10-16 16:13:12,922 [Worker-34: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.alibaba:druid:jar:1.1.19 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2019-10-16 16:13:15,107 [Worker-34: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.alibaba:druid:jar:1.1.19 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2019-10-16 16:13:15,413 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-16 16:13:15,422 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-10-16 16:13:15,448 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 110 resources
+2019-10-16 16:13:15,702 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-16 16:13:15,703 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\zxw\xd-project\demo-3\src\test\resources
