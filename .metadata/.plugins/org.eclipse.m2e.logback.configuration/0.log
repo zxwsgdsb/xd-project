@@ -1083,3 +1083,4 @@
 2019-10-16 13:46:11,629 [Worker-14: Launching demo-3 - Demo3Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-10-16 13:46:11,629 [Worker-14: Launching demo-3 - Demo3Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory G:\zxw\xd-project\demo-3\src\test\resources
 >>>>>>> 信达项目初始化
+2019-10-16 15:17:09,413 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
