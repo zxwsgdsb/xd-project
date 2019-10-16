@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="generate">
+  <target name="generate">
+    <mybatis.generate configfile="G:\zxw\xd-project\demo-3\src\main\resources\mybatisGenerator\generatorConfig-administrators_user.xml" />
+  </target>
+</project>
