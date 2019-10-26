@@ -3,8 +3,12 @@ package com.datangedu.cn.dao.mapper;
 import com.datangedu.cn.model.xd.shopping.Shopping;
 import com.datangedu.cn.model.xd.shopping.ShoppingExample;
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+
+@Mapper
 public interface ShoppingMapper {
     long countByExample(ShoppingExample example);
 

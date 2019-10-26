@@ -3,7 +3,6 @@
 <mapper namespace="com.datangedu.cn.dao.mapper.ServiceUserMapper">
   <resultMap id="BaseResultMap" type="com.datangedu.cn.model.xd.service_user.ServiceUser">
     <id column="id" jdbcType="VARCHAR" property="id" />
-    <result column="hp" jdbcType="VARCHAR" property="hp" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="area" jdbcType="VARCHAR" property="area" />
     <result column="service_ph" jdbcType="VARCHAR" property="servicePh" />
@@ -18,6 +17,9 @@
     <result column="wx" jdbcType="VARCHAR" property="wx" />
     <result column="customer_ph" jdbcType="VARCHAR" property="customerPh" />
     <result column="business_license" jdbcType="VARCHAR" property="businessLicense" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.datangedu.cn.model.xd.service_user.ServiceUser">
+    <result column="hp" jdbcType="LONGVARBINARY" property="hp" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -78,9 +80,28 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, hp, name, area, service_ph, service_pw, admin_introduction, state, mail, ts, 
-    user_introduction, work_ts, qq, wx, customer_ph, business_license
+    id, name, area, service_ph, service_pw, admin_introduction, state, mail, ts, user_introduction, 
+    work_ts, qq, wx, customer_ph, business_license
   </sql>
+  <sql id="Blob_Column_List">
+    hp
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from service_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
   <select id="selectByExample" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -95,9 +116,11 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
     select 
     <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
     from service_user
     where id = #{id,jdbcType=VARCHAR}
   </select>
@@ -112,27 +135,24 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
-    insert into service_user (id, hp, name, 
-      area, service_ph, service_pw, 
-      admin_introduction, state, mail, 
-      ts, user_introduction, work_ts, 
-      qq, wx, customer_ph, 
-      business_license)
-    values (#{id,jdbcType=VARCHAR}, #{hp,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
-      #{area,jdbcType=VARCHAR}, #{servicePh,jdbcType=VARCHAR}, #{servicePw,jdbcType=VARCHAR}, 
-      #{adminIntroduction,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, #{mail,jdbcType=VARCHAR}, 
-      #{ts,jdbcType=TIMESTAMP}, #{userIntroduction,jdbcType=VARCHAR}, #{workTs,jdbcType=VARCHAR}, 
-      #{qq,jdbcType=VARCHAR}, #{wx,jdbcType=VARCHAR}, #{customerPh,jdbcType=VARCHAR}, 
-      #{businessLicense,jdbcType=VARCHAR})
+    insert into service_user (id, name, area, 
+      service_ph, service_pw, admin_introduction, 
+      state, mail, ts, 
+      user_introduction, work_ts, qq, 
+      wx, customer_ph, business_license, 
+      hp)
+    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{area,jdbcType=VARCHAR}, 
+      #{servicePh,jdbcType=VARCHAR}, #{servicePw,jdbcType=VARCHAR}, #{adminIntroduction,jdbcType=VARCHAR}, 
+      #{state,jdbcType=VARCHAR}, #{mail,jdbcType=VARCHAR}, #{ts,jdbcType=TIMESTAMP}, 
+      #{userIntroduction,jdbcType=VARCHAR}, #{workTs,jdbcType=VARCHAR}, #{qq,jdbcType=VARCHAR}, 
+      #{wx,jdbcType=VARCHAR}, #{customerPh,jdbcType=VARCHAR}, #{businessLicense,jdbcType=VARCHAR}, 
+      #{hp,jdbcType=LONGVARBINARY})
   </insert>
   <insert id="insertSelective" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
     insert into service_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
-      </if>
-      <if test="hp != null">
-        hp,
       </if>
       <if test="name != null">
         name,
@@ -176,13 +196,13 @@
       <if test="businessLicense != null">
         business_license,
       </if>
+      <if test="hp != null">
+        hp,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
         #{id,jdbcType=VARCHAR},
-      </if>
-      <if test="hp != null">
-        #{hp,jdbcType=VARCHAR},
       </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
@@ -226,6 +246,9 @@
       <if test="businessLicense != null">
         #{businessLicense,jdbcType=VARCHAR},
       </if>
+      <if test="hp != null">
+        #{hp,jdbcType=LONGVARBINARY},
+      </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserExample" resultType="java.lang.Long">
@@ -239,9 +262,6 @@
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=VARCHAR},
-      </if>
-      <if test="record.hp != null">
-        hp = #{record.hp,jdbcType=VARCHAR},
       </if>
       <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
@@ -285,7 +305,32 @@
       <if test="record.businessLicense != null">
         business_license = #{record.businessLicense,jdbcType=VARCHAR},
       </if>
+      <if test="record.hp != null">
+        hp = #{record.hp,jdbcType=LONGVARBINARY},
+      </if>
     </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update service_user
+    set id = #{record.id,jdbcType=VARCHAR},
+      name = #{record.name,jdbcType=VARCHAR},
+      area = #{record.area,jdbcType=VARCHAR},
+      service_ph = #{record.servicePh,jdbcType=VARCHAR},
+      service_pw = #{record.servicePw,jdbcType=VARCHAR},
+      admin_introduction = #{record.adminIntroduction,jdbcType=VARCHAR},
+      state = #{record.state,jdbcType=VARCHAR},
+      mail = #{record.mail,jdbcType=VARCHAR},
+      ts = #{record.ts,jdbcType=TIMESTAMP},
+      user_introduction = #{record.userIntroduction,jdbcType=VARCHAR},
+      work_ts = #{record.workTs,jdbcType=VARCHAR},
+      qq = #{record.qq,jdbcType=VARCHAR},
+      wx = #{record.wx,jdbcType=VARCHAR},
+      customer_ph = #{record.customerPh,jdbcType=VARCHAR},
+      business_license = #{record.businessLicense,jdbcType=VARCHAR},
+      hp = #{record.hp,jdbcType=LONGVARBINARY}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -293,7 +338,6 @@
   <update id="updateByExample" parameterType="map">
     update service_user
     set id = #{record.id,jdbcType=VARCHAR},
-      hp = #{record.hp,jdbcType=VARCHAR},
       name = #{record.name,jdbcType=VARCHAR},
       area = #{record.area,jdbcType=VARCHAR},
       service_ph = #{record.servicePh,jdbcType=VARCHAR},
@@ -315,9 +359,6 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
     update service_user
     <set>
-      <if test="hp != null">
-        hp = #{hp,jdbcType=VARCHAR},
-      </if>
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
       </if>
@@ -360,13 +401,34 @@
       <if test="businessLicense != null">
         business_license = #{businessLicense,jdbcType=VARCHAR},
       </if>
+      <if test="hp != null">
+        hp = #{hp,jdbcType=LONGVARBINARY},
+      </if>
     </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
+    update service_user
+    set name = #{name,jdbcType=VARCHAR},
+      area = #{area,jdbcType=VARCHAR},
+      service_ph = #{servicePh,jdbcType=VARCHAR},
+      service_pw = #{servicePw,jdbcType=VARCHAR},
+      admin_introduction = #{adminIntroduction,jdbcType=VARCHAR},
+      state = #{state,jdbcType=VARCHAR},
+      mail = #{mail,jdbcType=VARCHAR},
+      ts = #{ts,jdbcType=TIMESTAMP},
+      user_introduction = #{userIntroduction,jdbcType=VARCHAR},
+      work_ts = #{workTs,jdbcType=VARCHAR},
+      qq = #{qq,jdbcType=VARCHAR},
+      wx = #{wx,jdbcType=VARCHAR},
+      customer_ph = #{customerPh,jdbcType=VARCHAR},
+      business_license = #{businessLicense,jdbcType=VARCHAR},
+      hp = #{hp,jdbcType=LONGVARBINARY}
     where id = #{id,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
     update service_user
-    set hp = #{hp,jdbcType=VARCHAR},
-      name = #{name,jdbcType=VARCHAR},
+    set name = #{name,jdbcType=VARCHAR},
       area = #{area,jdbcType=VARCHAR},
       service_ph = #{servicePh,jdbcType=VARCHAR},
       service_pw = #{servicePw,jdbcType=VARCHAR},

@@ -7,8 +7,6 @@ public class BuyUser {
 
     private String name;
 
-    private String hp;
-
     private String sex;
 
     private String ph;
@@ -27,6 +25,8 @@ public class BuyUser {
 
     private String state;
 
+    private byte[] hp;
+
     public String getId() {
         return id;
     }
@@ -41,14 +41,6 @@ public class BuyUser {
 
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
-    }
-
-    public String getHp() {
-        return hp;
-    }
-
-    public void setHp(String hp) {
-        this.hp = hp == null ? null : hp.trim();
     }
 
     public String getSex() {
@@ -121,5 +113,13 @@ public class BuyUser {
 
     public void setState(String state) {
         this.state = state == null ? null : state.trim();
+    }
+
+    public byte[] getHp() {
+        return hp;
+    }
+
+    public void setHp(byte[] hp) {
+        this.hp = hp;
     }
 }

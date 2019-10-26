@@ -9,8 +9,6 @@ public class AdministratorsUser {
 
     private String administratorsPw;
 
-    private String hp;
-
     private String name;
 
     private String mail;
@@ -18,6 +16,8 @@ public class AdministratorsUser {
     private String state;
 
     private Date ts;
+
+    private byte[] hp;
 
     public String getId() {
         return id;
@@ -41,14 +41,6 @@ public class AdministratorsUser {
 
     public void setAdministratorsPw(String administratorsPw) {
         this.administratorsPw = administratorsPw == null ? null : administratorsPw.trim();
-    }
-
-    public String getHp() {
-        return hp;
-    }
-
-    public void setHp(String hp) {
-        this.hp = hp == null ? null : hp.trim();
     }
 
     public String getName() {
@@ -81,5 +73,13 @@ public class AdministratorsUser {
 
     public void setTs(Date ts) {
         this.ts = ts;
+    }
+
+    public byte[] getHp() {
+        return hp;
+    }
+
+    public void setHp(byte[] hp) {
+        this.hp = hp;
     }
 }
