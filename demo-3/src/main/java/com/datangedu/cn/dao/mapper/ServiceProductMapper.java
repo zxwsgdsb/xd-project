@@ -3,8 +3,10 @@ package com.datangedu.cn.dao.mapper;
 import com.datangedu.cn.model.xd.service_product.ServiceProduct;
 import com.datangedu.cn.model.xd.service_product.ServiceProductExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface ServiceProductMapper {
     long countByExample(ServiceProductExample example);
 

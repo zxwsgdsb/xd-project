@@ -3,8 +3,10 @@ package com.datangedu.cn.dao.mapper;
 import com.datangedu.cn.model.xd.buy_user.BuyUser;
 import com.datangedu.cn.model.xd.buy_user.BuyUserExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface BuyUserMapper {
     long countByExample(BuyUserExample example);
 
