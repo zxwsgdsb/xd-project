@@ -5,8 +5,6 @@ import java.util.Date;
 public class ServiceProduct {
     private String id;
 
-    private String imag;
-
     private String serviceName;
 
     private String serviceExplain;
@@ -27,20 +25,14 @@ public class ServiceProduct {
 
     private String entrepreneurship;
 
+    private byte[] imag;
+
     public String getId() {
         return id;
     }
 
     public void setId(String id) {
         this.id = id == null ? null : id.trim();
-    }
-
-    public String getImag() {
-        return imag;
-    }
-
-    public void setImag(String imag) {
-        this.imag = imag == null ? null : imag.trim();
     }
 
     public String getServiceName() {
@@ -121,5 +113,13 @@ public class ServiceProduct {
 
     public void setEntrepreneurship(String entrepreneurship) {
         this.entrepreneurship = entrepreneurship == null ? null : entrepreneurship.trim();
+    }
+
+    public byte[] getImag() {
+        return imag;
+    }
+
+    public void setImag(byte[] imag) {
+        this.imag = imag;
     }
 }

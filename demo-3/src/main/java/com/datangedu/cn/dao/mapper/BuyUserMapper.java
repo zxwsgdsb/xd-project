@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
 @Mapper
 public interface BuyUserMapper {
     long countByExample(BuyUserExample example);
@@ -18,15 +19,21 @@ public interface BuyUserMapper {
 
     int insertSelective(BuyUser record);
 
+    List<BuyUser> selectByExampleWithBLOBs(BuyUserExample example);
+
     List<BuyUser> selectByExample(BuyUserExample example);
 
     BuyUser selectByPrimaryKey(String id);
 
     int updateByExampleSelective(@Param("record") BuyUser record, @Param("example") BuyUserExample example);
 
+    int updateByExampleWithBLOBs(@Param("record") BuyUser record, @Param("example") BuyUserExample example);
+
     int updateByExample(@Param("record") BuyUser record, @Param("example") BuyUserExample example);
 
     int updateByPrimaryKeySelective(BuyUser record);
+
+    int updateByPrimaryKeyWithBLOBs(BuyUser record);
 
     int updateByPrimaryKey(BuyUser record);
 }

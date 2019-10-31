@@ -5,8 +5,6 @@ import java.util.Date;
 public class ServiceUser {
     private String id;
 
-    private String hp;
-
     private String name;
 
     private String area;
@@ -35,20 +33,14 @@ public class ServiceUser {
 
     private String businessLicense;
 
+    private byte[] hp;
+
     public String getId() {
         return id;
     }
 
     public void setId(String id) {
         this.id = id == null ? null : id.trim();
-    }
-
-    public String getHp() {
-        return hp;
-    }
-
-    public void setHp(String hp) {
-        this.hp = hp == null ? null : hp.trim();
     }
 
     public String getName() {
@@ -161,5 +153,13 @@ public class ServiceUser {
 
     public void setBusinessLicense(String businessLicense) {
         this.businessLicense = businessLicense == null ? null : businessLicense.trim();
+    }
+
+    public byte[] getHp() {
+        return hp;
+    }
+
+    public void setHp(byte[] hp) {
+        this.hp = hp;
     }
 }
