@@ -6,6 +6,23 @@
     <result column="product_id" jdbcType="VARCHAR" property="productId" />
     <result column="num" jdbcType="INTEGER" property="num" />
   </resultMap>
+  <resultMap id="BaseResultMap1" type="com.datangedu.cn.util.ServiceShopping">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="product_id" jdbcType="VARCHAR" property="productId" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="id" jdbcType="VARCHAR" property="id2" />
+    <result column="imag" jdbcType="VARCHAR" property="imag" />
+    <result column="service_name" jdbcType="VARCHAR" property="serviceName" />
+    <result column="service_explain" jdbcType="VARCHAR" property="serviceExplain" />
+    <result column="service_price" jdbcType="REAL" property="servicePrice" />
+    <result column="service_state" jdbcType="VARCHAR" property="serviceState" />
+    <result column="ts" jdbcType="TIMESTAMP" property="ts" />
+    <result column="sales_volume" jdbcType="INTEGER" property="salesVolume" />
+    <result column="service_id" jdbcType="VARCHAR" property="serviceId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="recommend" jdbcType="VARCHAR" property="recommend" />
+    <result column="entrepreneurship" jdbcType="VARCHAR" property="entrepreneurship" />
+  </resultMap>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -64,6 +81,7 @@
       </foreach>
     </where>
   </sql>
+  
   <sql id="Base_Column_List">
     id, product_id, num
   </sql>
@@ -80,6 +98,11 @@
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
+  </select>
+  <select id="selectByshopping" resultMap="BaseResultMap1">
+    select *
+    from shopping,service_product
+    where shopping.product_id=service_product.id
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 

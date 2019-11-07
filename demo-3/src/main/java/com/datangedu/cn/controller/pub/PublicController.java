@@ -29,7 +29,6 @@ public class PublicController {
 		System.out.println(url);
 		return url;
 	}
-
 	@ResponseBody
 	@RequestMapping(value = "/login",method= RequestMethod.POST)
 	public Map<String,Object> login(HttpServletRequest request) {

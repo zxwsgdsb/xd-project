@@ -16,6 +16,24 @@ $(".user-action a").on("click", function(event){
     $(".user-action a").removeClass("bg-gray");
     $(event.target).addClass("bg-gray");
 })
-function pay(){
-    location.href="e-commerce_settlement.html";
-}
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_settlement.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_login.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_shoping-cai.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_order.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_product.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_evaluate.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_account.html"
+})

@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-<typeInfo handle="=demo-3/src\/main\/java&lt;com.datangedu.cn.administrators.service{AdminService.java[AdminService" modifiers="513" timestamp="1571299311517"/>
-<typeInfo handle="=demo-3/src\/main\/java&lt;com.datangedu.cn.administrators.service{OrderService.java[OrderService" modifiers="513" timestamp="1572511401161"/>
-<typeInfo handle="=demo-3/src\/main\/java&lt;com.datangedu.cn.administrators.service{Buy_userService.java[Buy_userService" modifiers="513" timestamp="1572835741160"/>
-<typeInfo handle="=demo-3/src\/main\/java&lt;com.datangedu.cn.administrators.service{Service_userService.java[Service_userService" modifiers="513" timestamp="1572510409073"/>
-</typeInfoHistroy>
+<typeInfoHistroy/>

@@ -210,3 +210,15 @@
     margin-left: 140px;
     cursor: pointer;
 }
+
+.save1{
+    width: 86px;
+    line-height: 24px;
+    text-align: center;
+    color: #4eb5ba;
+    border-radius: 3px;
+    border: 1px solid #4eb5ba;
+    margin-left: 140px;
+    cursor: pointer;
+}
+
