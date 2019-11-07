@@ -6,14 +6,15 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.datangedu.cn.model.xd.buy_user.BuyUser;
 import com.datangedu.cn.model.xd.service_product.ServiceProduct;
-import com.datangedu.cn.model.xd.shopping.Shopping;
 import com.datangedu.cn.service.BuyUserService;
 import com.datangedu.cn.service.ProductService;
 import com.datangedu.cn.service.ShoppingService;
@@ -54,6 +55,72 @@ public class BuyUserController {
 		return map;
 	}
 	
+	
+	@ResponseBody
+	@RequestMapping(value = "/repassword",method= RequestMethod.POST)
+	public Map<String,Object> repassword(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		String code = (String)session.getAttribute("code");
+		String imgcode = request.getParameter("imgcode");
+		System.out.println("getCommodity===="+request.getParameter("ph"));
+		String ph = request.getParameter("ph");
+		int code1 = 0;
+		Map<String,Object> map = new HashMap<String,Object>();
+		if(imgcode.toUpperCase().equals(code)) {
+			BuyUser user = new BuyUser();
+			user.setPh(request.getParameter("ph"));
+			user.setPw(request.getParameter("pw"));
+			if(request.getParameter("pw").equals(request.getParameter("pw1"))) {
+				System.out.println("if");
+				buyUserService.commerce_repassword(user);
+				System.out.println("if");
+				code1 = 1;
+				map.put("code", code1);
+			}
+			else {
+				System.out.println("else");
+				code1 = 2;
+				map.put("code", code1);
+			}
+		}
+		else {
+			map.put("code", code1);
+		}
+		System.out.println(imgcode+"====="+code+"===");
+		return map;
+	}
+
+
+	
+	@ResponseBody
+	@RequestMapping(value = "/buyuserlogin",method= RequestMethod.POST)
+	public Map<String,Object> login(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		String code = (String)session.getAttribute("code");
+		String imgcode = request.getParameter("imgcode");
+		System.out.println("getCommodity===="+request.getParameter("ph"));
+		System.out.println("getCommodity===="+request.getParameter("pw"));
+		int code1 = 0;
+		String ph = request.getParameter("ph");
+		Map<String,Object> map = new HashMap<String,Object>();
+		System.out.println(imgcode+"====="+code+"===");
+		if(imgcode.toUpperCase().equals(code)) {
+			List<BuyUser> loginList = buyUserService.buyuser_login(ph);
+			BuyUser pw = loginList.get(0);
+			if(pw.getPw().equals(request.getParameter("pw"))) {
+				code1 = 1;
+				map.put("code", code1);
+			}
+			else {
+				map.put("code", code1);
+			}
+		}else {
+			map.put("code", code1);
+		}
+		return map;
+	}
+	
+	
 
 	@Resource
 	ShoppingService ShoppingService;
@@ -62,6 +129,17 @@ public class BuyUserController {
 	@ResponseBody
 	@RequestMapping(value = "/getshoppinglist", method = RequestMethod.GET)
 	public Map<String, Object> getshoppinglist(HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		List<ServiceShopping> shoppingList = ShoppingService.getShoppingInfoByld();
+		map.put("shoppingList", shoppingList);
+		System.out.println("="+map);
+		return map;
+
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/shoppingcaraddre", method = RequestMethod.POST)
+	public Map<String, Object> shoppingcaraddre(HttpServletRequest request) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		List<ServiceShopping> shoppingList = ShoppingService.getShoppingInfoByld();
 		map.put("shoppingList", shoppingList);

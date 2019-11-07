@@ -3,13 +3,10 @@ package com.datangedu.cn.service.Impl;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Service;
 
 import com.datangedu.cn.dao.mapper.ShoppingMapper;
 
-import com.datangedu.cn.model.xd.shopping.Shopping;
 import com.datangedu.cn.model.xd.shopping.ShoppingExample;
 import com.datangedu.cn.service.ShoppingService;
 import com.datangedu.cn.util.ServiceShopping;

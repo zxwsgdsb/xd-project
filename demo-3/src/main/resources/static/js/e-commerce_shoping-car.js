@@ -56,14 +56,14 @@ $(function(){
 				            <li>${shoppingList[i].servicePrice}</li>
 				            <li>
 				                <span onclick="reducenum('123')">-</span>
-				                <input value="1" onblur="changenum('123')"/>
+				                <input value=${shoppingList[i].num} onblur="changenum('123')"/>
 				                <span onclick="addnum('123')">+</span>
 				            </li>
 				            <li>
 				                ${shoppingList[i].servicePrice}
 				            </li>
 				            <li>
-				                <span>删除</span>
+				                <span class="delete">删除</span>
 				            </li>
                     </ul>
    
@@ -81,18 +81,21 @@ $(function(){
 
 	　　});
 
-
-
+/*$(".delete").on("click", function(){
+    $.
+	
+})
+*/
 
 function reducenum(id){
 	var e = window.event;
 	var num=$(e.target).next().val()-1;
 	console.log("取回的数值为",num);
-	/*$.ajax({
+	$.ajax({
   		//请求类型
   		type:"post",
   		//请求路径
-  		url:"/buyuser/shoping_car",
+  		url:"/buyuser/shoppingcaraddre",
   		//请求参数
   		data:{
   	    num:num,
@@ -101,7 +104,7 @@ function reducenum(id){
   		dataType:"json",
   		//请求成功后调用函数
   		success:function(data){
-  			*/
+  			
   			
 	if($(e.target).next().val()<=1){
 		alert("数量不能小于1");
@@ -109,11 +112,11 @@ function reducenum(id){
 	else{
 	$(e.target).next().val($(e.target).next().val()-1);
 	}
-  		 /*},
+  		},
   		error:function(data){
   			console.log("失败后返回的数据",data);
   		}
-  	})*/
+  	})
 }
 
 

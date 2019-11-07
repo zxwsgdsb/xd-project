@@ -52,31 +52,31 @@ $(".login-btn").on("click", function(){
     location.href="e-commerce_evaluate.html"
 })
 
-$(".save").on("click", function(){
-	
-	var oldpw= $(".oldpw").val();
-	var newpw= $(".newpw").val();
-	var newpw1= $(".newpw1").val();
-	$.ajax({
-			// 请求类型
-			type:"post",
-			// 请求路径
-			url:"/buyuser/updatepw",
-			// 请求参数
-			  data:{ oldpw:oldpw,
-				     newpw:newpw,
-				     newpw1:newpw1,	 
-			 },
-			// 返回数据类型
-			dataType:"json",
-			// 请求成功后调用函数
-			success:function(data){
-				console.log("成功后返回的数据",data);
-				
-			}
-			// 请求成功后调用函数
-			error:function(data){
-				console.log("失败后返回的数据",data);
-			}
-		
-})
+//$(".save").on("click", function(){
+//	
+//	var oldpw= $(".oldpw").val();
+//	var newpw= $(".newpw").val();
+//	var newpw1= $(".newpw1").val();
+//	$.ajax({
+//			// 请求类型
+//			type:"post",
+//			// 请求路径
+//			url:"/buyuser/updatepw",
+//			// 请求参数
+//			  data:{ oldpw:oldpw,
+//				     newpw:newpw,
+//				     newpw1:newpw1,	 
+//			 },
+//			// 返回数据类型
+//			dataType:"json",
+//			// 请求成功后调用函数
+//			success:function(data){
+//				console.log("成功后返回的数据",data);
+//				
+//			}
+//			// 请求成功后调用函数
+//			error:function(data){
+//				console.log("失败后返回的数据",data);
+//			}
+//		
+//})

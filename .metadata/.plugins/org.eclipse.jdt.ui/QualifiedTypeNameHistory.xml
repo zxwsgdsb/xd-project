@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.buy_user.BuyUserExample"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.buy_user.BuyUser"/>
+</qualifiedTypeNameHistroy>

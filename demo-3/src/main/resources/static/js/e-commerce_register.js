@@ -1,7 +1,7 @@
 $(".login-btn").on("click", function(){
     location.href="e-commerce_login.html"
 })
- $(".login-btn font-aqua").on("click", function(){
+ $(".font-aqua").on("click", function(){
     	 //处理用户数据
     	var ph= $(".buyuser_ph").val();
     	var pw= $(".buyuser_pw").val();
