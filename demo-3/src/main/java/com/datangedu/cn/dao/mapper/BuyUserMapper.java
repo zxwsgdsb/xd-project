@@ -23,6 +23,8 @@ public interface BuyUserMapper {
     List<BuyUser> selectByExampleWithBLOBs(BuyUserExample example);
 
     List<BuyUser> selectByExample(BuyUserExample example);
+    
+    List<BuyUser> selectByLike(String name, BuyUserExample example);
 
     BuyUser selectByPrimaryKey(String id);
 

@@ -97,6 +97,12 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectByLike" parameterType="map" resultMap="BaseResultMap">
+  	select * from buy_user where name like '%${name}%'
+  	<if test="example.pageNum >= 0">
+  		limit ${example.pageNum},${example.pageSize}
+  	</if>
+  </select>
   <select id="selectByExample" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">

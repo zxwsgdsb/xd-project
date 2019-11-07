@@ -7,14 +7,23 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="javax.annotation.Resource"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.dao.mapper.OrderMapper"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.model.xd.order.OrderExample"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.administrators.service.OrderService"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.model.xd.order.Order"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.dao.mapper.OrderLMapper"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.model.xd.order.OrderLExample"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.model.xd.order.OrderL"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.dao.mapper.BuyUserMapper"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.administrators.service.Buy_userService"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.buy_user.BuyUser"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.dao.mapper.ServiceUserMapper"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.service_user.ServiceUser"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.administrators.service.Service_userService"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.buy_user.BuyUserExample"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.service_user.ServiceUserExample"/>
 </qualifiedTypeNameHistroy>

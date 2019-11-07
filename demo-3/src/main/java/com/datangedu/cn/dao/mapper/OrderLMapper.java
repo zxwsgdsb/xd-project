@@ -30,4 +30,6 @@ public interface OrderLMapper {
     int updateByPrimaryKeySelective(OrderL record);
 
     int updateByPrimaryKey(OrderL record);
+    
+    List<OrderL> selectByDate(String startdate, String enddate);
 }

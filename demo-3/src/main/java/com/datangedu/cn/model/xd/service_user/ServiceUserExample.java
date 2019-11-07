@@ -10,6 +10,26 @@ public class ServiceUserExample {
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
+    
+    protected int pageSize;   //每页展示的数据条数
+    
+    protected int pageNum;  //当前页
+    
+    public int getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(int pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public int getPageNum() {
+		return pageNum;
+	}
+
+	public void setPageNum(int pageNum) {
+		this.pageNum = (pageNum-1)*pageSize;
+	}
 
     public ServiceUserExample() {
         oredCriteria = new ArrayList<Criteria>();
@@ -62,6 +82,8 @@ public class ServiceUserExample {
         oredCriteria.clear();
         orderByClause = null;
         distinct = false;
+        pageNum = 1;
+        pageSize = 2;
     }
 
     protected abstract static class GeneratedCriteria {
@@ -1072,76 +1094,6 @@ public class ServiceUserExample {
 
         public Criteria andCustomerPhNotBetween(String value1, String value2) {
             addCriterion("customer_ph not between", value1, value2, "customerPh");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseIsNull() {
-            addCriterion("business_license is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseIsNotNull() {
-            addCriterion("business_license is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseEqualTo(String value) {
-            addCriterion("business_license =", value, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseNotEqualTo(String value) {
-            addCriterion("business_license <>", value, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseGreaterThan(String value) {
-            addCriterion("business_license >", value, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseGreaterThanOrEqualTo(String value) {
-            addCriterion("business_license >=", value, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseLessThan(String value) {
-            addCriterion("business_license <", value, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseLessThanOrEqualTo(String value) {
-            addCriterion("business_license <=", value, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseLike(String value) {
-            addCriterion("business_license like", value, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseNotLike(String value) {
-            addCriterion("business_license not like", value, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseIn(List<String> values) {
-            addCriterion("business_license in", values, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseNotIn(List<String> values) {
-            addCriterion("business_license not in", values, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseBetween(String value1, String value2) {
-            addCriterion("business_license between", value1, value2, "businessLicense");
-            return (Criteria) this;
-        }
-
-        public Criteria andBusinessLicenseNotBetween(String value1, String value2) {
-            addCriterion("business_license not between", value1, value2, "businessLicense");
             return (Criteria) this;
         }
     }

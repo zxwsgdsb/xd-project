@@ -3,6 +3,7 @@ package com.datangedu.cn.administrators.service.impl;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,25 @@ public class OrderServiceImpl implements OrderService {
 		OrderLExample.Criteria criteria = orderExample.createCriteria();
 		
 		return orderLMapper.selectByExample(null);
+	}
+
+	@Override
+	public List<OrderL> getExpenses() {
+		// TODO Auto-generated method stub
+		return orderLMapper.selectByExample(null);
+	}
+
+	@Override
+	public List<OrderL> selectByDate(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		
+		return orderLMapper.selectByDate(request.getParameter("enddate"), request.getParameter("startdate"));
+	}
+
+	@Override
+	public OrderL selectById(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		return orderLMapper.selectByPrimaryKey(request.getParameter("num"));
 	}
 
 }
