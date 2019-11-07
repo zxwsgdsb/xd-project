@@ -63,8 +63,8 @@ public class BuyUserController {
 		String code = (String)session.getAttribute("code");
 		String imgcode = request.getParameter("imgcode");
 		System.out.println("getCommodity===="+request.getParameter("ph"));
-		String ph = request.getParameter("ph");
 		int code1 = 0;
+		String ph = request.getParameter("ph");
 		Map<String,Object> map = new HashMap<String,Object>();
 		if(imgcode.toUpperCase().equals(code)) {
 			BuyUser user = new BuyUser();
