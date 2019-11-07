@@ -41,6 +41,54 @@ $(function() {
 		
 })
 
+$(".fa-search").on("click", function(){
+	var num = $(".ordernum").val();
+	$.ajax({
+		url:"/orderform/search",
+		type:"get",
+		data:{
+			num: num,
+		},
+		success: function(data){
+			console.log(data);
+			if(!data.orderList.id){
+				alert("订单不存在");
+			}else{
+				$("tbody").html("");
+				var txt = "";
+					 txt = `<tr>
+	                    <td>${data.orderList.id}</td>
+	                    <td>${data.orderList.buyName}</td>
+	                    <td>${data.orderList.orderContent}</td>
+	                    <td>${data.orderList.orderPrice}</td>
+	                    <td>${data.orderList.ts}</td>
+	                    
+	                    `;
+					if(+data.orderList.state == 1){
+						txt += `<td>已支付</td>
+						<td>
+	                        <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
+	                    </td>`;
+						
+				
+					} else{
+						txt += `<td>未支付</td>
+						<td>
+	                        <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
+	                    </td>`;
+					}
+					txt +=`</tr>`
+		
+				console.log(txt);
+				$("tbody").append(txt);
+			}
+			
+		},
+		error: function(){
+			console.log("失败")
+		}
+	})
+})
 
 $(".user-arrow-down").on("click",function(){
     if($(".dropdown").is(":hidden")){

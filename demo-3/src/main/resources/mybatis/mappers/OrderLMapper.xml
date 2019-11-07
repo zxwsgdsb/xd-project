@@ -87,6 +87,9 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectByDate" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from order_l where ts between #{startdate} and #{enddate}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

@@ -16,10 +16,12 @@
     <result column="qq" jdbcType="VARCHAR" property="qq" />
     <result column="wx" jdbcType="VARCHAR" property="wx" />
     <result column="customer_ph" jdbcType="VARCHAR" property="customerPh" />
-    <result column="business_license" jdbcType="VARCHAR" property="businessLicense" />
-  </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.datangedu.cn.model.xd.service_user.ServiceUser">
     <result column="hp" jdbcType="LONGVARBINARY" property="hp" />
+    <result column="business_license" jdbcType="LONGVARBINARY" property="businessLicense" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.datangedu.cn.model.xd.service_user.ServiceUserWithBLOBs">
+    <result column="hp" jdbcType="LONGVARBINARY" property="hp" />
+    <result column="business_license" jdbcType="LONGVARBINARY" property="businessLicense" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -81,10 +83,10 @@
   </sql>
   <sql id="Base_Column_List">
     id, name, area, service_ph, service_pw, admin_introduction, state, mail, ts, user_introduction, 
-    work_ts, qq, wx, customer_ph, business_license
+    work_ts, qq, wx, customer_ph
   </sql>
   <sql id="Blob_Column_List">
-    hp
+    hp, business_license
   </sql>
   <select id="selectByExampleWithBLOBs" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserExample" resultMap="ResultMapWithBLOBs">
     select
@@ -102,6 +104,12 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectByLike" parameterType="map" resultMap="BaseResultMap">
+  	select * from service_user where name like '%${name}%'
+  	<if test="example.pageNum >= 0">
+  		limit ${example.pageNum},${example.pageSize}
+  	</if>
+  </select>
   <select id="selectByExample" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -115,6 +123,12 @@
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
+  </select>
+  <select id="selectById" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from service_user where id = #{id}
+  </select>
+  <select id="selectByState" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from service_user where state = #{state}
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
     select 
@@ -134,21 +148,21 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
+  <insert id="insert" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserWithBLOBs">
     insert into service_user (id, name, area, 
       service_ph, service_pw, admin_introduction, 
       state, mail, ts, 
       user_introduction, work_ts, qq, 
-      wx, customer_ph, business_license, 
-      hp)
+      wx, customer_ph, hp, 
+      business_license)
     values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{area,jdbcType=VARCHAR}, 
       #{servicePh,jdbcType=VARCHAR}, #{servicePw,jdbcType=VARCHAR}, #{adminIntroduction,jdbcType=VARCHAR}, 
       #{state,jdbcType=VARCHAR}, #{mail,jdbcType=VARCHAR}, #{ts,jdbcType=TIMESTAMP}, 
       #{userIntroduction,jdbcType=VARCHAR}, #{workTs,jdbcType=VARCHAR}, #{qq,jdbcType=VARCHAR}, 
-      #{wx,jdbcType=VARCHAR}, #{customerPh,jdbcType=VARCHAR}, #{businessLicense,jdbcType=VARCHAR}, 
-      #{hp,jdbcType=LONGVARBINARY})
+      #{wx,jdbcType=VARCHAR}, #{customerPh,jdbcType=VARCHAR}, #{hp,jdbcType=LONGVARBINARY}, 
+      #{businessLicense,jdbcType=LONGVARBINARY})
   </insert>
-  <insert id="insertSelective" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
+  <insert id="insertSelective" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserWithBLOBs">
     insert into service_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -193,11 +207,11 @@
       <if test="customerPh != null">
         customer_ph,
       </if>
-      <if test="businessLicense != null">
-        business_license,
-      </if>
       <if test="hp != null">
         hp,
+      </if>
+      <if test="businessLicense != null">
+        business_license,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -243,11 +257,11 @@
       <if test="customerPh != null">
         #{customerPh,jdbcType=VARCHAR},
       </if>
-      <if test="businessLicense != null">
-        #{businessLicense,jdbcType=VARCHAR},
-      </if>
       <if test="hp != null">
         #{hp,jdbcType=LONGVARBINARY},
+      </if>
+      <if test="businessLicense != null">
+        #{businessLicense,jdbcType=LONGVARBINARY},
       </if>
     </trim>
   </insert>
@@ -302,11 +316,11 @@
       <if test="record.customerPh != null">
         customer_ph = #{record.customerPh,jdbcType=VARCHAR},
       </if>
-      <if test="record.businessLicense != null">
-        business_license = #{record.businessLicense,jdbcType=VARCHAR},
-      </if>
       <if test="record.hp != null">
         hp = #{record.hp,jdbcType=LONGVARBINARY},
+      </if>
+      <if test="record.businessLicense != null">
+        business_license = #{record.businessLicense,jdbcType=LONGVARBINARY},
       </if>
     </set>
     <if test="_parameter != null">
@@ -329,8 +343,8 @@
       qq = #{record.qq,jdbcType=VARCHAR},
       wx = #{record.wx,jdbcType=VARCHAR},
       customer_ph = #{record.customerPh,jdbcType=VARCHAR},
-      business_license = #{record.businessLicense,jdbcType=VARCHAR},
-      hp = #{record.hp,jdbcType=LONGVARBINARY}
+      hp = #{record.hp,jdbcType=LONGVARBINARY},
+      business_license = #{record.businessLicense,jdbcType=LONGVARBINARY}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -350,13 +364,12 @@
       work_ts = #{record.workTs,jdbcType=VARCHAR},
       qq = #{record.qq,jdbcType=VARCHAR},
       wx = #{record.wx,jdbcType=VARCHAR},
-      customer_ph = #{record.customerPh,jdbcType=VARCHAR},
-      business_license = #{record.businessLicense,jdbcType=VARCHAR}
+      customer_ph = #{record.customerPh,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
+  <update id="updateByPrimaryKeySelective" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserWithBLOBs">
     update service_user
     <set>
       <if test="name != null">
@@ -398,16 +411,16 @@
       <if test="customerPh != null">
         customer_ph = #{customerPh,jdbcType=VARCHAR},
       </if>
-      <if test="businessLicense != null">
-        business_license = #{businessLicense,jdbcType=VARCHAR},
-      </if>
       <if test="hp != null">
         hp = #{hp,jdbcType=LONGVARBINARY},
+      </if>
+      <if test="businessLicense != null">
+        business_license = #{businessLicense,jdbcType=LONGVARBINARY},
       </if>
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUserWithBLOBs">
     update service_user
     set name = #{name,jdbcType=VARCHAR},
       area = #{area,jdbcType=VARCHAR},
@@ -422,8 +435,8 @@
       qq = #{qq,jdbcType=VARCHAR},
       wx = #{wx,jdbcType=VARCHAR},
       customer_ph = #{customerPh,jdbcType=VARCHAR},
-      business_license = #{businessLicense,jdbcType=VARCHAR},
-      hp = #{hp,jdbcType=LONGVARBINARY}
+      hp = #{hp,jdbcType=LONGVARBINARY},
+      business_license = #{businessLicense,jdbcType=LONGVARBINARY}
     where id = #{id,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.datangedu.cn.model.xd.service_user.ServiceUser">
@@ -440,8 +453,7 @@
       work_ts = #{workTs,jdbcType=VARCHAR},
       qq = #{qq,jdbcType=VARCHAR},
       wx = #{wx,jdbcType=VARCHAR},
-      customer_ph = #{customerPh,jdbcType=VARCHAR},
-      business_license = #{businessLicense,jdbcType=VARCHAR}
+      customer_ph = #{customerPh,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
 </mapper>

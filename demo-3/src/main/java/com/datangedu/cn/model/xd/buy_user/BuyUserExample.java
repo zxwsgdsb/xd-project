@@ -9,7 +9,27 @@ public class BuyUserExample {
 
     protected boolean distinct;
 
-    protected List<Criteria> oredCriteria;
+	protected List<Criteria> oredCriteria;
+    
+    protected int pageSize;   //每页展示的数据条数
+    
+    protected int pageNum;  //当前页
+    
+    public int getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(int pageSize) {
+		this.pageSize = pageSize;
+	}
+
+	public int getPageNum() {
+		return pageNum;
+	}
+
+	public void setPageNum(int pageNum) {
+		this.pageNum = (pageNum-1)*pageSize;
+	}
 
     public BuyUserExample() {
         oredCriteria = new ArrayList<Criteria>();
@@ -62,6 +82,8 @@ public class BuyUserExample {
         oredCriteria.clear();
         orderByClause = null;
         distinct = false;
+        pageNum = 1;
+        pageSize = 2;
     }
 
     protected abstract static class GeneratedCriteria {

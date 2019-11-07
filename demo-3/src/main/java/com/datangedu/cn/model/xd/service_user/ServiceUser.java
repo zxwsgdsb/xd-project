@@ -30,10 +30,10 @@ public class ServiceUser {
     private String wx;
 
     private String customerPh;
-
-    private String businessLicense;
-
+    
     private byte[] hp;
+
+    private byte[] businessLicense;
 
     public String getId() {
         return id;
@@ -146,20 +146,20 @@ public class ServiceUser {
     public void setCustomerPh(String customerPh) {
         this.customerPh = customerPh == null ? null : customerPh.trim();
     }
-
-    public String getBusinessLicense() {
-        return businessLicense;
-    }
-
-    public void setBusinessLicense(String businessLicense) {
-        this.businessLicense = businessLicense == null ? null : businessLicense.trim();
-    }
-
+    
     public byte[] getHp() {
         return hp;
     }
 
     public void setHp(byte[] hp) {
         this.hp = hp;
+    }
+
+    public byte[] getBusinessLicense() {
+        return businessLicense;
+    }
+
+    public void setBusinessLicense(byte[] businessLicense) {
+        this.businessLicense = businessLicense;
     }
 }
