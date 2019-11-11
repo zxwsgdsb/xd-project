@@ -38,7 +38,9 @@ public class PrivateService_productController {
 		String id = request.getParameter("id");
 		System.out.println("======"+id);
 		user = service_productService.selectByPrimaryKey(id);
+		System.out.println(user.getServiceState());
 		user.setServiceState("0");
+		System.out.println("user="+user);
 		int code = service_productService.updateByPrimaryKey(user);
 		
 		return "operator_product";
@@ -61,5 +63,70 @@ public class PrivateService_productController {
 		int code = service_productService.updateByPrimaryKey(user);
 		
 		return "operator_product";
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/upall", method = RequestMethod.GET)
+	public Map<String, Object> upall(HttpServletRequest request) {
+		ServiceProduct user = new ServiceProduct();
+		Map<String,Object> map = new HashMap<String,Object>();
+		String xx= "";
+		System.out.println(xx);
+		String str = request.getParameter("str");
+		String[] strs= str.split(",");
+		System.out.println("======"+str);
+		int len = strs.length;
+		for(int i = 0;i<len;i++) {
+			user = service_productService.selectByPrimaryKey(strs[i]);
+			if(user.getServiceState().equals("0")) {
+				user.setServiceState("1");
+				int code = service_productService.updateByPrimaryKey(user);
+				xx += user.getServiceState();
+			}
+			else {
+				xx += user.getServiceState();
+			}
+//			011111111" ["","11111"]
+		}
+		map.put("xx", xx);
+		
+		return map;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/downall", method = RequestMethod.GET)
+	public Map<String, Object> downall(HttpServletRequest request) {
+		ServiceProduct user = new ServiceProduct();
+		Map<String,Object> map = new HashMap<String,Object>();
+		String xx= "";
+		System.out.println(xx);
+		String str = request.getParameter("str");
+		String[] strs= str.split(",");
+		System.out.println("======"+str);
+		int len = strs.length;
+		for(int i = 0;i<len;i++) {
+			user = service_productService.selectByPrimaryKey(strs[i]);
+			if(user.getServiceState().equals("1")) {
+				user.setServiceState("0");
+				int code = service_productService.updateByPrimaryKey(user);
+				xx += user.getServiceState();
+			}
+			else {
+				xx += user.getServiceState();
+			}
+//			011111111" ["","11111"]
+		}
+		map.put("xx", xx);
+		
+		return map;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public Map<String, Object> search(HttpServletRequest request) {
+		Map<String,Object> map = new HashMap<String,Object>();
+		List<ServiceProduct> service_productList = service_productService.selectByLike(request);
+		map.put("service_productList", service_productList);
+		return map;
 	}
 }

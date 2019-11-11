@@ -89,6 +89,18 @@
   </select>
   <select id="selectByDate" parameterType="java.lang.String" resultMap="BaseResultMap">
   	select * from order_l where ts between #{startdate} and #{enddate}
+  	<if test="example.pageNum >= 0">
+  		limit ${example.pageNum},${example.pageSize}
+  	</if>
+  </select>
+  <select id="selectByDate1" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from order_l where ts between #{startdate} and #{enddate}
+  </select>
+  <select id="selectByLike" parameterType="map" resultMap="BaseResultMap">
+  	select * from order_l where buy_name like '%${name}%'
+  	<if test="example.pageNum >= 0">
+  		limit ${example.pageNum},${example.pageSize}
+  	</if>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
