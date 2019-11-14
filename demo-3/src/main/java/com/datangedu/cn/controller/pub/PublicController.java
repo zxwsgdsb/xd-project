@@ -44,6 +44,7 @@ public class PublicController {
 		if(imgcode.toUpperCase().equals(code)) {
 			List<AdministratorsUser> loginList = adminService.operator_login(phone);
 			AdministratorsUser password = loginList.get(0);
+		
 			if(password.getAdministratorsPw().equals(request.getParameter("password"))) {
 				code1 = 1;
 				map.put("code", code1);
