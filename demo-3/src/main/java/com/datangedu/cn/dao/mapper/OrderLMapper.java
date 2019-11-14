@@ -20,6 +20,8 @@ public interface OrderLMapper {
     int insertSelective(OrderL record);
 
     List<OrderL> selectByExample(OrderLExample example);
+    
+    List<OrderL> selectByLike(String name, OrderLExample example);
 
     OrderL selectByPrimaryKey(String id);
 
@@ -31,5 +33,7 @@ public interface OrderLMapper {
 
     int updateByPrimaryKey(OrderL record);
     
-    List<OrderL> selectByDate(String startdate, String enddate);
+    List<OrderL> selectByDate(String startdate, String enddate,OrderLExample example);
+    
+    List<OrderL> selectByDate1(String startdate, String enddate);
 }

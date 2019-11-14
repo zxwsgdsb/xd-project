@@ -25,6 +25,7 @@ public class PrivateOrderController {
 	@Resource
 	OrderService orderService;
 	
+	
 	@ResponseBody
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public Map<String, Object> product(HttpServletRequest request) {
@@ -39,7 +40,10 @@ public class PrivateOrderController {
 	public Map<String, Object> expenses(HttpServletRequest request) {
 		Map<String,Object> map = new HashMap<String,Object>();
 		List<OrderL> orderList = orderService.getExpenses();
+		List<OrderL> userList = orderService.selectByLike(request);
 		map.put("orderList", orderList);
+		map.put("userList", userList);
+		map.put("coco", orderList.size());
 		return map;
 	}
 	
@@ -48,7 +52,9 @@ public class PrivateOrderController {
 	public Map<String, Object> query(HttpServletRequest request) {
 		Map<String,Object> map = new HashMap<String,Object>();
 		List<OrderL> orderList = orderService.selectByDate(request);
+		List<OrderL> userList = orderService.selectByDate1(request);
 		map.put("orderList", orderList);
+		map.put("coco", userList.size());
 		return map;
 	}
 	

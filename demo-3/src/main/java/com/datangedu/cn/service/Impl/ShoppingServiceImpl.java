@@ -27,7 +27,7 @@ public class ShoppingServiceImpl implements ShoppingService {
 		//设置具体的条件
 		//criteria.andIdEqualTo(id);
 		//执行查询并返回
-		return ShoppingMapper.selectByshopping();
+		return null;
 	}
 	@Override
 	public int shoppingcaraddre(Shopping shop) {

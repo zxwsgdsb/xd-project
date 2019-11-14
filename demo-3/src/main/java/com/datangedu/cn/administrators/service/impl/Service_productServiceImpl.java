@@ -3,6 +3,7 @@ package com.datangedu.cn.administrators.service.impl;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Service;
 
@@ -39,6 +40,11 @@ public class Service_productServiceImpl implements Service_productService {
 	public int deleteByPrimaryKey(String id) {
 		// TODO Auto-generated method stub
 		return serviceProductMapper.deleteByPrimaryKey(id);
+	}
+	@Override
+	public List<ServiceProduct> selectByLike(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		return serviceProductMapper.selectByLike(request.getParameter("text"));
 	}
 
 }

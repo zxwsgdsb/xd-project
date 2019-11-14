@@ -22,6 +22,8 @@ public interface ServiceProductMapper {
     List<ServiceProduct> selectByExampleWithBLOBs(ServiceProductExample example);
 
     List<ServiceProduct> selectByExample(ServiceProductExample example);
+    
+    List<ServiceProduct> selectByLike(String name);
 
     ServiceProduct selectByPrimaryKey(String id);
 

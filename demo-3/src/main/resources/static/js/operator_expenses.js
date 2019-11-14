@@ -1,25 +1,39 @@
+var page = 0;
 $(function() {
 //	location.href = "product"
 		$.ajax({
 			url:"/orderform/cost",
 			type:"get",
+			data:{
+				name: "",
+				pageNum: 1,
+				pageSize: 2,
+			},
 			success: function(data){
 				console.log("成功")
 				console.log(data);
-				for(var i=0; i<data.orderList.length; i++){
+				for(var i=0; i<data.userList.length; i++){
 					var txt = `<tr>
-                        <td>${data.orderList[i].buyName}</td>
-                        <td>${data.orderList[i].ts}</td>
-                        <td>${data.orderList[i].id}</td>
-                        <td>${data.orderList[i].orderPrice}</td>
-                        <td>${data.orderList[i].pay}</td>
-                        <td>${data.orderList[i].orderContent}</td>
+                        <td>${data.userList[i].buyName}</td>
+                        <td>${data.userList[i].ts}</td>
+                        <td>${data.userList[i].id}</td>
+                        <td>${data.userList[i].orderPrice}</td>
+                        <td>${data.userList[i].pay}</td>
+                        <td>${data.userList[i].orderContent}</td>
                         </tr>
-                        `;
-					
-					
-						$("tbody").append(txt);
+                        `;	
+					$("tbody").append(txt);
 				}
+//				$("tbody").append(txt);
+				var tat = ` <span onclick="pageOn(1)">首页</span>
+							<span onclick="pageOn('-')">上一页</span>`
+				for(var j = 0; j<(data.coco/2); j++){
+					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
+				}
+					tat += `<span onclick="pageOn('+')">下一页</span>
+					<span>尾页</span>
+					`
+				$(".pagez").append(tat);
 				
 			},
 			error: function(){
@@ -70,6 +84,50 @@ function getmonthFormatDate() {
     return SevenDayAgo;
 }
 
+function pageOn(pageNum){
+	if((typeof pageNum) == "number"){
+		page = pageNum;
+	} else if(pageNum == "+"){
+		page += 1;
+		pageNum = page;
+	}else if(pageNum == "-"){
+		page = page-1;
+		pageNum = page;
+	}
+	$.ajax({
+		url:"/orderform/cost",
+		type:"get",
+		data:{
+			name: "",
+			pageNum: pageNum,
+			pageSize: 2,
+		},
+		success: function(data){
+			console.log(data);
+			$("tbody").html("");
+			var txt = '';
+			for(var i=0; i<data.userList.length; i++){
+				var txt = `<tr>
+                    <td>${data.userList[i].buyName}</td>
+                    <td>${data.userList[i].ts}</td>
+                    <td>${data.userList[i].id}</td>
+                    <td>${data.userList[i].orderPrice}</td>
+                    <td>${data.userList[i].pay}</td>
+                    <td>${data.userList[i].orderContent}</td>
+                    </tr>
+                    `;	
+				$("tbody").append(txt);
+			}
+//			$("tbody").append(txt);
+			
+		
+		},
+		error: function(){
+			console.log("失败")
+		}
+	})
+}
+
 $(".search li:eq(0)").on("click", function(){
 	var b = new Date();
 	var a =  new Date();
@@ -83,6 +141,8 @@ $(".search li:eq(0)").on("click", function(){
 		data:{
 			startdate: startdate,
 			enddate: enddate,
+			pageNum: 1,
+			pageSize: 2,
 		},
 		success: function(data){
 			
@@ -102,6 +162,16 @@ $(".search li:eq(0)").on("click", function(){
 				
 					$("tbody").append(txt);
 			}
+			$(".pagez").html("");
+			var tat = ` <span onclick="pageOn(1)">首页</span>
+				<span onclick="pageOn('-')">上一页</span>`
+				for(var j = 0; j<(data.coco/2); j++){
+					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
+				}
+			tat += `<span onclick="pageOn('+')">下一页</span>
+				<span>尾页</span>
+				`
+				$(".pagez").append(tat);
 			
 		},
 		error: function(){
@@ -121,6 +191,8 @@ $(".search li:eq(1)").on("click", function(){
 		data:{
 			startdate: startdate,
 			enddate: enddate,
+			pageNum: 1,
+			pageSize: 2,
 		},
 		success: function(data){
 			
@@ -140,6 +212,16 @@ $(".search li:eq(1)").on("click", function(){
 				
 					$("tbody").append(txt);
 			}
+			$(".pagez").html("");
+			var tat = ` <span onclick="pageOn(1)">首页</span>
+				<span onclick="pageOn('-')">上一页</span>`
+				for(var j = 0; j<(data.coco/2); j++){
+					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
+				}
+			tat += `<span onclick="pageOn('+')">下一页</span>
+				<span>尾页</span>
+				`
+				$(".pagez").append(tat);
 			
 		},
 		error: function(){
@@ -159,6 +241,8 @@ $(".search li:eq(2)").on("click", function(){
 		data:{
 			startdate: startdate,
 			enddate: enddate,
+			pageNum: 1,
+			pageSize: 2,
 		},
 		success: function(data){
 			
@@ -178,6 +262,16 @@ $(".search li:eq(2)").on("click", function(){
 				
 					$("tbody").append(txt);
 			}
+			$(".pagez").html("");
+			var tat = ` <span onclick="pageOn(1)">首页</span>
+				<span onclick="pageOn('-')">上一页</span>`
+				for(var j = 0; j<(data.coco/2); j++){
+					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
+				}
+			tat += `<span onclick="pageOn('+')">下一页</span>
+				<span>尾页</span>
+				`
+				$(".pagez").append(tat);
 			
 		},
 		error: function(){
@@ -191,17 +285,22 @@ $(".search li:eq(3)").on("click", function(){
 	$.ajax({
 		url:"/orderform/cost",
 		type:"get",
+		data:{
+			name: "",
+			pageNum: 1,
+			pageSize: 2,
+		},
 		success: function(data){
 			console.log("成功")
 			console.log(data);
-			for(var i=0; i<data.orderList.length; i++){
+			for(var i=0; i<data.userList.length; i++){
 				var txt = `<tr>
-                    <td>${data.orderList[i].buyName}</td>
-                    <td>${data.orderList[i].ts}</td>
-                    <td>${data.orderList[i].id}</td>
-                    <td>${data.orderList[i].orderPrice}</td>
-                    <td>${data.orderList[i].pay}</td>
-                    <td>${data.orderList[i].orderContent}</td>
+                    <td>${data.userList[i].buyName}</td>
+                    <td>${data.userList[i].ts}</td>
+                    <td>${data.userList[i].id}</td>
+                    <td>${data.userList[i].orderPrice}</td>
+                    <td>${data.userList[i].pay}</td>
+                    <td>${data.userList[i].orderContent}</td>
                     </tr>
                     `;
 				

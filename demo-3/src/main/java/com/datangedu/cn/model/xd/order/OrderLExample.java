@@ -10,6 +10,26 @@ public class OrderLExample {
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
+    
+    protected int pageNum;
+    
+    protected int pageSize;
+    
+    public int getPageNum() {
+		return pageNum;
+	}
+
+	public void setPageNum(int pageNum) {
+		this.pageNum = (pageNum-1)*pageSize;
+	}
+
+	public int getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(int pageSize) {
+		this.pageSize = pageSize;
+	}
 
     public OrderLExample() {
         oredCriteria = new ArrayList<Criteria>();

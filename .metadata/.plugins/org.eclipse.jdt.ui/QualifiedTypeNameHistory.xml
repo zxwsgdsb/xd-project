@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="com.datangedu.cn.model.xd.order.OrderL"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.model.xd.order.OrderLExample"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.model.xd.shopping.Shopping"/>
+=======
+>>>>>>> f3406570f14710d84bddf65eb135114d7a838180
 </qualifiedTypeNameHistroy>

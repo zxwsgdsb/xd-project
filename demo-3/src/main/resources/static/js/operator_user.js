@@ -1,3 +1,4 @@
+var page = 0;
 $(function() {
 //	location.href = "product"
 		$.ajax({
@@ -30,12 +31,12 @@ $(function() {
 							
 				}
 					
-				var tat = ` <span>首页</span>
-					<span>上一页</span>`
+				var tat = ` <span onclick="pageOn(1)">首页</span>
+					<span onclick="pageOn('-')">上一页</span>`
 				for(var j = 0; j<(data.buy_userList.length/2); j++){
 					tat += `<span class="main-pagination-page" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
-					tat += `<span>下一页</span>
+					tat += `<span onclick="pageOn('+')">下一页</span>
 					<span>尾页</span>
 					`
 				$(".pagez").append(tat);
@@ -49,6 +50,15 @@ $(function() {
 })
 
 function pageOn(pageNum){
+	if((typeof pageNum) == "number"){
+		page = pageNum;
+	} else if(pageNum == "+"){
+		page += 1;
+		pageNum = page;
+	}else if(pageNum == "-"){
+		page = page-1;
+		pageNum = page;
+	}
 	$.ajax({
 		url:"/opeuser/page",
 		type:"get",

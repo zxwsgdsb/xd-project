@@ -36,14 +36,31 @@ public class OrderServiceImpl implements OrderService {
 	@Override
 	public List<OrderL> selectByDate(HttpServletRequest request) {
 		// TODO Auto-generated method stub
-		
-		return orderLMapper.selectByDate(request.getParameter("enddate"), request.getParameter("startdate"));
+		OrderLExample orderLExample = new OrderLExample();
+		orderLExample.setPageSize(Integer.parseInt(request.getParameter("pageSize")));
+		orderLExample.setPageNum(Integer.parseInt(request.getParameter("pageNum")));
+		return orderLMapper.selectByDate(request.getParameter("enddate"), request.getParameter("startdate"), orderLExample);
 	}
 
 	@Override
 	public OrderL selectById(HttpServletRequest request) {
 		// TODO Auto-generated method stub
 		return orderLMapper.selectByPrimaryKey(request.getParameter("num"));
+	}
+
+	@Override
+	public List<OrderL> selectByLike(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		OrderLExample orderLExample = new OrderLExample();
+		orderLExample.setPageSize(Integer.parseInt(request.getParameter("pageSize")));
+		orderLExample.setPageNum(Integer.parseInt(request.getParameter("pageNum")));
+		return orderLMapper.selectByLike(request.getParameter("name"), orderLExample);
+	}
+
+	@Override
+	public List<OrderL> selectByDate1(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		 return orderLMapper.selectByDate1(request.getParameter("enddate"), request.getParameter("startdate"));
 	}
 
 }

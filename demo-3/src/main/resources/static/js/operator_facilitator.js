@@ -1,4 +1,6 @@
+var page = 0;
 $(function() {
+	page = 1;
 //	location.href = "product"
 	$(".stop-content").hide();
 	var state = "1";
@@ -14,17 +16,17 @@ $(function() {
 				console.log("成功")
 				console.log(data);
 				var txt = '';
-				for(var i=0; i<data.service_userList.length; i++){
+				for(var i=0; i<data.stateList.length; i++){
 					
-					if(+data.service_userList[i].state == 1){
+					if(+data.stateList[i].state == 1){
 						txt += `<tr>
-	                        <td>${data.service_userList[i].name}</td>
-	                        <td>${data.service_userList[i].area}</td>
-	                        <td>${data.service_userList[i].servicePh}</td>
-	                        <td>${data.service_userList[i].adminIntroduction}</td>
+	                        <td>${data.stateList[i].name}</td>
+	                        <td>${data.stateList[i].area}</td>
+	                        <td>${data.stateList[i].servicePh}</td>
+	                        <td>${data.stateList[i].adminIntroduction}</td>
 							<td>
                             <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
-                            <span class="handle-btn"><i class="fa fa-circle-c fa-fw"></i>停用</span>
+                            <span class="handle-btn" onclick="close1(${data.stateList[i].id})"><i class="fa fa-circle-c fa-fw"></i>停用</span>
 							</td>
 							</tr>`;
 						
@@ -32,12 +34,12 @@ $(function() {
 					} 
 				}
 				$("tbody").append(txt);
-				var tat = ` <span>首页</span>
-					<span>上一页</span>`
+				var tat = ` <span onclick="pageOn(1)">首页</span>
+							<span onclick="pageOn('-')">上一页</span>`
 				for(var j = 0; j<(data.userList/2); j++){
-					tat += `<span class="main-pagination-page" onclick= "pageOn(${j+1})">${j+1}</span>`
+					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
-					tat += `<span>下一页</span>
+					tat += `<span onclick="pageOn('+')">下一页</span>
 					<span>尾页</span>
 					`
 				$(".pagez").append(tat);
@@ -52,6 +54,15 @@ $(function() {
 })
 
 function pageOn(pageNum){
+	if((typeof pageNum) == "number"){
+		page = pageNum;
+	} else if(pageNum == "+"){
+		page += 1;
+		pageNum = page;
+	}else if(pageNum == "-"){
+		page = page-1;
+		pageNum = page;
+	}
 	$.ajax({
 		url:"/facilitator/page",
 		type:"post",
@@ -256,7 +267,7 @@ $(".order1").on("click", function(){
 			console.log("成功")
 			console.log(data);
 			$("tbody").html("");
-			for(var i=0; i<2; i++){
+			for(var i=0; i<data.stateList.length; i++){
 				
 				if(+data.stateList[i].state == 1){
 					var txt = `<tr>
@@ -277,7 +288,7 @@ $(".order1").on("click", function(){
 					$("tbody").append(txt);
 			}
 			$(".pagez").html("");
-			var tat = ` <span>首页</span>
+			var tat = ` <span onclick= "pageOn(1)">首页</span>
 				<span>上一页</span>`
 			for(var j = 0; j<(data.stateList.length/2); j++){
 				tat += `<span class="main-pagination-page" onclick= "pageOn(${j+1})">${j+1}</span>`
@@ -376,7 +387,7 @@ function open1(id){
                         `;
 					txt += `<td>
                         <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
-                        <span class="handle-btn"><i class="fa fa-circle-c fa-fw"></i>启用</span>
+                        <span class="handle-btn" onclick="open1('${data.service_userList[i].id}')"><i class="fa fa-circle-c fa-fw"></i>启用</span>
                     </td>
                     </tr>`;
 					
@@ -408,28 +419,25 @@ function close1(id){
 			console.log("成功")
 			console.log(data);
 			$("tbody").html("");
+			var txt = '';
 			for(var i=0; i<data.service_userList.length; i++){
 				
-				if(+data.service_userList[i].state == 0){
-					var txt = `<tr>
+				if(+data.service_userList[i].state == 1){
+					txt += `<tr>
                         <td>${data.service_userList[i].name}</td>
                         <td>${data.service_userList[i].area}</td>
                         <td>${data.service_userList[i].servicePh}</td>
                         <td>${data.service_userList[i].adminIntroduction}</td>
-                        
-                        `;
-					txt += `<td>
+                        <td>
                         <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
-                        <span class="handle-btn"><i class="fa fa-circle-c fa-fw"></i>停用</span>
-                    </td>
-                    </tr>`;
+                        <span class="handle-btn" onclick="close1('${data.service_userList[i].id}')"><i class="fa fa-circle-c fa-fw"></i>停用</span>
+						</td>
+						</tr>`;
 					
-			
-				} 
-			
-				
-					$("tbody").append(txt);
+				}
+					
 			}
+			$("tbody").append(txt);
 			
 		},
 		error: function(){
