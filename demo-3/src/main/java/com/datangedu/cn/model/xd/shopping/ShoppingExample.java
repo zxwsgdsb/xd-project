@@ -293,6 +293,76 @@ public class ShoppingExample {
             addCriterion("num not between", value1, value2, "num");
             return (Criteria) this;
         }
+
+        public Criteria andBuyuserIdIsNull() {
+            addCriterion("buyuser_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdIsNotNull() {
+            addCriterion("buyuser_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdEqualTo(String value) {
+            addCriterion("buyuser_id =", value, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdNotEqualTo(String value) {
+            addCriterion("buyuser_id <>", value, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdGreaterThan(String value) {
+            addCriterion("buyuser_id >", value, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdGreaterThanOrEqualTo(String value) {
+            addCriterion("buyuser_id >=", value, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdLessThan(String value) {
+            addCriterion("buyuser_id <", value, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdLessThanOrEqualTo(String value) {
+            addCriterion("buyuser_id <=", value, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdLike(String value) {
+            addCriterion("buyuser_id like", value, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdNotLike(String value) {
+            addCriterion("buyuser_id not like", value, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdIn(List<String> values) {
+            addCriterion("buyuser_id in", values, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdNotIn(List<String> values) {
+            addCriterion("buyuser_id not in", values, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdBetween(String value1, String value2) {
+            addCriterion("buyuser_id between", value1, value2, "buyuserId");
+            return (Criteria) this;
+        }
+
+        public Criteria andBuyuserIdNotBetween(String value1, String value2) {
+            addCriterion("buyuser_id not between", value1, value2, "buyuserId");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

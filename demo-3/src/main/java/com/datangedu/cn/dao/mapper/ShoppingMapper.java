@@ -31,6 +31,8 @@ public interface ShoppingMapper {
     int updateByPrimaryKeySelective(Shopping record);
 
     int updateByPrimaryKey(Shopping record);
-    
-    List<ServiceShopping> selectByshopping();
+
+	List<ServiceShopping> selectByshopping();
+
+
 }

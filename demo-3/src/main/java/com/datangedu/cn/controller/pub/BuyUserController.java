@@ -14,8 +14,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.datangedu.cn.model.xd.buy_user.BuyUser;
+import com.datangedu.cn.model.xd.order.OrderL;
 import com.datangedu.cn.model.xd.service_product.ServiceProduct;
+import com.datangedu.cn.model.xd.shopping.Shopping;
 import com.datangedu.cn.service.BuyUserService;
+import com.datangedu.cn.service.OrderLService;
 import com.datangedu.cn.service.ProductService;
 import com.datangedu.cn.service.ShoppingService;
 import com.datangedu.cn.util.ServiceShopping;
@@ -27,7 +30,6 @@ public class BuyUserController {
 
 	@Resource
 	BuyUserService buyUserService;
-
 	@ResponseBody
 	// 请求地址，请求类型
 	@RequestMapping(value = "/buyuserregister", method = RequestMethod.POST)
@@ -42,17 +44,68 @@ public class BuyUserController {
 		return map;
 	}
 	@ResponseBody
+	@RequestMapping(value = "/getbuyuserlist", method = RequestMethod.GET)
+	public Map<String, Object> getbuyuserlist(HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		String ph = request.getParameter("ph");
+		List<BuyUser> buyuserList = buyUserService.buyuser_login(ph);
+		map.put("buyuserList", buyuserList);
+		System.out.println(buyuserList.get(0).getName());
+		System.out.println("buyuser="+map);
+		return map;
+
+	}
+	@ResponseBody
 	// 请求地址，请求类型
 	@RequestMapping(value = "/updatepw", method = RequestMethod.POST)
 	public Map<String, Object> updatepw(HttpServletRequest request) {
-
+		String ph = request.getParameter("ph");
+		int code = 0;
+		List<BuyUser> loginList = buyUserService.buyuser_pw(ph);
+		BuyUser buyUser = new BuyUser();
+		System.out.println(loginList.size()+"==="+ph);
+		buyUser = loginList.get(0);
 		Map<String, Object> map = new HashMap<String, Object>();
-		int buyUserList = buyUserService.setBuyUserRegister(request);
-		if (buyUserList == 2) {
-			map.put("msg", "密码小于6位请重新输入！");
+		BuyUser user = new BuyUser();
+		user.setPh(request.getParameter("ph"));
+		user.setPw(request.getParameter("newpw"));
+		if(buyUser.getPw().equals(request.getParameter("oldpw"))){
+			if(request.getParameter("newpw").equals(request.getParameter("newpw1"))) {
+				buyUserService.commerce_updata(user);
+				code =1;
+				map.put("code", code);
+			}else {
+				System.out.println("else");
+				code = 2;
+				map.put("code", code);
+			}
+		}else {
+			code = 3;
+			map.put("code", code);
 		}
-		map.put("msg", "更改成功!");
+	
 		return map;
+		
+	}
+	@ResponseBody
+	// 请求地址，请求类型
+	@RequestMapping(value = "/update", method = RequestMethod.POST)
+	public Map<String, Object> update(HttpServletRequest request) {
+		String ph = request.getParameter("ph");
+		List<BuyUser> loginList = buyUserService.buyuser_pw(ph);
+		System.out.println(loginList.size()+"==="+ph);
+		Map<String, Object> map = new HashMap<String, Object>();
+		BuyUser user = new BuyUser();
+		user.setPh(request.getParameter("ph"));
+		user.setName(request.getParameter("name"));
+		user.setMail(request.getParameter("mail"));
+		user.setSex(request.getParameter("sex"));
+		System.out.println("name=="+request.getParameter("name"));
+		System.out.println("mail=="+request.getParameter("mail"));
+		System.out.println("sex=="+request.getParameter("sex"));
+		buyUserService.commerce_updata(user);
+		return map;
+		
 	}
 	
 	
@@ -140,13 +193,32 @@ public class BuyUserController {
 	@ResponseBody
 	@RequestMapping(value = "/shoppingcaraddre", method = RequestMethod.POST)
 	public Map<String, Object> shoppingcaraddre(HttpServletRequest request) {
-		Map<String, Object> map = new HashMap<String, Object>();
-		List<ServiceShopping> shoppingList = ShoppingService.getShoppingInfoByld();
-		map.put("shoppingList", shoppingList);
-		System.out.println("="+map);
+		int code1 = 0;
+		Map<String,Object> map = new HashMap<String,Object>();
+			Shopping shop = new Shopping();
+			shop.setId(Integer.parseInt(request.getParameter("id")));
+			shop.setNum(Integer.parseInt(request.getParameter("num")));
+			System.out.println("==="+request.getParameter("id")+"==="+request.getParameter("num"));
+				ShoppingService.shoppingcaraddre(shop);
+				code1 = 1;
+				map.put("code", code1);
 		return map;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/shoppingcardelete", method = RequestMethod.POST)
+	public Map<String, Object> shoppingcardelete(HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		System.out.println("==="+request.getParameter("id"));
+		int  ShoppingList = ShoppingService.ShoppingDelete(request);
+		
+      	map.put("msg","恭喜删除成功");
+      	map.put("code",ShoppingList);
+ 		return map;
 
 	}
+	
+	
 
 	@Resource
 	ProductService ProductService;
@@ -161,7 +233,7 @@ public class BuyUserController {
 		return map;
 
 	}
-
+ 
 	@ResponseBody
 	// 请求地址，请求类型
 	@RequestMapping(value = "/getproductlistorderby", method = RequestMethod.GET)
@@ -172,6 +244,28 @@ public class BuyUserController {
 		map.put("productList", productList);
 		System.out.println("=" + productList);
 		return map;
-
+	}
+	@ResponseBody
+	// 请求地址，请求类型
+	@RequestMapping(value = "/addcar", method = RequestMethod.POST)
+	public Map<String, Object> addcar(HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		int  shoppingList = ProductService.addcar(request);
+		return map;
+	}
+	
+	
+	@Resource
+	OrderLService OrderLService;
+	@ResponseBody
+	// 请求地址，请求类型
+	@RequestMapping(value = "/getorderlist", method = RequestMethod.GET)
+	public Map<String, Object> getorderList(HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		String name = request.getParameter("name");
+		List<OrderL> orderList = OrderLService.orderlist(name);
+		System.out.println(orderList);
+		map.put("orderList", orderList);
+		return map;
 	}
 }

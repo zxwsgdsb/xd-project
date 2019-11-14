@@ -9,4 +9,9 @@ import com.datangedu.cn.util.ServiceShopping;
 
 public interface ShoppingService {
 	public List<ServiceShopping>getShoppingInfoByld();
+
+	public int shoppingcaraddre(Shopping shop);
+
+	public int ShoppingDelete(HttpServletRequest request);
+	
 }

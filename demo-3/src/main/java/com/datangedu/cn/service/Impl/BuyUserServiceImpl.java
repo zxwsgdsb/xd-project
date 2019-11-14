@@ -67,6 +67,36 @@ public class BuyUserServiceImpl implements BuyUserService{
 //		执行查询并返回
 		return buyUserMapper.updateByExampleSelective(user, buyUserExample);
 	}
+
+
+	@Override
+	public int commerce_updata(BuyUser user) {
+		// TODO Auto-generated method stub
+		//新建查询条件对象
+		BuyUserExample buyUserExample = new BuyUserExample();
+		//创建具体的条件实例
+		BuyUserExample.Criteria criteria = buyUserExample.createCriteria();
+		criteria.andPhEqualTo(user.getPh());
+		//administratorsUserExample.setPageNum(1);
+		//administratorsUserExample.setPageSize(2);
+//		执行查询并返回
+		return buyUserMapper.updateByExampleSelective(user, buyUserExample);
+	}
+
+
+	@Override
+	public List<BuyUser> buyuser_pw(String ph) {
+		BuyUserExample buyUserExample = new BuyUserExample();
+		//创建具体的条件实例
+		BuyUserExample.Criteria criteria = buyUserExample.createCriteria();
+		//administratorsUserExample.setPageNum(1);
+		//administratorsUserExample.setPageSize(2);
+		//设置具体条件
+		criteria.andPhEqualTo(ph);
+		//执行查询并返回
+		return buyUserMapper.selectByExample(buyUserExample);
+		
+	}
 	}
     
 
