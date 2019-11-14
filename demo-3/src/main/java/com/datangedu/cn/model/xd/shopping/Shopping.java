@@ -7,6 +7,8 @@ public class Shopping {
 
     private Integer num;
 
+    private String buyuserId;
+
     public Integer getId() {
         return id;
     }
@@ -29,5 +31,13 @@ public class Shopping {
 
     public void setNum(Integer num) {
         this.num = num;
+    }
+
+    public String getBuyuserId() {
+        return buyuserId;
+    }
+
+    public void setBuyuserId(String buyuserId) {
+        this.buyuserId = buyuserId == null ? null : buyuserId.trim();
     }
 }

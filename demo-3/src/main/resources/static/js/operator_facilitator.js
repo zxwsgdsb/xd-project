@@ -16,17 +16,17 @@ $(function() {
 				console.log("成功")
 				console.log(data);
 				var txt = '';
-				for(var i=0; i<data.service_userList.length; i++){
+				for(var i=0; i<data.stateList.length; i++){
 					
-					if(+data.service_userList[i].state == 1){
+					if(+data.stateList[i].state == 1){
 						txt += `<tr>
-	                        <td>${data.service_userList[i].name}</td>
-	                        <td>${data.service_userList[i].area}</td>
-	                        <td>${data.service_userList[i].servicePh}</td>
-	                        <td>${data.service_userList[i].adminIntroduction}</td>
+	                        <td>${data.stateList[i].name}</td>
+	                        <td>${data.stateList[i].area}</td>
+	                        <td>${data.stateList[i].servicePh}</td>
+	                        <td>${data.stateList[i].adminIntroduction}</td>
 							<td>
                             <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
-                            <span class="handle-btn" onclick="close1(${data.service_userList[i].id})"><i class="fa fa-circle-c fa-fw"></i>停用</span>
+                            <span class="handle-btn" onclick="close1(${data.stateList[i].id})"><i class="fa fa-circle-c fa-fw"></i>停用</span>
 							</td>
 							</tr>`;
 						
@@ -267,19 +267,19 @@ $(".order1").on("click", function(){
 			console.log("成功")
 			console.log(data);
 			$("tbody").html("");
-			for(var i=0; i<data.service_userList.length; i++){
+			for(var i=0; i<data.stateList.length; i++){
 				
-				if(+data.service_userList[i].state == 1){
+				if(+data.stateList[i].state == 1){
 					var txt = `<tr>
-                        <td>${data.service_userList[i].name}</td>
-                        <td>${data.service_userList[i].area}</td>
-                        <td>${data.service_userList[i].servicePh}</td>
-                        <td>${data.service_userList[i].adminIntroduction}</td>
+                        <td>${data.stateList[i].name}</td>
+                        <td>${data.stateList[i].area}</td>
+                        <td>${data.stateList[i].servicePh}</td>
+                        <td>${data.stateList[i].adminIntroduction}</td>
                         
                         `;
 					txt += `<td>
                         <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
-                        <span class="handle-btn" onclick="close1('${data.service_userList[i].id}')"><i class="fa fa-circle-c fa-fw"></i>停用</span>
+                        <span class="handle-btn" onclick="close1('${data.stateList[i].id}')"><i class="fa fa-circle-c fa-fw"></i>停用</span>
                     </td>
                     </tr>`;
 					
@@ -387,7 +387,7 @@ function open1(id){
                         `;
 					txt += `<td>
                         <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
-                        <span class="handle-btn" onclick="open1(data.service_userList[i].id)"><i class="fa fa-circle-c fa-fw"></i>启用</span>
+                        <span class="handle-btn" onclick="open1('${data.service_userList[i].id}')"><i class="fa fa-circle-c fa-fw"></i>启用</span>
                     </td>
                     </tr>`;
 					
@@ -430,7 +430,7 @@ function close1(id){
                         <td>${data.service_userList[i].adminIntroduction}</td>
                         <td>
                         <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
-                        <span class="handle-btn"><i class="fa fa-circle-c fa-fw"></i>停用</span>
+                        <span class="handle-btn" onclick="close1('${data.service_userList[i].id}')"><i class="fa fa-circle-c fa-fw"></i>停用</span>
 						</td>
 						</tr>`;
 					

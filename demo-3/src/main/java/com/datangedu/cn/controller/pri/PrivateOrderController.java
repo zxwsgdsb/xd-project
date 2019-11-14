@@ -25,6 +25,7 @@ public class PrivateOrderController {
 	@Resource
 	OrderService orderService;
 	
+	
 	@ResponseBody
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public Map<String, Object> product(HttpServletRequest request) {
