@@ -34,7 +34,9 @@ $(".login-btn").on("click", function(){
 			console.log("成功后返回数据",data);
 			if(data.code == 1){
 				location.href = "re?page=e-commerce_product"
+					sessionStorage.setItem("ph",ph)
 			}
+			
 			else{
 				alert("信息输入错误!");
 				

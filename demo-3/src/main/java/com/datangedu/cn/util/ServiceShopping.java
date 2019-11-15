@@ -6,6 +6,16 @@ public class ServiceShopping {
 	private Integer id;
 
     private String productId;
+    
+    private String buyuserId;
+    
+    public String getBuyuserId() {
+        return buyuserId;
+    }
+
+    public void setBuyuserId(String buyuserId) {
+        this.buyuserId = buyuserId == null ? null : buyuserId.trim();
+    }
 
     public Integer getId() {
 		return id;

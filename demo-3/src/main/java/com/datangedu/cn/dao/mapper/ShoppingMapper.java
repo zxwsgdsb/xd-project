@@ -32,4 +32,11 @@ public interface ShoppingMapper {
     int updateByPrimaryKeySelective(Shopping record);
 
     int updateByPrimaryKey(Shopping record);
+<<<<<<< HEAD
+
+	List<ServiceShopping> selectByshopping();
+
+
+=======
+>>>>>>> f3406570f14710d84bddf65eb135114d7a838180
 }
