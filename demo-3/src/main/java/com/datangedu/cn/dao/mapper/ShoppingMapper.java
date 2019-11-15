@@ -2,6 +2,8 @@ package com.datangedu.cn.dao.mapper;
 
 import com.datangedu.cn.model.xd.shopping.Shopping;
 import com.datangedu.cn.model.xd.shopping.ShoppingExample;
+import com.datangedu.cn.util.ServiceShopping;
+
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
@@ -30,11 +32,9 @@ public interface ShoppingMapper {
     int updateByPrimaryKeySelective(Shopping record);
 
     int updateByPrimaryKey(Shopping record);
-<<<<<<< HEAD
 
 	List<ServiceShopping> selectByshopping();
 
+	List<Shopping> selectdifferent(String productid,String buyuserid);
 
-=======
->>>>>>> f3406570f14710d84bddf65eb135114d7a838180
 }
