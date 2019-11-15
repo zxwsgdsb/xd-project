@@ -1,4 +1,4 @@
-var page = 0;
+var page = 1;
 $(function() {
 //	location.href = "product"
 		$.ajax({
@@ -15,7 +15,7 @@ $(function() {
 				for(var i=0; i<data.userList.length; i++){
 					var txt = `<tr>
                         <td>${data.userList[i].buyName}</td>
-                        <td>${data.userList[i].ts}</td>
+                        <td>${new Date(data.userList[i].ts).Format("yyyy-M-d")}</td>
                         <td>${data.userList[i].id}</td>
                         <td>${data.userList[i].orderPrice}</td>
                         <td>${data.userList[i].pay}</td>
@@ -27,13 +27,33 @@ $(function() {
 //				$("tbody").append(txt);
 				var tat = ` <span onclick="pageOn(1)">首页</span>
 							<span onclick="pageOn('-')">上一页</span>`
-				for(var j = 0; j<(data.coco/2); j++){
+				for(var j = 0; j<Math.ceil(data.coco/2); j++){
 					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
 					tat += `<span onclick="pageOn('+')">下一页</span>
 					<span>尾页</span>
 					`
 				$(".pagez").append(tat);
+				len = Math.ceil(data.coco/2);
+				$(`.pagez span`).removeClass("main-pagination-page");
+				if($(`.pagez span:eq(${page+1})`).text() == 1){
+					$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
+				}
+				var ph = sessionStorage.getItem("phone");
+				console.log(ph)
+				$(".user_info").html("");
+				var tat = `<li><a href="/re?page=operator_product"><i class="fa fa-cog fa-fw"></i>服务管理</a></li>
+				            <li><i class="fa fa-cube fa-fw"></i>业务管理</li>
+				            <li>
+				                <img src="/images/default_user.png">
+				                <span>${ph}</span>
+				                <i class="fa fa-chevron-down fa-fw user-arrow-down"></i>
+				                <ul class="dropdown">
+				                    <li>更改信息</li>
+				                    <li>退出登录</li>
+				                </ul>
+				            </li>`;
+				$(".user_info").append(tat);
 				
 			},
 			error: function(){
@@ -42,6 +62,25 @@ $(function() {
 		})
 		
 })
+
+Date.prototype.Format = function(fmt)   
+{
+  var o = {   
+    "M+" : this.getMonth()+1,                 //月份   
+    "d+" : this.getDate(),                    //日   
+    "h+" : this.getHours(),                   //小时   
+    "m+" : this.getMinutes(),                 //分   
+    "s+" : this.getSeconds(),                 //秒   
+    "q+" : Math.floor((this.getMonth()+3)/3), //季度   
+    "S"  : this.getMilliseconds()             //毫秒   
+  };   
+  if(/(y+)/.test(fmt))   
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));   
+  for(var k in o)   
+    if(new RegExp("("+ k +")").test(fmt))   
+  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));   
+  return fmt;   
+}
 
 function dateFormatDay(date){  //时间戳为10位需*1000，时间戳为13位的话不需乘1000
     var Y = date.getFullYear() + '-';
@@ -88,11 +127,23 @@ function pageOn(pageNum){
 	if((typeof pageNum) == "number"){
 		page = pageNum;
 	} else if(pageNum == "+"){
+		if(page == len){
+			alert("没有下一页");
+			return;
+		}
 		page += 1;
 		pageNum = page;
 	}else if(pageNum == "-"){
+		if(page == 1){
+			alert("没有上一页");
+			return;
+		}
 		page = page-1;
 		pageNum = page;
+	}
+	if(page<= len){
+		$(`.pagez span`).removeClass("main-pagination-page");
+		$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
 	}
 	$.ajax({
 		url:"/orderform/cost",
@@ -109,7 +160,7 @@ function pageOn(pageNum){
 			for(var i=0; i<data.userList.length; i++){
 				var txt = `<tr>
                     <td>${data.userList[i].buyName}</td>
-                    <td>${data.userList[i].ts}</td>
+                    <td>${new Date(data.userList[i].ts).Format("yyyy-M-d")}</td>
                     <td>${data.userList[i].id}</td>
                     <td>${data.userList[i].orderPrice}</td>
                     <td>${data.userList[i].pay}</td>

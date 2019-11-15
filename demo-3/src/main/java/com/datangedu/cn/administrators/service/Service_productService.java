@@ -16,5 +16,7 @@ public interface Service_productService {
 	
 	public int deleteByPrimaryKey(String id);
 	
+	public int deleteByProductId(String id);
+	
 	public List<ServiceProduct> selectByLike(HttpServletRequest request);
 }

@@ -50,6 +50,7 @@ public class Service_userServiceImpl implements Service_userService {
 	@Override
 	public List<ServiceUser> getUser(HttpServletRequest request) {
 		// TODO Auto-generated method stub
+		System.out.println(request.getParameter("id"));
 		return serviceUserMapper.selectById(request.getParameter("id"));
 	}
 
@@ -82,7 +83,7 @@ public class Service_userServiceImpl implements Service_userService {
 		ServiceUserExample serviceUserExample = new ServiceUserExample();
 		serviceUserExample.setPageSize(Integer.parseInt(request.getParameter("pageSize")));
 		serviceUserExample.setPageNum(Integer.parseInt(request.getParameter("pageNum")));
-		return serviceUserMapper.selectByLike(request.getParameter("name"), serviceUserExample);
+		return serviceUserMapper.selectByLike(request.getParameter("name"), serviceUserExample,request.getParameter("state"));
 	}
 
 }

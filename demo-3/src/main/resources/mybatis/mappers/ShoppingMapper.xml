@@ -92,6 +92,10 @@
     delete from shopping
     where id = #{id,jdbcType=INTEGER}
   </delete>
+  <delete id="deleteByProductId" parameterType="java.lang.String">
+    delete from shopping
+    where product_id = #{product_id,jdbcType=VARCHAR}
+  </delete>
   <delete id="deleteByExample" parameterType="com.datangedu.cn.model.xd.shopping.ShoppingExample">
     delete from shopping
     <if test="_parameter != null">
