@@ -24,6 +24,10 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="recommend" jdbcType="VARCHAR" property="recommend" />
     <result column="entrepreneurship" jdbcType="VARCHAR" property="entrepreneurship" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> d47ccd8ec4d603eff87614e64236200e56921eb0
   </resultMap>
   
   <sql id="Example_Where_Clause">
@@ -120,6 +124,10 @@
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from shopping
     where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByProductId" parameterType="java.lang.String">
+    delete from shopping
+    where product_id = #{product_id,jdbcType=VARCHAR}
   </delete>
   <delete id="deleteByExample" parameterType="com.datangedu.cn.model.xd.shopping.ShoppingExample">
     delete from shopping

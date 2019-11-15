@@ -6,6 +6,7 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
+<<<<<<< HEAD
 	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH" value="450"/>
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT" value="400"/>
@@ -51,4 +52,6 @@
 		<item key="width" value="600"/>
 		<item key="height" value="400"/>
 	</section>
+=======
+>>>>>>> d47ccd8ec4d603eff87614e64236200e56921eb0
 </section>

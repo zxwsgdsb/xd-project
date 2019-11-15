@@ -105,7 +105,7 @@
     </if>
   </select>
   <select id="selectByLike" parameterType="map" resultMap="BaseResultMap">
-  	select * from service_user where name like '%${name}%'
+  	select * from service_user where name like '%${name}%' and state = ${state}
   	<if test="example.pageNum >= 0">
   		limit ${example.pageNum},${example.pageSize}
   	</if>

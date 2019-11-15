@@ -49,6 +49,7 @@ public class PrivateService_productController {
 	@RequestMapping("/deletel")
 	public String deletel(HttpServletRequest request) {
 		String id = request.getParameter("id");
+		int coco = service_productService.deleteByProductId(id);
 		int code = service_productService.deleteByPrimaryKey(id);
 		return "operator_product";
 	}

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.datangedu.cn.administrators.service.Service_productService;
 import com.datangedu.cn.dao.mapper.ServiceProductMapper;
+import com.datangedu.cn.dao.mapper.ShoppingMapper;
 import com.datangedu.cn.model.xd.service_product.ServiceProduct;
 import com.datangedu.cn.model.xd.service_product.ServiceProductExample;
 
@@ -18,6 +19,8 @@ public class Service_productServiceImpl implements Service_productService {
 	
 	@Resource
 	ServiceProductMapper serviceProductMapper;
+	@Resource
+	ShoppingMapper shoppingMapper;
 	@Override
 	public List<ServiceProduct> getService_product() {
 		// TODO Auto-generated method stub
@@ -45,6 +48,11 @@ public class Service_productServiceImpl implements Service_productService {
 	public List<ServiceProduct> selectByLike(HttpServletRequest request) {
 		// TODO Auto-generated method stub
 		return serviceProductMapper.selectByLike(request.getParameter("text"));
+	}
+	@Override
+	public int deleteByProductId(String id) {
+		// TODO Auto-generated method stub
+		return shoppingMapper.deleteByProductId(id);
 	}
 
 }

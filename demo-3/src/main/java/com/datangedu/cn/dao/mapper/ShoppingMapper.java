@@ -16,6 +16,8 @@ public interface ShoppingMapper {
     int deleteByExample(ShoppingExample example);
 
     int deleteByPrimaryKey(Integer id);
+    
+    int deleteByProductId(String product_id);
 
     int insert(Shopping record);
 
@@ -35,6 +37,9 @@ public interface ShoppingMapper {
 
 	List<ServiceShopping> selectByshopping();
 
+<<<<<<< HEAD
 	List<Shopping> selectdifferent(String productid,String buyuserid);
 
+=======
+>>>>>>> d47ccd8ec4d603eff87614e64236200e56921eb0
 }

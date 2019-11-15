@@ -40,6 +40,7 @@ public class PrivateService_userController {
 	public Map<String, Object> close(HttpServletRequest request) {
 		Map<String,Object> map = new HashMap<String,Object>();
 		List<ServiceUser> userList = service_userService.getUser(request);
+		System.out.println("-----"+userList.size());
 		ServiceUser user = userList.get(0);
 		int i = service_userService.reState1(user);
 		List<ServiceUser> service_userList = service_userService.getService_user(request);

@@ -24,7 +24,7 @@ public interface ServiceUserMapper {
 
     List<ServiceUser> selectByExample(ServiceUserExample example);
     
-    List<ServiceUser> selectByLike(String name, ServiceUserExample example);
+    List<ServiceUser> selectByLike(String name, ServiceUserExample example,String state);
 
     ServiceUserWithBLOBs selectByPrimaryKey(String id);
 
