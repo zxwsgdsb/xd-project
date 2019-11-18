@@ -5238,3 +5238,1388 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:41:13.776
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZTkRGufE => OK
+!SESSION 2019-11-15 15:44:41.034 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-11-15 15:44:46.211
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-11-15 15:44:47.113
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-11-15 15:44:47.113
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@198524ec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5edaa572,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-15 15:45:01.841
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:09.078
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:09.079
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7319f77c[org.springframework.tooling.boot.ls:1.11.0.201909171347(id=1042)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:09.082
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:09.159
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.093
+!MESSAGE Boot LS startup time from start to initialized: 4987ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.223
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WWRYUMMEisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.956
+!MESSAGE subscribing to classpath changes: sts4.classpath.WWRYUMME isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.959
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.963
+!MESSAGE subsribers = {sts4.classpath.WWRYUMME=Send Classpath Notifications(822)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.964
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.965
+!MESSAGE project demo-3 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.966
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.966
+!MESSAGE Preparing classpath changed notification demo-3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.967
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WWRYUMME => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:14.969
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:15.002
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:15.008
+!MESSAGE buffering callback sts4.classpath.WWRYUMME demo-3 false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:15.008
+!MESSAGE executing callback sts4.classpath.WWRYUMME 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-15 15:45:15.048
+!MESSAGE executing callback sts4.classpath.WWRYUMME SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-11-15 15:47:59.345
+!MESSAGE The POM for com.alibaba:druid:jar:1.1.19 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.lsp4e 4 0 2019-11-15 15:59:30.069
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:50.995
+!MESSAGE Unknown Host: https://download.springsource.com/release/TOOLS/sts4-language-servers/e4.8/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.springsource.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:51.000
+!MESSAGE Unknown Host: http://download.oracle.com/otn_software/oepe/12.2.1.8/oxygen/repository/dependencies/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.oracle.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:51.003
+!MESSAGE Unknown Host: https://download.springsource.com/release/TOOLS/sts4/update/e4.12/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.springsource.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:51.099
+!MESSAGE Unknown Host: http://download.eclipse.org/buildship/updates/e410/releases/3.x/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:51.119
+!MESSAGE Unknown Host: http://download.eclipse.org/usssdk/updates/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:51.125
+!MESSAGE Unknown Host: http://download.eclipse.org/oomph/uss/updates/latest/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:51.220
+!MESSAGE Unknown Host: http://download.eclipse.org/webtools/repository/latest/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:51.230
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/2019-06/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:53.514
+!MESSAGE Unknown Host: https://dl.bintray.com/mybatis/mybatis-generator/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: dl.bintray.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:53.518
+!MESSAGE Unknown Host: http://download.eclipse.org/usssdk/updates/release/latest/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2019-11-15 16:13:53.522
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.12/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-11-18 09:00:59.629 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-11-18 09:01:07.515
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.core 1 0 2019-11-18 09:01:11.479
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-11-18 09:01:13.474
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-11-18 09:01:13.474
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@65b69ccb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a9f0360,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-18 09:01:32.131
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2019-11-18 09:01:55.064
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:01:59.744
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:01:59.745
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@703ca5d8[org.springframework.tooling.boot.ls:1.11.0.201909171347(id=1042)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:01:59.792
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:00.193
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-11-18 09:02:06.313
+!MESSAGE The POM for com.alibaba:druid:jar:1.1.19 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.442
+!MESSAGE Boot LS startup time from start to initialized: 11631ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.587
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kOJLTDJgisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.592
+!MESSAGE subscribing to classpath changes: sts4.classpath.kOJLTDJg isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.594
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.597
+!MESSAGE subsribers = {sts4.classpath.kOJLTDJg=Send Classpath Notifications(825)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.598
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.599
+!MESSAGE project demo-3 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.600
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.601
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kOJLTDJg => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.602
+!MESSAGE Preparing classpath changed notification demo-3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.603
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.726
+!MESSAGE classpath=93 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.743
+!MESSAGE buffering callback sts4.classpath.kOJLTDJg demo-3 false 93
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.744
+!MESSAGE executing callback sts4.classpath.kOJLTDJg 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:02:11.774
+!MESSAGE executing callback sts4.classpath.kOJLTDJg SUCCESS [done]
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:50.020
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:150)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:50.658
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy$1.run(JavascriptReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy.reconcile(JavascriptReconcilingStrategy.java:76)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy.reconcile(JavascriptReconcilingStrategy.java:129)
+	at org.eclipse.wst.jsdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:98)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaReconciler.process(JavaReconciler.java:374)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:50.707
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:150)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:50.854
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:50.885
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:50.895
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:171)
+	at org.eclipse.wst.jsdt.internal.core.Openable.generateInfos(Openable.java:243)
+	at org.eclipse.wst.jsdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:538)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1107)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.wst.jsdt.internal.core.search.BasicSearchEngine.searchAllTypeNames(BasicSearchEngine.java:1109)
+	at org.eclipse.wst.jsdt.internal.core.search.BasicSearchEngine.searchAllTypeNames(BasicSearchEngine.java:946)
+	at org.eclipse.wst.jsdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:416)
+	at org.eclipse.wst.jsdt.internal.codeassist.SelectionEngine.select(SelectionEngine.java:785)
+	at org.eclipse.wst.jsdt.internal.core.Openable.codeSelect(Openable.java:165)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:245)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:239)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo(AbstractJavaEditorTextHover.java:119)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:50.932
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:50.993
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:51.466
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:51.595
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:51.681
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:52.274
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:81)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:52.577
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:150)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:08:53.669
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy$1.run(JavascriptReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy.reconcile(JavascriptReconcilingStrategy.java:76)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptReconcilingStrategy.reconcile(JavascriptReconcilingStrategy.java:129)
+	at org.eclipse.wst.jsdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:98)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaReconciler.process(JavaReconciler.java:374)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-11-18 09:12:55.892
+!MESSAGE null
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.wst.jsdt.core.dom.ASTNode.setStructuralProperty(ASTNode.java:1521)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.safeSetProperty(ClosureCompilerASTConverter.java:1690)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:514)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBlock(ClosureCompilerASTConverter.java:528)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:199)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunction(ClosureCompilerASTConverter.java:805)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:229)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processFunctionCall(ClosureCompilerASTConverter.java:876)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:203)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processBinaryExpression(ClosureCompilerASTConverter.java:515)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:187)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transformAndSetProperty(ClosureCompilerASTConverter.java:1680)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processExpressionStatement(ClosureCompilerASTConverter.java:718)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:219)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.processAstRoot(ClosureCompilerASTConverter.java:493)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.process(ClosureCompilerASTConverter.java:263)
+	at org.eclipse.wst.jsdt.core.dom.ClosureCompilerASTConverter.transform(ClosureCompilerASTConverter.java:128)
+	at org.eclipse.wst.jsdt.internal.compiler.closure.ClosureCompiler.parse(ClosureCompiler.java:120)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:652)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:583)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:576)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:511)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:150)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup$3.run(SelectionListenerWithASTManager.java:135)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:36:05.318
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.kOJLTDJg
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:36:05.319
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.kOJLTDJg
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:36:05.320
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-11-18 09:36:05.321
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.kOJLTDJg => OK

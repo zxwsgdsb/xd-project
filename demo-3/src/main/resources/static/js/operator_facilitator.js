@@ -40,7 +40,7 @@ $(function() {
 					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
 					tat += `<span onclick="pageOn('+')">下一页</span>
-					<span>尾页</span>
+					<span onclick="pageOn(Math.ceil(${data.userList/2}))">尾页</span>
 					`
 				$(".pagez").append(tat);
 				len = Math.ceil((data.userList/2));
@@ -268,11 +268,11 @@ $(".find1").on("click",function(){
 			$(".pagez").html("");
 			var tat = ` <span>首页</span>
 				<span>上一页</span>`
-			for(var j = 0; j<(data.service_userList.length/2); j++){
+			for(var j = 0; j<Math.ceil((data.service_userList.length/2)); j++){
 				tat += `<span class="main-pagination-page" onclick= "pageOn(${j+1})">${j+1}</span>`
 			}
 				tat += `<span>下一页</span>
-				<span>尾页</span>
+				<span onclick="pageOn(Math.ceil(${data.service_userList.length/2}))">尾页</span>
 				`
 			$(".pagez").append(tat);
 		
@@ -318,11 +318,11 @@ $(".find2").on("click",function(){
 			$(".pagez").html("");
 			var tat = ` <span>首页</span>
 				<span>上一页</span>`
-			for(var j = 0; j<(data.service_userList.length/2); j++){
+			for(var j = 0; j<Math.ceil((data.service_userList.length/2)); j++){
 				tat += `<span class="main-pagination-page" onclick= "pageOn(${j+1})">${j+1}</span>`
 			}
 				tat += `<span>下一页</span>
-				<span>尾页</span>
+				<span onclick="pageOn(Math.ceil(${data.service_userList.length/2}))">尾页</span>
 				`
 			$(".pagez").append(tat);
 		
@@ -388,7 +388,7 @@ $(".order1").on("click", function(){
 				tat += `<span class="main-pagination-page" onclick= "pageOn(${j+1})">${j+1}</span>`
 			}
 				tat += `<span onclick="pageOn('+')">下一页</span>
-				<span>尾页</span>
+				<span onclick="pageOn(Math.ceil(${data.userList/2}))">尾页</span>
 				`
 			$(".pagez").append(tat);
 				len = Math.ceil(data.userList/2);
@@ -447,7 +447,7 @@ $(".order2").on("click", function(){
 				tat += `<span class="main-pagination-page" onclick= "pageClose(${j+1})">${j+1}</span>`
 			}
 				tat += `<span onclick="pageOne('+')">下一页</span>
-				<span>尾页</span>
+				<span onclick="pageOn(Math.ceil(${data.userList/2}))">尾页</span>
 				`
 			$(".pagez").append(tat);
 			len = Math.ceil(data.userList/2);
@@ -497,6 +497,7 @@ function open1(id){
 				
 					$("tbody").append(txt);
 			}
+			location.href="re?page=operator_facilitator";
 			
 		},
 		error: function(){
@@ -534,11 +535,10 @@ function close1(id){
 						</td>
 						</tr>`;
 					
-				}
-					
+				}		
 			}
 			$("tbody").append(txt);
-			
+			location.href="re?page=operator_facilitator";
 		},
 		error: function(){
 			console.log("失败")

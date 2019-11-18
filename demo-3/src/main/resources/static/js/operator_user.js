@@ -42,7 +42,7 @@ $(function() {
 					}
 				}
 					tat += `<span onclick="pageOn('+')">下一页</span>
-					<span>尾页</span>
+					<span onclick="pageOn(Math.ceil(${data.buy_userList.length/2}))">尾页</span>
 					`
 				$(".pagez").append(tat);
 				len = Math.ceil((data.buy_userList.length/2));
@@ -198,7 +198,7 @@ $(".fa-search").on("click", function(){
 				tat += `<span class="main-pagination-page" onclick= "pageOn(${j+1})">${j+1}</span>`
 			}
 				tat += `<span>下一页</span>
-				<span>尾页</span>
+				<span onclick="pageOn(Math.ceil(${data.buy_userList.length/2}))">尾页</span>
 				`
 			$(".pagez").append(tat);
 		
