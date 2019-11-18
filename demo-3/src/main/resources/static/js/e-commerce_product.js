@@ -93,7 +93,7 @@ $(function(){
                 <li>${productList[i].servicePrice}元</li>
                 <li>
                     <a href="re?page=e-commerce_settlement.html">立即购买</a>
-                    <span class="addcar">加入购物车</span>
+                    <span onclick="addcar('${productList[i].id}')">加入购物车</span>
                 </li>
             </ul>
         </div>
@@ -209,7 +209,7 @@ $(".content-nav li:eq(1)").on("click", function(){
 	                <li>${productList[i].servicePrice}元</li>
 	                <li>
 	                    <a href="re?page=e-commerce_settlement.html">立即购买</a>
-	                    <span class="addcar">加入购物车</span>
+	                    <span onclick="addcar('${productList[i].id}')">加入购物车</span>
 	                </li>
 	            </ul>
 	        </div>
@@ -234,7 +234,7 @@ function addcar(id){
 			// 请求类型
 			type:"post",
 			// 请求路径
-			url:"/buyuser/getbuyuserlist",
+			url:"/buyuser/addcar",
 			// 请求参数
 			
 			  data:{ 
@@ -247,6 +247,7 @@ function addcar(id){
 			// 请求成功后调用函数
 			success:function(data){
 				console.log("成功后返回的数据",data);
+				alert(data.msg);
 			},
 			// 请求成功后调用函数
 			error:function(data){

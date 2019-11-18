@@ -12,10 +12,14 @@
 		<list key="textArray">
 		</list>
 	</section>
+<<<<<<< HEAD
 	<section name="NewWizardAction">
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="195"/>
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
+=======
+	<section name="ImportExportAction">
+>>>>>>> 8baa8daf82024214da8ec3dfa5f1643ef80c6602
 	</section>
 </section>

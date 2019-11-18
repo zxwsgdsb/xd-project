@@ -251,6 +251,8 @@ public class BuyUserController {
 	public Map<String, Object> addcar(HttpServletRequest request) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		int  shoppingList = ProductService.addcar(request);
+		map.put("msg","添加成功!");
+		map.put("shoppingList",shoppingList);
 		return map;
 	}
 	

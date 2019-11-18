@@ -12,6 +12,7 @@ $(function() {
 			success: function(data){
 				console.log("成功")
 				console.log(data);
+				var price = null;
 				for(var i=0; i<data.userList.length; i++){
 					var txt = `<tr>
                         <td>${data.userList[i].buyName}</td>
@@ -23,7 +24,9 @@ $(function() {
                         </tr>
                         `;	
 					$("tbody").append(txt);
+					price += data.userList[i].orderPrice;
 				}
+				$(".face").text(price);
 //				$("tbody").append(txt);
 				var tat = ` <span onclick="pageOn(1)">首页</span>
 							<span onclick="pageOn('-')">上一页</span>`
@@ -157,6 +160,7 @@ function pageOn(pageNum){
 			console.log(data);
 			$("tbody").html("");
 			var txt = '';
+			var price = null;
 			for(var i=0; i<data.userList.length; i++){
 				var txt = `<tr>
                     <td>${data.userList[i].buyName}</td>
@@ -168,7 +172,9 @@ function pageOn(pageNum){
                     </tr>
                     `;	
 				$("tbody").append(txt);
+				price += data.userList[i].orderPrice;
 			}
+			$(".face").text(price);
 //			$("tbody").append(txt);
 			
 		
@@ -199,10 +205,11 @@ $(".search li:eq(0)").on("click", function(){
 			
 			console.log(data);
 			$("tbody").html("");
+			var price = null;
 			for(var i=0; i<data.orderList.length; i++){
 				var txt = `<tr>
                     <td>${data.orderList[i].buyName}</td>
-                    <td>${data.orderList[i].ts}</td>
+                    <td>${new Date(data.orderList[i].ts).Format("yyyy-M-d")}</td>
                     <td>${data.orderList[i].id}</td>
                     <td>${data.orderList[i].orderPrice}</td>
                     <td>${data.orderList[i].pay}</td>
@@ -212,7 +219,9 @@ $(".search li:eq(0)").on("click", function(){
 				
 				
 					$("tbody").append(txt);
+					price += data.orderList[i].orderPrice;
 			}
+			$(".face").text(price);
 			$(".pagez").html("");
 			var tat = ` <span onclick="pageOn(1)">首页</span>
 				<span onclick="pageOn('-')">上一页</span>`
@@ -223,6 +232,11 @@ $(".search li:eq(0)").on("click", function(){
 				<span>尾页</span>
 				`
 				$(".pagez").append(tat);
+			len = Math.ceil(data.coco/2);
+			$(`.pagez span`).removeClass("main-pagination-page");
+			if($(`.pagez span:eq(${page+1})`).text() == 1){
+				$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
+			}
 			
 		},
 		error: function(){
@@ -249,10 +263,11 @@ $(".search li:eq(1)").on("click", function(){
 			
 			console.log(data);
 			$("tbody").html("");
+			var price = null;
 			for(var i=0; i<data.orderList.length; i++){
 				var txt = `<tr>
                     <td>${data.orderList[i].buyName}</td>
-                    <td>${data.orderList[i].ts}</td>
+                    <td>${new Date(data.orderList[i].ts).Format("yyyy-M-d")}</td>
                     <td>${data.orderList[i].id}</td>
                     <td>${data.orderList[i].orderPrice}</td>
                     <td>${data.orderList[i].pay}</td>
@@ -260,19 +275,25 @@ $(".search li:eq(1)").on("click", function(){
                     </tr>
                     `;
 				
-				
-					$("tbody").append(txt);
+				price += data.orderList[i].orderPrice;
+				$("tbody").append(txt);
 			}
+			$(".face").text(price);
 			$(".pagez").html("");
 			var tat = ` <span onclick="pageOn(1)">首页</span>
 				<span onclick="pageOn('-')">上一页</span>`
-				for(var j = 0; j<(data.coco/2); j++){
+				for(var j = 0; j<Math.ceil(data.coco/2); j++){
 					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
 			tat += `<span onclick="pageOn('+')">下一页</span>
 				<span>尾页</span>
 				`
 				$(".pagez").append(tat);
+			len = Math.ceil(data.coco/2);
+			$(`.pagez span`).removeClass("main-pagination-page");
+			if($(`.pagez span:eq(${page+1})`).text() == 1){
+				$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
+			}
 			
 		},
 		error: function(){
@@ -299,10 +320,11 @@ $(".search li:eq(2)").on("click", function(){
 			
 			console.log(data);
 			$("tbody").html("");
+			var price = null;
 			for(var i=0; i<data.orderList.length; i++){
 				var txt = `<tr>
                     <td>${data.orderList[i].buyName}</td>
-                    <td>${data.orderList[i].ts}</td>
+                    <td>${new Date(data.orderList[i].ts).Format("yyyy-M-d")}</td>
                     <td>${data.orderList[i].id}</td>
                     <td>${data.orderList[i].orderPrice}</td>
                     <td>${data.orderList[i].pay}</td>
@@ -310,9 +332,10 @@ $(".search li:eq(2)").on("click", function(){
                     </tr>
                     `;
 				
-				
-					$("tbody").append(txt);
+				price += data.orderList[i].orderPrice;
+				$("tbody").append(txt);
 			}
+			$(".face").text(price);
 			$(".pagez").html("");
 			var tat = ` <span onclick="pageOn(1)">首页</span>
 				<span onclick="pageOn('-')">上一页</span>`
@@ -323,6 +346,11 @@ $(".search li:eq(2)").on("click", function(){
 				<span>尾页</span>
 				`
 				$(".pagez").append(tat);
+			len = Math.ceil(data.coco/2);
+			$(`.pagez span`).removeClass("main-pagination-page");
+			if($(`.pagez span:eq(${page+1})`).text() == 1){
+				$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
+			}
 			
 		},
 		error: function(){
@@ -344,10 +372,11 @@ $(".search li:eq(3)").on("click", function(){
 		success: function(data){
 			console.log("成功")
 			console.log(data);
+			var price = null;
 			for(var i=0; i<data.userList.length; i++){
 				var txt = `<tr>
                     <td>${data.userList[i].buyName}</td>
-                    <td>${data.userList[i].ts}</td>
+                    <td>${new Date(data.userList[i].ts).Format("yyyy-M-d")}</td>
                     <td>${data.userList[i].id}</td>
                     <td>${data.userList[i].orderPrice}</td>
                     <td>${data.userList[i].pay}</td>
@@ -355,8 +384,14 @@ $(".search li:eq(3)").on("click", function(){
                     </tr>
                     `;
 				
-				
-					$("tbody").append(txt);
+				price += data.userList[i].orderPrice;
+				$("tbody").append(txt);
+			}
+			$(".face").text(price);
+			len = Math.ceil(data.coco/2);
+			$(`.pagez span`).removeClass("main-pagination-page");
+			if($(`.pagez span:eq(${page+1})`).text() == 1){
+				$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
 			}
 			
 		},

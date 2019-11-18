@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.datangedu.cn.util.ServiceShopping"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<fullyQualifiedTypeName name="java.util.UUID"/>
+=======
+>>>>>>> d47ccd8ec4d603eff87614e64236200e56921eb0
+>>>>>>> 8baa8daf82024214da8ec3dfa5f1643ef80c6602
 </qualifiedTypeNameHistroy>
