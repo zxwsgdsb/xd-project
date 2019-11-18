@@ -31,3 +31,18 @@ $(".cancel").on("click", function(event){
     $(".masking").hide();
     console.log("取消");
 })
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_shoping-car.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_login.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_order.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_product.html"
+})
+$(".login-btn").on("click", function(){
+    location.href="e-commerce_account.html"
+})

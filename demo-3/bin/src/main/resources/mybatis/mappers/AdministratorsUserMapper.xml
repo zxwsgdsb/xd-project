@@ -5,11 +5,13 @@
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="Administrators_ph" jdbcType="VARCHAR" property="administratorsPh" />
     <result column="Administrators_pw" jdbcType="VARCHAR" property="administratorsPw" />
-    <result column="hp" jdbcType="VARCHAR" property="hp" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="mail" jdbcType="VARCHAR" property="mail" />
     <result column="state" jdbcType="VARCHAR" property="state" />
     <result column="ts" jdbcType="TIMESTAMP" property="ts" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.datangedu.cn.model.xd.administrators_user.AdministratorsUser">
+    <result column="hp" jdbcType="LONGVARBINARY" property="hp" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -70,8 +72,27 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, Administrators_ph, Administrators_pw, hp, name, mail, state, ts
+    id, Administrators_ph, Administrators_pw, name, mail, state, ts
   </sql>
+  <sql id="Blob_Column_List">
+    hp
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.datangedu.cn.model.xd.administrators_user.AdministratorsUserExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from administrators_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
   <select id="selectByExample" parameterType="com.datangedu.cn.model.xd.administrators_user.AdministratorsUserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -86,9 +107,11 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
     select 
     <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
     from administrators_user
     where id = #{id,jdbcType=VARCHAR}
   </select>
@@ -104,11 +127,11 @@
   </delete>
   <insert id="insert" parameterType="com.datangedu.cn.model.xd.administrators_user.AdministratorsUser">
     insert into administrators_user (id, Administrators_ph, Administrators_pw, 
-      hp, name, mail, state, 
-      ts)
+      name, mail, state, 
+      ts, hp)
     values (#{id,jdbcType=VARCHAR}, #{administratorsPh,jdbcType=VARCHAR}, #{administratorsPw,jdbcType=VARCHAR}, 
-      #{hp,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{mail,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, 
-      #{ts,jdbcType=TIMESTAMP})
+      #{name,jdbcType=VARCHAR}, #{mail,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, 
+      #{ts,jdbcType=TIMESTAMP}, #{hp,jdbcType=LONGVARBINARY})
   </insert>
   <insert id="insertSelective" parameterType="com.datangedu.cn.model.xd.administrators_user.AdministratorsUser">
     insert into administrators_user
@@ -122,9 +145,6 @@
       <if test="administratorsPw != null">
         Administrators_pw,
       </if>
-      <if test="hp != null">
-        hp,
-      </if>
       <if test="name != null">
         name,
       </if>
@@ -137,6 +157,9 @@
       <if test="ts != null">
         ts,
       </if>
+      <if test="hp != null">
+        hp,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -147,9 +170,6 @@
       </if>
       <if test="administratorsPw != null">
         #{administratorsPw,jdbcType=VARCHAR},
-      </if>
-      <if test="hp != null">
-        #{hp,jdbcType=VARCHAR},
       </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
@@ -162,6 +182,9 @@
       </if>
       <if test="ts != null">
         #{ts,jdbcType=TIMESTAMP},
+      </if>
+      <if test="hp != null">
+        #{hp,jdbcType=LONGVARBINARY},
       </if>
     </trim>
   </insert>
@@ -183,9 +206,6 @@
       <if test="record.administratorsPw != null">
         Administrators_pw = #{record.administratorsPw,jdbcType=VARCHAR},
       </if>
-      <if test="record.hp != null">
-        hp = #{record.hp,jdbcType=VARCHAR},
-      </if>
       <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
       </if>
@@ -198,7 +218,24 @@
       <if test="record.ts != null">
         ts = #{record.ts,jdbcType=TIMESTAMP},
       </if>
+      <if test="record.hp != null">
+        hp = #{record.hp,jdbcType=LONGVARBINARY},
+      </if>
     </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update administrators_user
+    set id = #{record.id,jdbcType=VARCHAR},
+      Administrators_ph = #{record.administratorsPh,jdbcType=VARCHAR},
+      Administrators_pw = #{record.administratorsPw,jdbcType=VARCHAR},
+      name = #{record.name,jdbcType=VARCHAR},
+      mail = #{record.mail,jdbcType=VARCHAR},
+      state = #{record.state,jdbcType=VARCHAR},
+      ts = #{record.ts,jdbcType=TIMESTAMP},
+      hp = #{record.hp,jdbcType=LONGVARBINARY}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -208,7 +245,6 @@
     set id = #{record.id,jdbcType=VARCHAR},
       Administrators_ph = #{record.administratorsPh,jdbcType=VARCHAR},
       Administrators_pw = #{record.administratorsPw,jdbcType=VARCHAR},
-      hp = #{record.hp,jdbcType=VARCHAR},
       name = #{record.name,jdbcType=VARCHAR},
       mail = #{record.mail,jdbcType=VARCHAR},
       state = #{record.state,jdbcType=VARCHAR},
@@ -226,9 +262,6 @@
       <if test="administratorsPw != null">
         Administrators_pw = #{administratorsPw,jdbcType=VARCHAR},
       </if>
-      <if test="hp != null">
-        hp = #{hp,jdbcType=VARCHAR},
-      </if>
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
       </if>
@@ -241,14 +274,27 @@
       <if test="ts != null">
         ts = #{ts,jdbcType=TIMESTAMP},
       </if>
+      <if test="hp != null">
+        hp = #{hp,jdbcType=LONGVARBINARY},
+      </if>
     </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.datangedu.cn.model.xd.administrators_user.AdministratorsUser">
+    update administrators_user
+    set Administrators_ph = #{administratorsPh,jdbcType=VARCHAR},
+      Administrators_pw = #{administratorsPw,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      mail = #{mail,jdbcType=VARCHAR},
+      state = #{state,jdbcType=VARCHAR},
+      ts = #{ts,jdbcType=TIMESTAMP},
+      hp = #{hp,jdbcType=LONGVARBINARY}
     where id = #{id,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.datangedu.cn.model.xd.administrators_user.AdministratorsUser">
     update administrators_user
     set Administrators_ph = #{administratorsPh,jdbcType=VARCHAR},
       Administrators_pw = #{administratorsPw,jdbcType=VARCHAR},
-      hp = #{hp,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR},
       mail = #{mail,jdbcType=VARCHAR},
       state = #{state,jdbcType=VARCHAR},

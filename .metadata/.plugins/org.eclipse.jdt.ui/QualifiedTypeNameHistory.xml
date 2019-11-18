@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
-<<<<<<< HEAD
-<fullyQualifiedTypeName name="com.datangedu.cn.dao.mapper.ShoppingMapper"/>
-=======
-<<<<<<< HEAD
-<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.order.OrderL"/>
-<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.order.OrderLExample"/>
-<fullyQualifiedTypeName name="com.datangedu.cn.model.xd.shopping.Shopping"/>
-=======
->>>>>>> f3406570f14710d84bddf65eb135114d7a838180
->>>>>>> cdbcec9700c8da1ee045f86f90a89538b2f2f24d
+<fullyQualifiedTypeName name="com.datangedu.cn.util.ServiceShopping"/>
 </qualifiedTypeNameHistroy>

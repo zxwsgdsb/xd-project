@@ -4,7 +4,6 @@
   <resultMap id="BaseResultMap" type="com.datangedu.cn.model.xd.buy_user.BuyUser">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="hp" jdbcType="VARCHAR" property="hp" />
     <result column="sex" jdbcType="CHAR" property="sex" />
     <result column="ph" jdbcType="VARCHAR" property="ph" />
     <result column="pw" jdbcType="VARCHAR" property="pw" />
@@ -14,6 +13,9 @@
     <result column="buy_num" jdbcType="INTEGER" property="buyNum" />
     <result column="consume_price" jdbcType="REAL" property="consumePrice" />
     <result column="state" jdbcType="VARCHAR" property="state" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.datangedu.cn.model.xd.buy_user.BuyUser">
+    <result column="hp" jdbcType="LONGVARBINARY" property="hp" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -74,8 +76,33 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, hp, sex, ph, pw, buy_area, ts, mail, buy_num, consume_price, state
+    id, name, sex, ph, pw, buy_area, ts, mail, buy_num, consume_price, state
   </sql>
+  <sql id="Blob_Column_List">
+    hp
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUserExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from buy_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByLike" parameterType="map" resultMap="BaseResultMap">
+  	select * from buy_user where name like '%${name}%'
+  	<if test="example.pageNum >= 0">
+  		limit ${example.pageNum},${example.pageSize}
+  	</if>
+  </select>
   <select id="selectByExample" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -90,9 +117,11 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="ResultMapWithBLOBs">
     select 
     <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
     from buy_user
     where id = #{id,jdbcType=VARCHAR}
   </select>
@@ -107,14 +136,14 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUser">
-    insert into buy_user (id, name, hp, 
-      sex, ph, pw, buy_area, 
-      ts, mail, buy_num, 
-      consume_price, state)
-    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{hp,jdbcType=VARCHAR}, 
-      #{sex,jdbcType=CHAR}, #{ph,jdbcType=VARCHAR}, #{pw,jdbcType=VARCHAR}, #{buyArea,jdbcType=VARCHAR}, 
-      #{ts,jdbcType=TIMESTAMP}, #{mail,jdbcType=VARCHAR}, #{buyNum,jdbcType=INTEGER}, 
-      #{consumePrice,jdbcType=REAL}, #{state,jdbcType=VARCHAR})
+    insert into buy_user (id, name, sex, ph, 
+      pw, buy_area, ts, 
+      mail, buy_num, consume_price, 
+      state, hp)
+    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{sex,jdbcType=CHAR}, #{ph,jdbcType=VARCHAR}, 
+      #{pw,jdbcType=VARCHAR}, #{buyArea,jdbcType=VARCHAR}, #{ts,jdbcType=TIMESTAMP}, 
+      #{mail,jdbcType=VARCHAR}, #{buyNum,jdbcType=INTEGER}, #{consumePrice,jdbcType=REAL}, 
+      #{state,jdbcType=VARCHAR}, #{hp,jdbcType=LONGVARBINARY})
   </insert>
   <insert id="insertSelective" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUser">
     insert into buy_user
@@ -124,9 +153,6 @@
       </if>
       <if test="name != null">
         name,
-      </if>
-      <if test="hp != null">
-        hp,
       </if>
       <if test="sex != null">
         sex,
@@ -155,6 +181,9 @@
       <if test="state != null">
         state,
       </if>
+      <if test="hp != null">
+        hp,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -162,9 +191,6 @@
       </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="hp != null">
-        #{hp,jdbcType=VARCHAR},
       </if>
       <if test="sex != null">
         #{sex,jdbcType=CHAR},
@@ -193,6 +219,9 @@
       <if test="state != null">
         #{state,jdbcType=VARCHAR},
       </if>
+      <if test="hp != null">
+        #{hp,jdbcType=LONGVARBINARY},
+      </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUserExample" resultType="java.lang.Long">
@@ -209,9 +238,6 @@
       </if>
       <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
-      </if>
-      <if test="record.hp != null">
-        hp = #{record.hp,jdbcType=VARCHAR},
       </if>
       <if test="record.sex != null">
         sex = #{record.sex,jdbcType=CHAR},
@@ -240,7 +266,28 @@
       <if test="record.state != null">
         state = #{record.state,jdbcType=VARCHAR},
       </if>
+      <if test="record.hp != null">
+        hp = #{record.hp,jdbcType=LONGVARBINARY},
+      </if>
     </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update buy_user
+    set id = #{record.id,jdbcType=VARCHAR},
+      name = #{record.name,jdbcType=VARCHAR},
+      sex = #{record.sex,jdbcType=CHAR},
+      ph = #{record.ph,jdbcType=VARCHAR},
+      pw = #{record.pw,jdbcType=VARCHAR},
+      buy_area = #{record.buyArea,jdbcType=VARCHAR},
+      ts = #{record.ts,jdbcType=TIMESTAMP},
+      mail = #{record.mail,jdbcType=VARCHAR},
+      buy_num = #{record.buyNum,jdbcType=INTEGER},
+      consume_price = #{record.consumePrice,jdbcType=REAL},
+      state = #{record.state,jdbcType=VARCHAR},
+      hp = #{record.hp,jdbcType=LONGVARBINARY}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -249,7 +296,6 @@
     update buy_user
     set id = #{record.id,jdbcType=VARCHAR},
       name = #{record.name,jdbcType=VARCHAR},
-      hp = #{record.hp,jdbcType=VARCHAR},
       sex = #{record.sex,jdbcType=CHAR},
       ph = #{record.ph,jdbcType=VARCHAR},
       pw = #{record.pw,jdbcType=VARCHAR},
@@ -268,9 +314,6 @@
     <set>
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="hp != null">
-        hp = #{hp,jdbcType=VARCHAR},
       </if>
       <if test="sex != null">
         sex = #{sex,jdbcType=CHAR},
@@ -299,13 +342,30 @@
       <if test="state != null">
         state = #{state,jdbcType=VARCHAR},
       </if>
+      <if test="hp != null">
+        hp = #{hp,jdbcType=LONGVARBINARY},
+      </if>
     </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUser">
+    update buy_user
+    set name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=CHAR},
+      ph = #{ph,jdbcType=VARCHAR},
+      pw = #{pw,jdbcType=VARCHAR},
+      buy_area = #{buyArea,jdbcType=VARCHAR},
+      ts = #{ts,jdbcType=TIMESTAMP},
+      mail = #{mail,jdbcType=VARCHAR},
+      buy_num = #{buyNum,jdbcType=INTEGER},
+      consume_price = #{consumePrice,jdbcType=REAL},
+      state = #{state,jdbcType=VARCHAR},
+      hp = #{hp,jdbcType=LONGVARBINARY}
     where id = #{id,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUser">
     update buy_user
     set name = #{name,jdbcType=VARCHAR},
-      hp = #{hp,jdbcType=VARCHAR},
       sex = #{sex,jdbcType=CHAR},
       ph = #{ph,jdbcType=VARCHAR},
       pw = #{pw,jdbcType=VARCHAR},

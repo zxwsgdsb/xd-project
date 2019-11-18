@@ -66,4 +66,13 @@ public class PrivateOrderController {
 		map.put("orderList", order);
 		return map;
 	}
+	@ResponseBody
+	@RequestMapping(value = "/research", method = RequestMethod.GET)
+	public Map<String, Object> research(HttpServletRequest request) {
+		Map<String,Object> map = new HashMap<String,Object>();
+		List<OrderL> orderList = orderService.selectBylike(request);
+		map.put("orderList", orderList);
+		return map;
+	}
+	
 }

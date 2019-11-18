@@ -36,4 +36,7 @@ public interface OrderLMapper {
     List<OrderL> selectByDate(String startdate, String enddate,OrderLExample example);
     
     List<OrderL> selectByDate1(String startdate, String enddate);
+    List<OrderL> selectByDate(String startdate, String enddate);
+    List<OrderL> selectByLike１(int pageNum,int pageSize,String buy_name);
+   
 }
