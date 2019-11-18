@@ -37,7 +37,7 @@
 			</javaClientGenerator>
 			
 		<!-- 配置表信息 -->   
-		<table tableName="order">
+		<table tableName="order_l">
 			<!-- <columnOverride column="???" property="???" /> -->
 		</table>
 	</context>

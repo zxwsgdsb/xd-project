@@ -20,6 +20,9 @@ public class OrderL {
     private String state;
 
     private String evaluate;
+    private String pageNum;
+    
+    private String pageSize;
 
     public String getId() {
         return id;
@@ -92,4 +95,20 @@ public class OrderL {
     public void setEvaluate(String evaluate) {
         this.evaluate = evaluate == null ? null : evaluate.trim();
     }
+
+	public String getPageNum() {
+		return pageNum;
+	}
+
+	public void setPageNum(String pageNum) {
+		this.pageNum = pageNum;
+	}
+
+	public String getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(String pageSize) {
+		this.pageSize = pageSize;
+	}
 }

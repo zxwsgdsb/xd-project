@@ -1,3 +1,129 @@
+$(function() {
+//	location.href = "product"
+		$.ajax({
+			url:"/orderform/login",
+			type:"get",
+			success: function(data){
+				console.log("成功")
+				console.log(data);
+				for(var i=0; i<data.orderList.length; i++){
+					var txt = `<tr>
+                        <td>${data.orderList[i].id}</td>
+                        <td>${data.orderList[i].buyName}</td>
+                        <td>${data.orderList[i].orderContent}</td>
+                        <td>${data.orderList[i].orderPrice}</td>
+                        <td>${new Date(data.orderList[i].ts).Format("yyyy-M-d")}</td>
+                        
+                        `;
+					if(+data.orderList[i].state == 1){
+						txt += `<td>已支付</td>
+						<td>
+                            <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
+                        </td>`;
+						
+				
+					} else{
+						txt += `<td>未支付</td>
+						<td>
+                            <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
+                        </td>`;
+					}
+					txt +=`</tr>`
+				
+						$("tbody").append(txt);
+				}
+				var ph = sessionStorage.getItem("phone");
+				console.log(ph)
+				$(".user_info").html("");
+				var tat = `<li><a href="/re?page=operator_product"><i class="fa fa-cog fa-fw"></i>服务管理</a></li>
+				            <li><i class="fa fa-cube fa-fw"></i>业务管理</li>
+				            <li>
+				                <img src="/images/default_user.png">
+				                <span>${ph}</span>
+				                <i class="fa fa-chevron-down fa-fw user-arrow-down"></i>
+				                <ul class="dropdown">
+				                    <li>更改信息</li>
+				                    <li>退出登录</li>
+				                </ul>
+				            </li>`;
+				$(".user_info").append(tat);
+				
+			},
+			error: function(){
+				console.log("失败")
+			}
+		})
+		
+})
+
+Date.prototype.Format = function(fmt)   
+{
+  var o = {   
+    "M+" : this.getMonth()+1,                 //月份   
+    "d+" : this.getDate(),                    //日   
+    "h+" : this.getHours(),                   //小时   
+    "m+" : this.getMinutes(),                 //分   
+    "s+" : this.getSeconds(),                 //秒   
+    "q+" : Math.floor((this.getMonth()+3)/3), //季度   
+    "S"  : this.getMilliseconds()             //毫秒   
+  };   
+  if(/(y+)/.test(fmt))   
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));   
+  for(var k in o)   
+    if(new RegExp("("+ k +")").test(fmt))   
+  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));   
+  return fmt;   
+}
+
+$(".fa-search").on("click", function(){
+	var num = $(".ordernum").val();
+	$.ajax({
+		url:"/orderform/search",
+		type:"get",
+		data:{
+			num: num,
+		},
+		success: function(data){
+			console.log(data);
+			if(!data.orderList.id){
+				alert("订单不存在");
+			}else{
+				$("tbody").html("");
+				var txt = "";
+					 txt = `<tr>
+	                    <td>${data.orderList.id}</td>
+	                    <td>${data.orderList.buyName}</td>
+	                    <td>${data.orderList.orderContent}</td>
+	                    <td>${data.orderList.orderPrice}</td>
+	                    <td>${data.orderList.ts}</td>
+	                    
+	                    `;
+					if(+data.orderList.state == 1){
+						txt += `<td>已支付</td>
+						<td>
+	                        <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
+	                    </td>`;
+						
+				
+					} else{
+						txt += `<td>未支付</td>
+						<td>
+	                        <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
+	                    </td>`;
+					}
+					txt +=`</tr>`
+		
+				console.log(txt);
+				$("tbody").append(txt);
+			}
+			
+		},
+		error: function(){
+			console.log("失败")
+		}
+	})
+})
+
 $(".user-arrow-down").on("click",function(){
     if($(".dropdown").is(":hidden")){
         $(".dropdown").show();

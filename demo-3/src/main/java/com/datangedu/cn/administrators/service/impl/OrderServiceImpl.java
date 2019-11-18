@@ -63,4 +63,14 @@ public class OrderServiceImpl implements OrderService {
 		 return orderLMapper.selectByDate1(request.getParameter("enddate"), request.getParameter("startdate"));
 	}
 
+
+	
+	@Override
+	public List<OrderL> selectBylike(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		System.out.println(request.getParameter("name"));
+		return orderLMapper.selectByLike１(Integer.parseInt(request.getParameter("pageNum")), Integer.parseInt(request.getParameter("pageSize")), request.getParameter("name"));
+	}
+	
+
 }

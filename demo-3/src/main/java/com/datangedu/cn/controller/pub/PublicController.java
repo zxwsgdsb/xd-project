@@ -29,6 +29,42 @@ public class PublicController {
 		System.out.println(url);
 		return url;
 	}
+	@RequestMapping("/se") 
+	public String se(HttpServletRequest request) {
+		String url = request.getParameter("page");
+		System.out.println(url);
+		return url;
+	}
+	@RequestMapping("/ser") 
+	public String ser(HttpServletRequest request) {
+		String url = request.getParameter("page");
+		System.out.println(url);
+		return url;
+	}
+	@RequestMapping("e") 
+	public String e(HttpServletRequest request) {
+		String url = request.getParameter("page");
+		System.out.println(url);
+		return url;
+	}
+	@RequestMapping("cost") 
+	public String cost(HttpServletRequest request) {
+		String url = request.getParameter("page");
+		System.out.println(url);
+		return url;
+	}
+	@RequestMapping("store") 
+	public String store(HttpServletRequest request) {
+		String url = request.getParameter("page");
+		System.out.println(url);
+		return url;
+	}
+	@RequestMapping("o") 
+	public String o(HttpServletRequest request) {
+		String url = request.getParameter("page");
+		System.out.println(url);
+		return url;
+	}
 	@ResponseBody
 	@RequestMapping(value = "/login",method= RequestMethod.POST)
 	public Map<String,Object> login(HttpServletRequest request) {

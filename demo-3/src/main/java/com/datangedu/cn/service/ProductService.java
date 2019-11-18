@@ -12,4 +12,5 @@ public interface ProductService {
 	public List<ServiceProduct> getProductInfoByld();
 	public List<ServiceProduct> getProductListorderby();
 	public int addcar(HttpServletRequest request);
+	
 }

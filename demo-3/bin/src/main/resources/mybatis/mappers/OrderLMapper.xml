@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.datangedu.cn.dao.mapper.OrderMapper">
-  <resultMap id="BaseResultMap" type="com.datangedu.cn.model.xd.order.Order">
+<mapper namespace="com.datangedu.cn.dao.mapper.OrderLMapper">
+  <resultMap id="BaseResultMap" type="com.datangedu.cn.model.xd.order.OrderL">
     <id column="id" jdbcType="VARCHAR" property="id" />
     <result column="buy_name" jdbcType="VARCHAR" property="buyName" />
     <result column="order_content" jdbcType="VARCHAR" property="orderContent" />
@@ -73,13 +73,13 @@
   <sql id="Base_Column_List">
     id, buy_name, order_content, order_price, ts, buy_id, pay, state, evaluate
   </sql>
-  <select id="selectByExample" parameterType="com.datangedu.cn.model.xd.order.OrderExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.datangedu.cn.model.xd.order.OrderLExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from order
+    from order_l
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -87,24 +87,39 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectByDate" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from order_l where ts between #{startdate} and #{enddate}
+  	<if test="example.pageNum >= 0">
+  		limit ${example.pageNum},${example.pageSize}
+  	</if>
+  </select>
+  <select id="selectByDate1" parameterType="java.lang.String" resultMap="BaseResultMap">
+  	select * from order_l where ts between #{startdate} and #{enddate}
+  </select>
+  <select id="selectByLike" parameterType="map" resultMap="BaseResultMap">
+  	select * from order_l where buy_name like '%${name}%'
+  	<if test="example.pageNum >= 0">
+  		limit ${example.pageNum},${example.pageSize}
+  	</if>
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from order
+    from order_l
     where id = #{id,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-    delete from order
+    delete from order_l
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <delete id="deleteByExample" parameterType="com.datangedu.cn.model.xd.order.OrderExample">
-    delete from order
+  <delete id="deleteByExample" parameterType="com.datangedu.cn.model.xd.order.OrderLExample">
+    delete from order_l
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.datangedu.cn.model.xd.order.Order">
-    insert into order (id, buy_name, order_content, 
+  <insert id="insert" parameterType="com.datangedu.cn.model.xd.order.OrderL">
+    insert into order_l (id, buy_name, order_content, 
       order_price, ts, buy_id, 
       pay, state, evaluate
       )
@@ -113,8 +128,8 @@
       #{pay,jdbcType=VARCHAR}, #{state,jdbcType=VARCHAR}, #{evaluate,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.datangedu.cn.model.xd.order.Order">
-    insert into order
+  <insert id="insertSelective" parameterType="com.datangedu.cn.model.xd.order.OrderL">
+    insert into order_l
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
@@ -174,14 +189,14 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.datangedu.cn.model.xd.order.OrderExample" resultType="java.lang.Long">
-    select count(*) from order
+  <select id="countByExample" parameterType="com.datangedu.cn.model.xd.order.OrderLExample" resultType="java.lang.Long">
+    select count(*) from order_l
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update order
+    update order_l
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=VARCHAR},
@@ -216,7 +231,7 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update order
+    update order_l
     set id = #{record.id,jdbcType=VARCHAR},
       buy_name = #{record.buyName,jdbcType=VARCHAR},
       order_content = #{record.orderContent,jdbcType=VARCHAR},
@@ -230,8 +245,8 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.datangedu.cn.model.xd.order.Order">
-    update order
+  <update id="updateByPrimaryKeySelective" parameterType="com.datangedu.cn.model.xd.order.OrderL">
+    update order_l
     <set>
       <if test="buyName != null">
         buy_name = #{buyName,jdbcType=VARCHAR},
@@ -260,8 +275,8 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.datangedu.cn.model.xd.order.Order">
-    update order
+  <update id="updateByPrimaryKey" parameterType="com.datangedu.cn.model.xd.order.OrderL">
+    update order_l
     set buy_name = #{buyName,jdbcType=VARCHAR},
       order_content = #{orderContent,jdbcType=VARCHAR},
       order_price = #{orderPrice,jdbcType=REAL},

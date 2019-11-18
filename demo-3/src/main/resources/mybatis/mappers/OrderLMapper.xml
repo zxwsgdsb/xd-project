@@ -102,6 +102,15 @@
   		limit ${example.pageNum},${example.pageSize}
   	</if>
   </select>
+  <select id ="selectByLike１" resultMap="BaseResultMap">
+  SELECT * FROM order_l
+    <if test="buy_name!=null">
+        WHERE buy_name LIKE '%${buy_name}%' 
+    </if>
+    <if test="pageSize>=0">
+    limit ${pageSize},${pageNum}
+  </if>
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
