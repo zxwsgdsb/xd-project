@@ -6,10 +6,6 @@
     <result column="product_id" jdbcType="VARCHAR" property="productId" />
     <result column="num" jdbcType="INTEGER" property="num" />
     <result column="buyuser_id" jdbcType="VARCHAR" property="buyuserId" />
-<<<<<<< HEAD
-
-=======
->>>>>>> 8baa8daf82024214da8ec3dfa5f1643ef80c6602
   </resultMap>
    <resultMap id="BaseResultMap1" type="com.datangedu.cn.util.ServiceShopping">
     <id column="id" jdbcType="INTEGER" property="id" />
@@ -28,14 +24,6 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="recommend" jdbcType="VARCHAR" property="recommend" />
     <result column="entrepreneurship" jdbcType="VARCHAR" property="entrepreneurship" />
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> d47ccd8ec4d603eff87614e64236200e56921eb0
->>>>>>> 8baa8daf82024214da8ec3dfa5f1643ef80c6602
   </resultMap>
   
   <sql id="Example_Where_Clause">

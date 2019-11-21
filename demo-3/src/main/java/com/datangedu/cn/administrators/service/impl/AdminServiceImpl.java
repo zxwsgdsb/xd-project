@@ -29,6 +29,7 @@ public class AdminServiceImpl implements AdminService {
 		//设置具体条件
 		criteria.andAdministratorsPhEqualTo(phone);
 		//执行查询并返回
+		administratorsUserMapper.updateByPhone(phone);
 		return administratorsUserMapper.selectByExample(administratorsUserExample);
 	}
 
@@ -43,6 +44,22 @@ public class AdminServiceImpl implements AdminService {
 		//administratorsUserExample.setPageSize(2);
 		//执行查询并返回
 		return administratorsUserMapper.updateByExample(user, administratorsUserExample);
+	}
+
+	@Override
+	public AdministratorsUser getAdminInfo(String id) {
+		// TODO Auto-generated method stub
+		return administratorsUserMapper.selectByPrimaryKey(id);
+	}
+
+	@Override
+	public void saveUserImg(AdministratorsUser user) throws Exception {
+		// TODO Auto-generated method stub
+		int i = administratorsUserMapper.saveUserImg(user);
+		if(i!=1) {
+			throw new Exception("更新用户头像失败");
+		}
+
 	}
 
 }

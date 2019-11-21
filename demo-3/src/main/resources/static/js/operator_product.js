@@ -33,19 +33,7 @@ $(function() {
 				}
 				var ph = sessionStorage.getItem("phone");
 				console.log(ph)
-				$(".user_info").html("");
-				var tat = `<li><a href="/re?page=operator_product"><i class="fa fa-cog fa-fw"></i>服务管理</a></li>
-				            <li><i class="fa fa-cube fa-fw"></i>业务管理</li>
-				            <li>
-				                <img src="/images/default_user.png">
-				                <span>${ph}</span>
-				                <i class="fa fa-chevron-down fa-fw user-arrow-down"></i>
-				                <ul class="dropdown">
-				                    <li>更改信息</li>
-				                    <li>退出登录</li>
-				                </ul>
-				            </li>`;
-				$(".user_info").append(tat);
+				$(".username").text(ph);
 			},
 			error: function(){
 				console.log("失败")
@@ -53,6 +41,7 @@ $(function() {
 		})
 		
 })
+
 
 $(".checkall").on("change", function(){
 	check=this.checked
@@ -162,6 +151,7 @@ $(".fa-search").on("click", function(){
 })
 
 $(".user-arrow-down").on("click", function() {
+	console.log("点击")
 	if ($(".dropdown").is(":hidden")) {
 		$(".dropdown").show();
 	} else {

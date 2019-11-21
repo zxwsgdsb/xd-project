@@ -77,6 +77,10 @@
   <sql id="Blob_Column_List">
     hp
   </sql>
+  <update id="saveUserImg" parameterType="com.datangedu.cn.model.xd.administrators_user.AdministratorsUser">
+    update administrators_user set hp = #{hp} where id = #{id}
+</update>
+  
   <select id="selectByExampleWithBLOBs" parameterType="com.datangedu.cn.model.xd.administrators_user.AdministratorsUserExample" resultMap="ResultMapWithBLOBs">
     select
     <if test="distinct">
@@ -225,6 +229,9 @@
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
+  </update>
+  <update id="updateByPhone" parameterType="java.lang.String">
+  		update administrators_user set state = '1' where administrators_ph = ${phone}
   </update>
   <update id="updateByExampleWithBLOBs" parameterType="map">
     update administrators_user

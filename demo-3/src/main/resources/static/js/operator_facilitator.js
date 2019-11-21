@@ -49,20 +49,7 @@ $(function() {
 					$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
 				}
 				var ph = sessionStorage.getItem("phone");
-				console.log(ph)
-				$(".user_info").html("");
-				var tat = `<li><a href="/re?page=operator_product"><i class="fa fa-cog fa-fw"></i>服务管理</a></li>
-				            <li><i class="fa fa-cube fa-fw"></i>业务管理</li>
-				            <li>
-				                <img src="/images/default_user.png">
-				                <span>${ph}</span>
-				                <i class="fa fa-chevron-down fa-fw user-arrow-down"></i>
-				                <ul class="dropdown">
-				                    <li>更改信息</li>
-				                    <li>退出登录</li>
-				                </ul>
-				            </li>`;
-				$(".user_info").append(tat);
+				$(".username").text(ph);
 				
 				
 			},
@@ -234,11 +221,12 @@ function pageClose(pageNum){
 }
 
 $(".find1").on("click",function(){
-	var name = $(".username").val();
+	var name = $(".username2").val();
 	$.ajax({
 		url:"/facilitator/page",
 		type:"post",
 		data:{
+			state: 1,
 			name: name,
 			pageNum: 1,
 			pageSize: 2,
@@ -257,7 +245,7 @@ $(".find1").on("click",function(){
                         <td>${data.service_userList[i].adminIntroduction}</td>
 						<td>
                         <span class="handle-btn"><i class="fa fa-edit fa-fw"></i>详情</span>
-                        <span class="handle-btn open" onclick="open1('${data.service_userList[i].id}')"><i class="fa fa-circle-c fa-fw"></i>启用</span>
+                        <span class="handle-btn open" onclick="close1('${data.service_userList[i].id}')"><i class="fa fa-circle-c fa-fw"></i>停用</span>
 						</td>
 						</tr>`;
 					
@@ -289,6 +277,7 @@ $(".find2").on("click",function(){
 		url:"/facilitator/page",
 		type:"post",
 		data:{
+			state: 0,
 			name: name,
 			pageNum: 1,
 			pageSize: 2,
@@ -444,10 +433,10 @@ $(".order2").on("click", function(){
 			var tat = ` <span onclick="pageOne(1)">首页</span>
 				<span onclick="pageOne('-')">上一页</span>`
 			for(var j = 0; j<Math.ceil(data.userList/2); j++){
-				tat += `<span class="main-pagination-page" onclick= "pageClose(${j+1})">${j+1}</span>`
+				tat += `<span class="main-pagination-page" onclick= "pageOne(${j+1})">${j+1}</span>`
 			}
 				tat += `<span onclick="pageOne('+')">下一页</span>
-				<span onclick="pageOn(Math.ceil(${data.userList/2}))">尾页</span>
+				<span onclick="pageOne(Math.ceil(${data.userList/2}))">尾页</span>
 				`
 			$(".pagez").append(tat);
 			len = Math.ceil(data.userList/2);

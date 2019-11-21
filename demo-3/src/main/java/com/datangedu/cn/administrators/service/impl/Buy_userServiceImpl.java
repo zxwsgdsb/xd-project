@@ -32,7 +32,7 @@ public class Buy_userServiceImpl implements Buy_userService {
 		BuyUserExample buyUserExample = new BuyUserExample();
 		buyUserExample.setPageSize(Integer.parseInt(request.getParameter("pageSize")));
 		buyUserExample.setPageNum(Integer.parseInt(request.getParameter("pageNum")));
-		
+		System.out.println(request.getParameter("name"));
 		return buyUserMapper.selectByLike(request.getParameter("name"),buyUserExample);
 	}
 

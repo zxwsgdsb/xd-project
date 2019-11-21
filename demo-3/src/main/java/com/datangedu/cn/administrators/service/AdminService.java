@@ -8,4 +8,8 @@ public interface AdminService {
 	public List<AdministratorsUser> operator_login(String phone);
 	
 	public int operator_repassword(AdministratorsUser user);
+
+	public AdministratorsUser getAdminInfo(String id);
+
+	public void saveUserImg(AdministratorsUser user) throws Exception;
 }
