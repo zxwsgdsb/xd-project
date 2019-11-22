@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=F\:\\\u5927\u5510\\xd-project\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=D\:\\git\\reasum\\.git;D\:\\git\\reasum\\xd-project\\.git;
+GitRepositoriesView.GitDirectories.relative=D\:\\git\\reasum\\.git;.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

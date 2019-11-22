@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="java.lang.Void"/>
 <fullyQualifiedTypeName name="com.alibaba.druid.sql.dialect.oracle.ast.clause.ModelClause.MainModelClause"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+=======
+<fullyQualifiedTypeName name="java.awt.PageAttributes.MediaType"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.util.http.parser.MediaType"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+<fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
+>>>>>>> 7d7502543c3fd600fb6e8bac42ba9544ac1e8e57
 </qualifiedTypeNameHistroy>

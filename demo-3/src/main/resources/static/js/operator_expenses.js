@@ -34,7 +34,7 @@ $(function() {
 					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
 					tat += `<span onclick="pageOn('+')">下一页</span>
-					<span>尾页</span>
+					<span onclick="pageOn(Math.ceil(${data.coco/2}))">尾页</span>
 					`
 				$(".pagez").append(tat);
 				len = Math.ceil(data.coco/2);
@@ -43,20 +43,7 @@ $(function() {
 					$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
 				}
 				var ph = sessionStorage.getItem("phone");
-				console.log(ph)
-				$(".user_info").html("");
-				var tat = `<li><a href="/re?page=operator_product"><i class="fa fa-cog fa-fw"></i>服务管理</a></li>
-				            <li><i class="fa fa-cube fa-fw"></i>业务管理</li>
-				            <li>
-				                <img src="/images/default_user.png">
-				                <span>${ph}</span>
-				                <i class="fa fa-chevron-down fa-fw user-arrow-down"></i>
-				                <ul class="dropdown">
-				                    <li>更改信息</li>
-				                    <li>退出登录</li>
-				                </ul>
-				            </li>`;
-				$(".user_info").append(tat);
+				$(".username").text(ph);
 				
 			},
 			error: function(){
@@ -188,7 +175,7 @@ function pageOn(pageNum){
 $(".search li:eq(0)").on("click", function(){
 	var b = new Date();
 	var a =  new Date();
-	var startdate = new Date(a.getTime());
+	var startdate = new Date(a.getTime() + 24*60*60*1000);
 	var enddate = new Date(b.getTime());
 	startdate = dateFormatDay(startdate);
 	enddate = dateFormatDay(enddate);
@@ -225,12 +212,16 @@ $(".search li:eq(0)").on("click", function(){
 			$(".pagez").html("");
 			var tat = ` <span onclick="pageOn(1)">首页</span>
 				<span onclick="pageOn('-')">上一页</span>`
-				for(var j = 0; j<(data.coco/2); j++){
+				for(var j = 0; j<Math.ceil(data.coco/2); j++){
 					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
 			tat += `<span onclick="pageOn('+')">下一页</span>
-				<span>尾页</span>
 				`
+				if(data.coco <= 2){
+					tat +=`<span >尾页</span>`
+				}else{
+					tat += `<span onclick="pageOn(Math.ceil(${data.coco/2}))">尾页</span>`
+				}
 				$(".pagez").append(tat);
 			len = Math.ceil(data.coco/2);
 			$(`.pagez span`).removeClass("main-pagination-page");
@@ -286,8 +277,12 @@ $(".search li:eq(1)").on("click", function(){
 					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
 			tat += `<span onclick="pageOn('+')">下一页</span>
-				<span>尾页</span>
 				`
+				if(data.coco <= 2){
+					tat +=`<span >尾页</span>`
+				}else{
+					tat += `<span onclick="pageOn(Math.ceil(${data.coco/2}))">尾页</span>`
+				}
 				$(".pagez").append(tat);
 			len = Math.ceil(data.coco/2);
 			$(`.pagez span`).removeClass("main-pagination-page");
@@ -339,12 +334,16 @@ $(".search li:eq(2)").on("click", function(){
 			$(".pagez").html("");
 			var tat = ` <span onclick="pageOn(1)">首页</span>
 				<span onclick="pageOn('-')">上一页</span>`
-				for(var j = 0; j<(data.coco/2); j++){
+				for(var j = 0; j<Math.ceil(data.coco/2); j++){
 					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
 				}
 			tat += `<span onclick="pageOn('+')">下一页</span>
-				<span>尾页</span>
 				`
+				if(data.coco <= 2){
+					tat +=`<span >尾页</span>`
+				}else{
+					tat += `<span onclick="pageOn(Math.ceil(${data.coco/2}))">尾页</span>`
+				}
 				$(".pagez").append(tat);
 			len = Math.ceil(data.coco/2);
 			$(`.pagez span`).removeClass("main-pagination-page");
@@ -388,6 +387,20 @@ $(".search li:eq(3)").on("click", function(){
 				$("tbody").append(txt);
 			}
 			$(".face").text(price);
+			$(".pagez").html("");
+			var tat = ` <span onclick="pageOn(1)">首页</span>
+					<span onclick="pageOn('-')">上一页</span>`
+				for(var j = 0; j<Math.ceil(data.coco/2); j++){
+					tat += `<span class="main-pagination-page" id="pagevalue" onclick= "pageOn(${j+1})">${j+1}</span>`
+				}
+			tat += `<span onclick="pageOn('+')">下一页</span>
+				`
+				if(data.coco <= 2){
+					tat +=`<span >尾页</span>`
+				}else{
+					tat += `<span onclick="pageOn(Math.ceil(${data.coco/2}))">尾页</span>`
+				}
+				$(".pagez").append(tat);
 			len = Math.ceil(data.coco/2);
 			$(`.pagez span`).removeClass("main-pagination-page");
 			if($(`.pagez span:eq(${page+1})`).text() == 1){

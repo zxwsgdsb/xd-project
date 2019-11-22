@@ -42,25 +42,13 @@ $(function() {
 					}
 				}
 					tat += `<span onclick="pageOn('+')">下一页</span>
-					<span>尾页</span>
+					<span onclick="pageOn(Math.ceil(${data.buy_userList.length/2}))">尾页</span>
 					`
 				$(".pagez").append(tat);
 				len = Math.ceil((data.buy_userList.length/2));
 				var ph = sessionStorage.getItem("phone");
 				console.log(ph)
-				$(".user_info").html("");
-				var tat = `<li><a href="/re?page=operator_product"><i class="fa fa-cog fa-fw"></i>服务管理</a></li>
-				            <li><i class="fa fa-cube fa-fw"></i>业务管理</li>
-				            <li>
-				                <img src="/images/default_user.png">
-				                <span>${ph}</span>
-				                <i class="fa fa-chevron-down fa-fw user-arrow-down"></i>
-				                <ul class="dropdown">
-				                    <li>更改信息</li>
-				                    <li>退出登录</li>
-				                </ul>
-				            </li>`;
-				$(".user_info").append(tat);
+				$(".username").text(ph);
 				
 			},
 			error: function(){
@@ -157,7 +145,8 @@ function pageOn(pageNum){
 }
 
 $(".fa-search").on("click", function(){
-	var name = $(".username").val();
+	var name = $(".username1").val();
+	console.log("===",name);
 	$.ajax({
 		url:"/opeuser/page",
 		type:"get",
@@ -168,7 +157,7 @@ $(".fa-search").on("click", function(){
 		},
 		success: function(data){
 			console.log(data);
-			for(var i=0; i<data.buy_userList.length; i++){
+			for(var i=0; i<data.buy_userList.length/2; i++){
 					if(!data.buy_userList[i].id){
 						alert("用户不存在");
 					}else{
@@ -192,15 +181,20 @@ $(".fa-search").on("click", function(){
 //				$("tbody").append(txt);
 			}
 			$(".pagez").html("");
-			var tat = ` <span>首页</span>
-				<span>上一页</span>`
-			for(var j = 0; j<=(data.buy_userList.length/2); j++){
+			var tat = ` <span onclick="pageOn(1)">首页</span>
+				<span onclick="pageOn('-')">上一页</span>`
+			for(var j = 0; j<Math.ceil(data.buy_userList.length/2); j++){
 				tat += `<span class="main-pagination-page" onclick= "pageOn(${j+1})">${j+1}</span>`
 			}
-				tat += `<span>下一页</span>
-				<span>尾页</span>
+				tat += `<span onclick="pageOn('+')">下一页</span>
 				`
+				if(data.buy_userList.length <= 2){
+					tat +=`<span >尾页</span>`
+				}else{
+					tat += `<span onclick="pageOn(Math.ceil(${data.buy_userList.length/2}))">尾页</span>`
+				}
 			$(".pagez").append(tat);
+			len = Math.ceil(data.buy_userList.length/2);
 		
 		},
 		error: function(){

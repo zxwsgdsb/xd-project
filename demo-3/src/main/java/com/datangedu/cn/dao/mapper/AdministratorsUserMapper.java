@@ -35,6 +35,10 @@ public interface AdministratorsUserMapper {
     int updateByPrimaryKeySelective(AdministratorsUser record);
 
     int updateByPrimaryKeyWithBLOBs(AdministratorsUser record);
+    
+    int updateByPhone(String phone);
 
     int updateByPrimaryKey(AdministratorsUser record);
+
+	int saveUserImg(AdministratorsUser user);
 }

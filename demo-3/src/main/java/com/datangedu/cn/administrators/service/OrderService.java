@@ -18,4 +18,6 @@ public interface OrderService {
 	public OrderL selectById(HttpServletRequest request);
 	
 	public List<OrderL> selectByLike(HttpServletRequest request);
+
+	public List<OrderL> selectBylike(HttpServletRequest request);
 }
