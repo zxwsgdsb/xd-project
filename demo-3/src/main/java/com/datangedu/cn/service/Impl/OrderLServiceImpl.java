@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.datangedu.cn.dao.mapper.OrderLMapper;
 import com.datangedu.cn.model.xd.order.OrderL;
 import com.datangedu.cn.model.xd.order.OrderLExample;
+
 import com.datangedu.cn.service.OrderLService;
 
 @Service
@@ -27,6 +28,22 @@ public class OrderLServiceImpl implements OrderLService {
 		//执行查询并返回
 		return orderLMapper.selectByExample(orderLExample);
 	
+	}
+	@Override
+	public List<OrderL> getsettle(String id) {
+		 OrderLExample orderExample = new OrderLExample();
+		 OrderLExample.Criteria criteria = orderExample.createCriteria();
+
+		 criteria.andIdEqualTo(id);
+		return orderLMapper.selectByExample(orderExample);
+	}
+	
+	@Override
+	public int payfororder(OrderL orderl) {
+		OrderLExample orderlExample = new OrderLExample();
+		OrderLExample.Criteria criteria = orderlExample.createCriteria();
+		criteria.andIdEqualTo(orderl.getId());
+		return orderLMapper.updateByExampleSelective(orderl, orderlExample);
 	}
 
 }

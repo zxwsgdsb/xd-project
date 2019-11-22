@@ -183,7 +183,9 @@ public class BuyUserController {
 	@RequestMapping(value = "/getshoppinglist", method = RequestMethod.GET)
 	public Map<String, Object> getshoppinglist(HttpServletRequest request) {
 		Map<String, Object> map = new HashMap<String, Object>();
-		List<ServiceShopping> shoppingList = ShoppingService.getShoppingInfoByld();
+		String buyuserid = request.getParameter("buyuserid");
+		System.out.println("id==="+buyuserid);
+		List<ServiceShopping> shoppingList = ShoppingService.getShoppingInfoByld(buyuserid);
 		map.put("shoppingList", shoppingList);
 		System.out.println("="+map);
 		return map;
@@ -228,6 +230,7 @@ public class BuyUserController {
 	@RequestMapping(value = "/getproductlist", method = RequestMethod.GET)
 	public Map<String, Object> getProductList(HttpServletRequest request) {
 		Map<String, Object> map = new HashMap<String, Object>();
+		
 		List<ServiceProduct> productList = ProductService.getProductInfoByld();
 		map.put("productList", productList);
 		return map;
@@ -256,6 +259,24 @@ public class BuyUserController {
 		return map;
 	}
 	
+	@ResponseBody
+	// 请求地址，请求类型
+	@RequestMapping(value = "/settle", method = RequestMethod.POST)
+	public Map<String, Object> settle(HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		String  id = ProductService.settle(request);	
+		map.put("id",id);
+		return map;
+	}
+	@ResponseBody
+	@RequestMapping(value = "/searchlike", method = RequestMethod.GET)
+	public Map<String, Object> searchlike(HttpServletRequest request) {
+		Map<String,Object> map = new HashMap<String,Object>();
+		List<ServiceProduct> service_productList = ProductService.selectByLike(request);
+		map.put("productList", service_productList);
+		return map;
+	}
+	
 	
 	@Resource
 	OrderLService OrderLService;
@@ -268,6 +289,34 @@ public class BuyUserController {
 		List<OrderL> orderList = OrderLService.orderlist(name);
 		System.out.println(orderList);
 		map.put("orderList", orderList);
+		return map;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/getsettle", method = RequestMethod.GET)
+	public Map<String, Object> getsettle(HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		String id=request.getParameter("id");
+		List<OrderL> order = OrderLService.getsettle(id);
+		System.out.println(order);
+		map.put("order", order);
+		return map;
+	}
+	
+	
+	@ResponseBody
+	@RequestMapping(value = "/payfororder", method = RequestMethod.POST)
+	public Map<String, Object> payfororder(HttpServletRequest request) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		String id=request.getParameter("id");
+		String pay=request.getParameter("pay");
+		OrderL orderl = new OrderL();
+		orderl.setId(id);
+		orderl.setState("1");
+		orderl.setPay(pay);
+		OrderLService.payfororder(orderl);
+		System.out.println(orderl);
+		map.put("orderl", orderl);
 		return map;
 	}
 }

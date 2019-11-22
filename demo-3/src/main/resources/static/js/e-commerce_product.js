@@ -30,6 +30,26 @@ $(".login-btn").on("click", function(){
 })
 
 $(function(){
+	
+	var name = sessionStorage.getItem("name");
+	var txt = "";
+	
+	txt += `
+	 <div><span>${name}</span>欢迎来到信达！<a href="re?page=e-commerce_login.html"><span class="user-quit">[退出]</span></div>
+            <ul>
+                <li><a href="re?page=e-commerce_shoping-car.html"><i class="fa fa-shopping-cart fa-lg"></i>
+                        购物车</a></li>
+                <li> <a href="re?page=e-commerce_order.html">
+                        <i class="fa fa-file-text-o fa-lg"></i> 我的订单
+                    </a></li>
+                <li>服务商入口</li>
+            </ul>
+	`
+		$(".headder-top-content").append(txt);
+})
+
+
+$(function(){
 	var ph = sessionStorage.getItem("ph");
 　　  $.ajax({
 		// 请求类型
@@ -256,4 +276,50 @@ function addcar(id){
 		})
 }
 
-
+$(".search-btn").on("click", function(){
+	var text = $(".search-like").val();
+	$.ajax({
+		url:"/buyuser/searchlike",
+		type:"get",
+		data:{
+			text: text,
+		},
+		success: function(data){
+			var productList =data.productList
+			$(".article+hr").remove();
+			$(".article").remove();
+			console.log($(".article").nextAll());
+			var txt="";
+			for(var i=0;i<productList.length;i++){
+				if(+productList[i].serviceState == 1){
+				txt +=`
+				
+				 <div class="article">
+            <img src="" alt="图片" />
+            <ul class="article-info">
+   
+                <li>${productList[i].serviceName}</li>
+				<li>${productList[i].serviceExplain}</li>
+				<li>${productList[i].name}</li>
+            </ul>
+            <ul class="article-price">
+                <li>${productList[i].servicePrice}元</li>
+                <li>
+                    <a href="re?page=e-commerce_settlement.html">立即购买</a>
+                    <span onclick="addcar('${productList[i].id}')">加入购物车</span>
+                </li>
+            </ul>
+        </div>
+        
+        <hr color="#ededed" size="1">
+				`;
+				}
+			}
+			$(".content").append(txt);
+			
+		},
+		error: function(){
+			console.log("失败")
+		}
+	})
+})

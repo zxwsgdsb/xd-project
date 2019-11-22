@@ -24,10 +24,7 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="recommend" jdbcType="VARCHAR" property="recommend" />
     <result column="entrepreneurship" jdbcType="VARCHAR" property="entrepreneurship" />
-<<<<<<< HEAD
-=======
 
->>>>>>> d47ccd8ec4d603eff87614e64236200e56921eb0
   </resultMap>
   
   <sql id="Example_Where_Clause">
@@ -94,7 +91,7 @@
     <select id="selectByshopping" resultMap="BaseResultMap1">
     select *
     from shopping,service_product
-    where shopping.product_id=service_product.id
+    where shopping.product_id=service_product.id and buyuser_id=${buyuserid}
   </select>
    <select id="selectdifferent" resultMap="BaseResultMap">
     select * 

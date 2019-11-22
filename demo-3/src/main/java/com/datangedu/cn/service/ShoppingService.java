@@ -8,7 +8,7 @@ import com.datangedu.cn.model.xd.shopping.Shopping;
 import com.datangedu.cn.util.ServiceShopping;
 
 public interface ShoppingService {
-	public List<ServiceShopping>getShoppingInfoByld();
+	public List<ServiceShopping>getShoppingInfoByld(String buyuserid);
 
 	public int shoppingcaraddre(Shopping shop);
 

@@ -51,9 +51,25 @@ $(".login-btn").on("click", function(){
 $(".login-btn").on("click", function(){
     location.href="e-commerce_evaluate.html"
 })
-//$(function(){
-//	
-//}
+$(function(){
+	
+	var name = sessionStorage.getItem("name");
+	var txt = "";
+	
+	txt += `
+	 <div><span>${name}</span>欢迎来到信达！<a href="re?page=e-commerce_login.html"><span class="user-quit">[退出]</span></div>
+            <ul>
+                <li><a href="re?page=e-commerce_shoping-car.html"><i class="fa fa-shopping-cart fa-lg"></i>
+                        购物车</a></li>
+                <li> <a href="re?page=e-commerce_order.html">
+                        <i class="fa fa-file-text-o fa-lg"></i> 我的订单
+                    </a></li>
+                <li>服务商入口</li>
+            </ul>
+	`
+		$(".headder-top-content").append(txt);
+})
+
 $(".save").on("click", function(){
 	
 	var oldpw= $(".oldpw").val();
