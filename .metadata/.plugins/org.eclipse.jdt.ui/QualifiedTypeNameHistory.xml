@@ -6,4 +6,7 @@
 <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.dao.mapper.XkRegionMapper"/>
+<fullyQualifiedTypeName name="com.datangedu.cn.administrators.service.Xk_regionService"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
 </qualifiedTypeNameHistroy>

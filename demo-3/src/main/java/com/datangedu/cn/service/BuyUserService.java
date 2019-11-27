@@ -19,5 +19,6 @@ public interface BuyUserService {
 	public int  commerce_repassword(BuyUser user);
 	public int commerce_updata(BuyUser user);
 	public List<BuyUser> buyuser_pw(String ph);
+	public int insert(HttpServletRequest request);
 	
 }

@@ -145,6 +145,10 @@
       #{mail,jdbcType=VARCHAR}, #{buyNum,jdbcType=INTEGER}, #{consumePrice,jdbcType=REAL}, 
       #{state,jdbcType=VARCHAR}, #{hp,jdbcType=LONGVARBINARY})
   </insert>
+  <insert id="insertRegister" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUser">
+    insert into buy_user (id, name, ph, pw, buy_area) values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR},
+    #{ph,jdbcType=VARCHAR}, #{pw,jdbcType=VARCHAR}, #{buyArea,jdbcType=VARCHAR})
+  </insert>
   <insert id="insertSelective" parameterType="com.datangedu.cn.model.xd.buy_user.BuyUser">
     insert into buy_user
     <trim prefix="(" suffix=")" suffixOverrides=",">

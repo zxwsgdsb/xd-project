@@ -46,9 +46,10 @@ $(function() {
 					`
 				$(".pagez").append(tat);
 				len = Math.ceil((data.buy_userList.length/2));
-				var ph = sessionStorage.getItem("phone");
-				console.log(ph)
-				$(".username").text(ph);
+				var name = sessionStorage.getItem("name");
+				var id = sessionStorage.getItem("id");
+				$(".username").text(name);
+				$("#aaa").attr("src","/headImg?id="+id);
 				
 			},
 			error: function(){

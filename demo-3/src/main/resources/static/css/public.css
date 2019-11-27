@@ -28,3 +28,8 @@ select, input, button{
     width: 1200px;
     margin: 0 auto;
 }
+.imagesyle {
+	width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

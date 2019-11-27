@@ -31,9 +31,10 @@ $(function() {
 				
 						$("tbody").append(txt);
 				}
-				var ph = sessionStorage.getItem("phone");
-				console.log(ph)
-				$(".username").text(ph);
+				var name = sessionStorage.getItem("name");
+				var id = sessionStorage.getItem("id");
+				$(".username").text(name);
+				$("#aaa").attr("src","/headImg?id="+id);
 			},
 			error: function(){
 				console.log("失败")
