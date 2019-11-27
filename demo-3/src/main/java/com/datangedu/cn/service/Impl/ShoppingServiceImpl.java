@@ -19,15 +19,16 @@ public class ShoppingServiceImpl implements ShoppingService {
 	@Resource
 	ShoppingMapper ShoppingMapper;
 	@Override
-	public List<ServiceShopping> getShoppingInfoByld() {
+	public List<ServiceShopping> getShoppingInfoByld(String buyuserid) {
 	
 		ShoppingExample ShoppingExample = new ShoppingExample();
 		//创建具体的条件实例
 		ShoppingExample.Criteria criteria = ShoppingExample.createCriteria();
 		//设置具体的条件
-		//criteria.andIdEqualTo(id);
+		criteria.andBuyuserIdEqualTo(buyuserid);
+		
 		//执行查询并返回
-		return null;
+		return ShoppingMapper.selectByshopping(buyuserid);
 	}
 	@Override
 	public int shoppingcaraddre(Shopping shop) {

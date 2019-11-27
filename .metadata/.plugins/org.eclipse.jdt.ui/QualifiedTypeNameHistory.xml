@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="com.alibaba.druid.sql.dialect.oracle.ast.clause.ModelClause.MainModelClause"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+=======
 <fullyQualifiedTypeName name="java.awt.PageAttributes.MediaType"/>
 <fullyQualifiedTypeName name="org.apache.tomcat.util.http.parser.MediaType"/>
 <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
 <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="com.datangedu.cn.dao.mapper.XkRegionMapper"/>
 <fullyQualifiedTypeName name="com.datangedu.cn.administrators.service.Xk_regionService"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
+=======
+>>>>>>> 7d7502543c3fd600fb6e8bac42ba9544ac1e8e57
+>>>>>>> dc2eb7b66e3b3f5db48db57a1f6647d776873726
 </qualifiedTypeNameHistroy>

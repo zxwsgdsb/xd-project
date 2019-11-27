@@ -35,8 +35,13 @@ public interface ShoppingMapper {
 
     int updateByPrimaryKey(Shopping record);
 
-	List<ServiceShopping> selectByshopping();
+	List<ServiceShopping> selectByshopping(String buyuserid);
+
 
 	List<Shopping> selectdifferent(String productid,String buyuserid);
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7d7502543c3fd600fb6e8bac42ba9544ac1e8e57

@@ -29,25 +29,53 @@ $(".login-btn").on("click", function(){
     location.href="e-commerce_settlement.html"
 })
 
+
 $(function(){
+	
+	var name = sessionStorage.getItem("name");
+	var txt = "";
+	
+	txt += `
+	 <div><span>${name}</span>欢迎来到信达！<a href="re?page=e-commerce_login.html"><span class="user-quit">[退出]</span></div>
+            <ul>
+                <li><a href="re?page=e-commerce_shoping-car.html"><i class="fa fa-shopping-cart fa-lg"></i>
+                        购物车</a></li>
+                <li> <a href="re?page=e-commerce_order.html">
+                        <i class="fa fa-file-text-o fa-lg"></i> 我的订单
+                    </a></li>
+                <li>服务商入口</li>
+            </ul>
+	`
+		$(".headder-top-content").append(txt);
+})
+
+
+$(function(){
+	var buyuserid=sessionStorage.getItem("buyuserid")
 	 $.ajax({
 			// 请求类型
 			type:"get",
 			// 请求路径
 			url:"/buyuser/getshoppinglist",
 			// 请求参数
-			/*
-			 * data:{ id:id, },
-			 */
+		
+			  data:{
+				  buyuserid:buyuserid,
+				     },
+			
 			// 返回数据类型
 			dataType:"json",
 			// 请求成功后调用函数
 			success:function(data){
 				console.log("成功后返回的数据",data);
 				var shoppingList =data.shoppingList
-//				var multiply=${shoppingList[i].servicePrice}*${shoppingList[i].num};
 				var txt="";
+				var txt1="";
+				var s=0;
+				var ordername="";
 				for(var i=0;i<shoppingList.length;i++){
+					s=s+shoppingList[i].servicePrice*shoppingList[i].num;
+					ordername=ordername+shoppingList[i].serviceName;
 					txt +=`
 					 <ul class="merchandise">
 				            <li>
@@ -66,13 +94,27 @@ $(function(){
 				            <li>
 				                <span class="delete" onclick="deleteid('${shoppingList[i].id}')">删除</span>
 				            </li>
+			
                     </ul>
-   
-                  `; 
+                  `	          
+						;}
+//				for(var i=0;i<shoppingList.length;i++){
+					txt1 +=`
+							<ul class="price">
+					            <li>金额合计<span>${s}</span></li>
+					            <li>
+					                <a href="re?page=e-commerce_product.html">继续购物</a>
+					                <a onclick="settle('${buyuserid}')">去结算</a>
+					            </li>
+					        </ul>
+					`
+//						}
 					//Map.put("111",[a: [],b: [{123},{456}]])
 					//List<Map<String, List<aaa>>>
-				}
+				sessionStorage.setItem("s",s);
+				sessionStorage.setItem("ordername",ordername);
 				$(".product_list_title").after(txt); 
+				$(".content").append(txt1); 
 			},
 			// 请求成功后调用函数
 			error:function(data){
@@ -208,4 +250,38 @@ function deleteid(id){
   			console.log("失败后返回的数据",data);
   		}
   	})
+}
+
+function settle(buyuserid){
+	var price = sessionStorage.getItem("s")
+	var name = sessionStorage.getItem("name")
+	var ordername=sessionStorage.getItem("ordername")
+	$.ajax({
+  		//请求类型
+  		type:"post",
+  		//请求路径
+  		url:"/buyuser/settle",
+  		//请求参数
+  		data:{
+  			buyuserid:buyuserid,
+  			name:name,
+  			price:price,
+  			ordername:ordername,
+  		}, 
+  		//返回数据类型
+  		dataType:"json",
+  		//请求成功后调用函数
+  		success:function(data){
+  			var id=data.id
+  			sessionStorage.setItem("id",id);
+ 			location.href = "re?page=e-commerce_settlement.html"
+  				
+  		},
+  		 error:function(data){
+  			console.log("失败后返回的数据",data);
+  		}
+  	})
+	
+	
+	
 }

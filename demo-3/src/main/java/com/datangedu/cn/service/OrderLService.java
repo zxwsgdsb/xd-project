@@ -8,4 +8,8 @@ public interface OrderLService {
 
 	public List<OrderL> orderlist(String name);
 
+	public List<OrderL> getsettle(String id);
+
+	public int payfororder(OrderL orderl);
+
 }
