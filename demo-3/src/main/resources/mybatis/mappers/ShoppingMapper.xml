@@ -24,10 +24,7 @@
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="recommend" jdbcType="VARCHAR" property="recommend" />
     <result column="entrepreneurship" jdbcType="VARCHAR" property="entrepreneurship" />
-<<<<<<< HEAD
 
-=======
->>>>>>> 7d7502543c3fd600fb6e8bac42ba9544ac1e8e57
   </resultMap>
   
   <sql id="Example_Where_Clause">
