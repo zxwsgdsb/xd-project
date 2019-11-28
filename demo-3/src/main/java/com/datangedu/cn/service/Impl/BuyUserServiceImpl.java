@@ -2,6 +2,7 @@ package com.datangedu.cn.service.Impl;
 
 
 import java.util.List;
+import java.util.UUID;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -97,6 +98,21 @@ public class BuyUserServiceImpl implements BuyUserService{
 		return buyUserMapper.selectByExample(buyUserExample);
 		
 	}
+
+
+	@Override
+	public int insert(HttpServletRequest request) {
+		// TODO Auto-generated method stub
+		String uuid = UUID.randomUUID().toString().replace("-","").replace("m","").replace("n","").replace("b","").replace("v","").replace("c","").replace("x","").replace("z","").replace("l","").replace("k","").replace("j","").replace("h","").replace("g","").replace("f","").replace("d","").replace("s","").replace("a","").replace("p","").replace("o","").replace("i","").replace("u","").replace("y","").replace("t","").replace("r","").replace("e","").replace("w","").replace("q","");  
+		String id=uuid.substring(1,9);
+		BuyUser buyUser= new BuyUser();
+		buyUser.setId(id);
+		buyUser.setName(request.getParameter("name"));
+		buyUser.setPh(request.getParameter("ph"));
+		buyUser.setPw(request.getParameter("pw"));
+		buyUser.setBuyArea(request.getParameter("area"));
+		return buyUserMapper.insertRegister(buyUser);
 	}
+}
     
 

@@ -42,8 +42,10 @@ $(function() {
 				if($(`.pagez span:eq(${page+1})`).text() == 1){
 					$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
 				}
-				var ph = sessionStorage.getItem("phone");
-				$(".username").text(ph);
+				var name = sessionStorage.getItem("name");
+				var id = sessionStorage.getItem("id");
+				$(".username").text(name);
+				$("#aaa").attr("src","/headImg?id="+id);
 				
 			},
 			error: function(){

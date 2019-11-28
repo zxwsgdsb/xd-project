@@ -77,16 +77,16 @@ tbody tr {
 
 table td:nth-child(1),
 table th:nth-child(1) {
-    width: 40px;
+    width: 45px;
     text-align: center;
 }
 
 table td:nth-child(2) {
-    width: 140px;
+    width: 200px;
 }
 
 table td:nth-child(3) {
-    width: 600px;
+    width: 500px;
 }
 
 table td:nth-child(4) {
@@ -94,7 +94,7 @@ table td:nth-child(4) {
 }
 
 table td:nth-child(5) {
-    width: 60px;
+    width: 150px;
 }
 
 table td:nth-child(6) {

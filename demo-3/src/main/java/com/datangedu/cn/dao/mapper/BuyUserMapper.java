@@ -16,6 +16,8 @@ public interface BuyUserMapper {
     int deleteByPrimaryKey(String id);
 
     int insert(BuyUser record);
+    
+    int insertRegister(BuyUser record);
 
     int insertSelective(BuyUser record);
 

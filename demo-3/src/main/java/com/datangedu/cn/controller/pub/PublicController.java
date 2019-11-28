@@ -91,6 +91,8 @@ public class PublicController {
 			if(password.getAdministratorsPw().equals(request.getParameter("password"))) {
 				code1 = 1;
 				map.put("code", code1);
+				map.put("name", password.getName());
+				map.put("id", password.getId());
 			}
 			else {
 				map.put("code", code1);

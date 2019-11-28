@@ -13,10 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.datangedu.cn.administrators.service.Xk_regionService;
 import com.datangedu.cn.model.xd.buy_user.BuyUser;
 import com.datangedu.cn.model.xd.order.OrderL;
 import com.datangedu.cn.model.xd.service_product.ServiceProduct;
 import com.datangedu.cn.model.xd.shopping.Shopping;
+import com.datangedu.cn.model.xd.xk_region.XkRegion;
 import com.datangedu.cn.service.BuyUserService;
 import com.datangedu.cn.service.OrderLService;
 import com.datangedu.cn.service.ProductService;
@@ -30,19 +32,63 @@ public class BuyUserController {
 
 	@Resource
 	BuyUserService buyUserService;
+	@Resource
+	Xk_regionService xk_regionService;
 	@ResponseBody
 	// 请求地址，请求类型
-	@RequestMapping(value = "/buyuserregister", method = RequestMethod.POST)
+	@RequestMapping(value = "/provinceregister", method = RequestMethod.POST)
 	public Map<String, Object> buyuserRegister(HttpServletRequest request) {
 
 		Map<String, Object> map = new HashMap<String, Object>();
-		int buyUserList = buyUserService.setBuyUserRegister(request);
-		if (buyUserList == 2) {
-			map.put("msg", "密码小于6位请重新输入！");
-		}
-		map.put("msg", "恭喜注册成功，请登录！");
+		List<XkRegion> provinceList = xk_regionService.selectByProvince();
+		map.put("provinceList", provinceList);
 		return map;
 	}
+	
+	@ResponseBody
+	// 请求地址，请求类型
+	@RequestMapping(value = "/cityregister", method = RequestMethod.POST)
+	public Map<String, Object> cityRegister(HttpServletRequest request) {
+
+		Map<String, Object> map = new HashMap<String, Object>();
+		String id = request.getParameter("id");
+		id = id.substring(0, 2);
+		List<XkRegion> cityList = xk_regionService.selectBycity(id);
+		map.put("cityList", cityList);
+		return map;
+	}
+	
+	
+	@ResponseBody
+	// 请求地址，请求类型
+	@RequestMapping(value = "/arearegister", method = RequestMethod.POST)
+	public Map<String, Object> areaRegister(HttpServletRequest request) {
+
+		Map<String, Object> map = new HashMap<String, Object>();
+		String id = request.getParameter("id");
+		id = id.substring(0, 4);
+		List<XkRegion> areaList = xk_regionService.selectByarea(id);
+		map.put("areaList", areaList);
+		return map;
+	}
+	
+	@ResponseBody
+	// 请求地址，请求类型
+	@RequestMapping(value = "/nowregister", method = RequestMethod.POST)
+	public Map<String, Object> nowRegister(HttpServletRequest request) {
+
+		HttpSession session = request.getSession();
+		String code1 = (String)session.getAttribute("code");
+		String imgcode = request.getParameter("imgcode");
+		Map<String, Object> map = new HashMap<String, Object>();
+		int code = 0;
+		if(imgcode.toUpperCase().equals(code1)) {
+			code = buyUserService.insert(request);
+		}
+		map.put("code", code);
+		return map;
+	}
+	
 	@ResponseBody
 	@RequestMapping(value = "/getbuyuserlist", method = RequestMethod.GET)
 	public Map<String, Object> getbuyuserlist(HttpServletRequest request) {
