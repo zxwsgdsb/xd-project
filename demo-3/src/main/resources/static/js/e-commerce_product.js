@@ -55,7 +55,7 @@ $(function(){
 		// 请求类型
 		type:"get",
 		// 请求路径
-		url:"/buyuser/getbuyuserlist",
+		url:"buyuser/getbuyuserlist",
 		// 请求参数
 		
 		  data:{ ph:ph, },
@@ -84,7 +84,7 @@ $(function(){
 		// 请求类型
 		type:"get",
 		// 请求路径
-		url:"/buyuser/getproductlist",
+		url:"buyuser/getproductlist",
 		// 请求参数
 		/*
 		 * data:{ id:id, },
@@ -141,7 +141,7 @@ $(".nav-active").on("click", function(){
 			// 请求类型
 			type:"get",
 			// 请求路径
-			url:"/buyuser/getproductlist",
+			url:"buyuser/getproductlist",
 			// 请求参数
 			/*
 			 * data:{ id:id, },
@@ -198,7 +198,7 @@ $(".content-nav li:eq(1)").on("click", function(){
 			// 请求类型
 			type:"get",
 			// 请求路径
-			url:"/buyuser/getproductlistorderby",
+			url:"buyuser/getproductlistorderby",
 			// 请求参数
 			/*
 			 * data:{ id:id, },
@@ -254,7 +254,7 @@ function addcar(id){
 			// 请求类型
 			type:"post",
 			// 请求路径
-			url:"/buyuser/addcar",
+			url:"buyuser/addcar",
 			// 请求参数
 			
 			  data:{ 
@@ -279,7 +279,7 @@ function addcar(id){
 $(".search-btn").on("click", function(){
 	var text = $(".search-like").val();
 	$.ajax({
-		url:"/buyuser/searchlike",
+		url:"buyuser/searchlike",
 		type:"get",
 		data:{
 			text: text,

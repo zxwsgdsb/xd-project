@@ -56,7 +56,7 @@ $(function(){
 			// 请求类型
 			type:"get",
 			// 请求路径
-			url:"/buyuser/getshoppinglist",
+			url:"buyuser/getshoppinglist",
 			// 请求参数
 		
 			  data:{
@@ -134,7 +134,7 @@ function reducenum(id){
   		//请求类型
   		type:"post",
   		//请求路径
-  		url:"/buyuser/shoppingcaraddre",
+  		url:"buyuser/shoppingcaraddre",
   		//请求参数
   		data:{
   	    num:num,
@@ -151,7 +151,7 @@ function reducenum(id){
 	}
 	else{
 	$(e.target).next().val($(e.target).next().val()-1);
-	location.href = "re?page=e-commerce_shoping-car"
+	location.href = "./re?page=e-commerce_shoping-car"
 	}
   		},
   		error:function(data){
@@ -171,7 +171,7 @@ function addnum(id){
   		//请求类型
   		type:"post",
   		//请求路径
-  		url:"/buyuser/shoppingcaraddre",
+  		url:"buyuser/shoppingcaraddre",
   		//请求参数
   		data:{
   	    num:num,
@@ -188,7 +188,7 @@ function addnum(id){
 	else{
 	
 	$(e.target).prev().val(+$(e.target).prev().val()+1);
-	location.href = "re?page=e-commerce_shoping-car"
+	location.href = "./re?page=e-commerce_shoping-car"
 
 	}
   		},
@@ -207,7 +207,7 @@ function changenum(id){
   		//请求类型
   		type:"post",
   		//请求路径
-  		url:"/buyuser/shoppingcaraddre",
+  		url:"buyuser/shoppingcaraddre",
   		//请求参数
   		data:{
   	    num:num,
@@ -217,7 +217,7 @@ function changenum(id){
   		dataType:"json",
   		//请求成功后调用函数
   		success:function(data){
-  			location.href = "re?page=e-commerce_shoping-car"
+  			location.href = "./re?page=e-commerce_shoping-car"
 
   		},
   		 error:function(data){
@@ -234,7 +234,7 @@ function deleteid(id){
   		//请求类型
   		type:"post",
   		//请求路径
-  		url:"/buyuser/shoppingcardelete",
+  		url:"buyuser/shoppingcardelete",
   		//请求参数
   		data:{
   	    id:id,
@@ -244,7 +244,7 @@ function deleteid(id){
   		//请求成功后调用函数
   		success:function(data){
   			console.log("删除成功!")
-  			location.href = "re?page=e-commerce_shoping_car"
+  			location.href = "./re?page=e-commerce_shoping_car"
   		},
   		 error:function(data){
   			console.log("失败后返回的数据",data);
@@ -260,7 +260,7 @@ function settle(buyuserid){
   		//请求类型
   		type:"post",
   		//请求路径
-  		url:"/buyuser/settle",
+  		url:"buyuser/settle",
   		//请求参数
   		data:{
   			buyuserid:buyuserid,
@@ -274,7 +274,7 @@ function settle(buyuserid){
   		success:function(data){
   			var id=data.id
   			sessionStorage.setItem("id",id);
- 			location.href = "re?page=e-commerce_settlement.html"
+ 			location.href = "./re?page=e-commerce_settlement.html"
   				
   		},
   		 error:function(data){

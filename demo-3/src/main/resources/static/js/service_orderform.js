@@ -29,7 +29,7 @@ $(".order3").on("click", function(){
 $(function() {
 // location.href = "product"
 		$.ajax({
-			url:"/orderform/research",
+			url:"orderform/research",
 			type:"get",
 			data: {
 				pageNum:2,
@@ -79,7 +79,7 @@ $(".search-btn").on("click", function(){
    console.log(value);
    $.ajax({
 	   type:"get",
-	   url:"/orderform/research",
+	   url:"orderform/research",
 	   data:{
 		   pageNum: 2,
 		   pageSize: 0,
@@ -118,7 +118,7 @@ $(".pagenext-btn").on("click", function(){
    console.log(value);
    $.ajax({
 	   type:"get",
-	   url:"/orderform/research",
+	   url:"orderform/research",
 	   data:{
 		   pageNum: 2,
 		   pageSize: 0,

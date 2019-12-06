@@ -9,9 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demo-xd</artifactId>
+	<artifactId>xinda1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo-3</name>
+	<packaging>war</packaging>
+	<name>xinda1</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -39,6 +40,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
 		<dependency>
@@ -62,6 +68,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>xinda1</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

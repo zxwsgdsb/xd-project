@@ -16,7 +16,7 @@ $(function(){
  		//请求类型
  		type:"post",
  		//请求路径
- 		url:"/buyuser/provinceregister",
+ 		url:"buyuser/provinceregister",
  		//请求参数
  		//返回数据类型
  		dataType:"json",
@@ -43,7 +43,7 @@ $(".province").on("change", function(){
  		//请求类型
  		type:"post",
  		//请求路径
- 		url:"/buyuser/cityregister",
+ 		url:"buyuser/cityregister",
  		//请求参数
  		data:{
  			id: id,
@@ -73,7 +73,7 @@ $(".city").on("change", function(){
  		//请求类型
  		type:"post",
  		//请求路径
- 		url:"/buyuser/arearegister",
+ 		url:"buyuser/arearegister",
  		//请求参数
  		data:{
  			id: id,
@@ -110,7 +110,7 @@ $(".nowregister").on("click", function(){
      		//请求类型
      		type:"post",
      		//请求路径
-     		url:"/buyuser/nowregister",
+     		url:"buyuser/nowregister",
      		//请求参数
      		data:{
      		 name: name,
@@ -127,7 +127,7 @@ $(".nowregister").on("click", function(){
      		success:function(data){
      			if(data.code == 1){
      				alert("注册成功，请登录");
-     				location.href = "re?page=e-commerce_login"
+     				location.href = "./re?page=e-commerce_login"
      			}else{
      				alert("注册失败")
      			}

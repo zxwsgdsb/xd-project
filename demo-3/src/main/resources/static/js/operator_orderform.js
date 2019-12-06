@@ -1,7 +1,7 @@
 $(function() {
 //	location.href = "product"
 		$.ajax({
-			url:"/orderform/login",
+			url:"orderform/login",
 			type:"get",
 			success: function(data){
 				console.log("成功")
@@ -35,7 +35,7 @@ $(function() {
 				var name = sessionStorage.getItem("name");
 				var id = sessionStorage.getItem("id");
 				$(".username").text(name);
-				$("#aaa").attr("src","/headImg?id="+id);
+				$("#aaa").attr("src","./headImg?id="+id);
 				
 			},
 			error: function(){
@@ -67,7 +67,7 @@ Date.prototype.Format = function(fmt)
 $(".fa-search").on("click", function(){
 	var num = $(".ordernum").val();
 	$.ajax({
-		url:"/orderform/search",
+		url:"orderform/search",
 		type:"get",
 		data:{
 			num: num,

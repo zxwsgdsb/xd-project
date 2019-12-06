@@ -2,7 +2,7 @@ var page = 1;
 $(function() {
 //	location.href = "product"
 		$.ajax({
-			url:"/orderform/cost",
+			url:"orderform/cost",
 			type:"get",
 			data:{
 				name: "",
@@ -45,7 +45,7 @@ $(function() {
 				var name = sessionStorage.getItem("name");
 				var id = sessionStorage.getItem("id");
 				$(".username").text(name);
-				$("#aaa").attr("src","/headImg?id="+id);
+				$("#aaa").attr("src","./headImg?id="+id);
 				
 			},
 			error: function(){
@@ -138,7 +138,7 @@ function pageOn(pageNum){
 		$(`.pagez span:eq(${page+1})`).attr("class","main-pagination-page");
 	}
 	$.ajax({
-		url:"/orderform/cost",
+		url:"orderform/cost",
 		type:"get",
 		data:{
 			name: "",
@@ -182,7 +182,7 @@ $(".search li:eq(0)").on("click", function(){
 	startdate = dateFormatDay(startdate);
 	enddate = dateFormatDay(enddate);
 	$.ajax({
-		url:"/orderform/query",
+		url:"orderform/query",
 		type:"get",
 		data:{
 			startdate: startdate,
@@ -244,7 +244,7 @@ $(".search li:eq(1)").on("click", function(){
 	startdate = dateFormatDay(startdate);
 	var enddate = getSevenFormatDate();
 	$.ajax({
-		url:"/orderform/query",
+		url:"orderform/query",
 		type:"get",
 		data:{
 			startdate: startdate,
@@ -305,7 +305,7 @@ $(".search li:eq(2)").on("click", function(){
 	startdate = dateFormatDay(startdate);
 	var enddate = getmonthFormatDate();
 	$.ajax({
-		url:"/orderform/query",
+		url:"orderform/query",
 		type:"get",
 		data:{
 			startdate: startdate,
@@ -363,7 +363,7 @@ $(".search li:eq(2)").on("click", function(){
 $(".search li:eq(3)").on("click", function(){
 	$("tbody").html("");
 	$.ajax({
-		url:"/orderform/cost",
+		url:"orderform/cost",
 		type:"get",
 		data:{
 			name: "",

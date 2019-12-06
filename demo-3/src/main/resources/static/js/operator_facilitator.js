@@ -5,7 +5,7 @@ $(function() {
 	$(".stop-content").hide();
 	var state = "1";
 		$.ajax({
-			url:"/facilitator/page",
+			url:"facilitator/page",
 			type:"post",
 			data:{
 				state: state,
@@ -51,7 +51,7 @@ $(function() {
 				var name = sessionStorage.getItem("name");
 				var id = sessionStorage.getItem("id");
 				$(".username").text(name);
-				$("#aaa").attr("src","/headImg?id="+id);
+				$("#aaa").attr("src","./headImg?id="+id);
 				
 				
 			},
@@ -86,7 +86,7 @@ function pageOn(pageNum){
 	}
 	console.log($(`.pagez span:eq(${page+1})`));
 	$.ajax({
-		url:"/facilitator/page",
+		url:"facilitator/page",
 		type:"post",
 		data:{
 			state: 1,
@@ -146,7 +146,7 @@ function pageOne(pageNum){
 	}
 	console.log($(`.pagez span:eq(${page+1})`));
 	$.ajax({
-		url:"/facilitator/page",
+		url:"facilitator/page",
 		type:"post",
 		data:{
 			state: 0,
@@ -184,7 +184,7 @@ function pageOne(pageNum){
 
 function pageClose(pageNum){
 	$.ajax({
-		url:"/facilitator/page",
+		url:"facilitator/page",
 		type:"get",
 		data:{
 			name: "",
@@ -225,7 +225,7 @@ function pageClose(pageNum){
 $(".find1").on("click",function(){
 	var name = $(".username2").val();
 	$.ajax({
-		url:"/facilitator/page",
+		url:"facilitator/page",
 		type:"post",
 		data:{
 			state: 1,
@@ -276,7 +276,7 @@ $(".find1").on("click",function(){
 $(".find2").on("click",function(){
 	var name = $(".username1").val();
 	$.ajax({
-		url:"/facilitator/page",
+		url:"facilitator/page",
 		type:"post",
 		data:{
 			state: 0,
@@ -341,7 +341,7 @@ $(".order1").on("click", function(){
     $(".main-top li").eq(3).text("正常用户");
     var state = "1";
     $.ajax({
-		url:"/facilitator/page",
+		url:"facilitator/page",
 		type:"post",
 		data:{
 			state: state,
@@ -400,7 +400,7 @@ $(".order2").on("click", function(){
     $(".main-top li").eq(3).text("停用用户");
     var state = "0";
     $.ajax({
-		url:"/facilitator/page",
+		url:"facilitator/page",
 		type:"post",
 		data:{
 			state: state,
@@ -456,7 +456,7 @@ $(".order2").on("click", function(){
 function open1(id){
 	var state = "0";
 	$.ajax({
-		url:"/facilitator/open",
+		url:"facilitator/open",
 		type:"post",
 		data:{
 			id: id,
@@ -501,7 +501,7 @@ function open1(id){
 function close1(id){
 	var state = "1";
 	$.ajax({
-		url:"/facilitator/close",
+		url:"facilitator/close",
 		type:"post",
 		data:{
 			id: id,

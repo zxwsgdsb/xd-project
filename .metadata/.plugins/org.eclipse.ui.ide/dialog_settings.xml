@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
-<<<<<<< HEAD
-		<item value="D:\git\reasum\xd-project\demo-3"/>
-=======
-		<item value="F:\信达\xd-project\demo-3"/>
->>>>>>> 8baa8daf82024214da8ec3dfa5f1643ef80c6602
-		<item value="F:\大唐\xd-project\demo-3"/>
-		<item value="G:\zxw\xd-project\demo-3"/>
+		<item value="G:\zxw\xd-project\demo-2"/>
 	</list>
-	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
-		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-		</list>
-	</section>
 </section>

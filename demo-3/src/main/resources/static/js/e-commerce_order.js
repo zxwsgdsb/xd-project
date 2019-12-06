@@ -65,7 +65,7 @@ $(function(){
 		// 请求类型
 		type:"get",
 		// 请求路径
-		url:"/buyuser/getorderlist",
+		url:"buyuser/getorderlist",
 		// 请求参数
 		
 		   data:{ name:name, },

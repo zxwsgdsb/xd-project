@@ -8,7 +8,7 @@ $(function(){
 			// 请求类型
 			type:"get",
 			// 请求路径
-			url:"/buyuser/getsettle",
+			url:"buyuser/getsettle",
 			// 请求参数
 			
 			  data:{ id:id, },
@@ -77,7 +77,7 @@ function payfororder(id){
   		//请求类型
   		type:"post",
   		//请求路径
-  		url:"/buyuser/payfororder",
+  		url:"buyuser/payfororder",
   		//请求参数
   		data:{
   	    id:id,
@@ -88,7 +88,7 @@ function payfororder(id){
   		//请求成功后调用函数
   		success:function(data){
   			console.log("成功后返回的数据",data);
-  			location.href = "re?page=e-commerce_order"
+  			location.href = "./re?page=e-commerce_order"
 
   		},
   		 error:function(data){

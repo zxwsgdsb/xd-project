@@ -3,7 +3,7 @@ var len = 0.0;
 $(function() {
 //	location.href = "product"
 		$.ajax({
-			url:"/opeuser/login",
+			url:"opeuser/login",
 			type:"get",
 			data: {
 				pageNum: 1,
@@ -49,7 +49,7 @@ $(function() {
 				var name = sessionStorage.getItem("name");
 				var id = sessionStorage.getItem("id");
 				$(".username").text(name);
-				$("#aaa").attr("src","/headImg?id="+id);
+				$("#aaa").attr("src","./headImg?id="+id);
 				
 			},
 			error: function(){
@@ -106,7 +106,7 @@ function pageOn(pageNum){
 	
 	console.log($(`.pagez span:eq(${page+1})`));
 	$.ajax({
-		url:"/opeuser/page",
+		url:"opeuser/page",
 		type:"get",
 		data:{
 			name: "",
@@ -149,7 +149,7 @@ $(".fa-search").on("click", function(){
 	var name = $(".username1").val();
 	console.log("===",name);
 	$.ajax({
-		url:"/opeuser/page",
+		url:"opeuser/page",
 		type:"get",
 		data:{
 			name: name,

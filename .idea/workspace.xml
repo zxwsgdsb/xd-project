@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b6bf7d0-6c10-4f93-bcdb-7aac2aa92716" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.metadata/.bak_0.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.bak_0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/demo-3/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/demo-3/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.ui.workbench.swt/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.ui.workbench.swt/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2928898550.index" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2928898550.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/a06e339f4abd9c91c0b8edf737617577/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/nexus/a06e339f4abd9c91c0b8edf737617577/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.jdt/demo-3.container" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.jdt/demo-3.container" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/Demo2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/Demo2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/controller/PublicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/controller/PublicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdBoughtUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdBoughtUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdServiceUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdServiceUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdShoppingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdShoppingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/dao/mapper/XdUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/service/XdShoppingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/service/XdShoppingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/service/XdUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/service/XdUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/service/impl/XdShoppingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/service/impl/XdShoppingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/service/impl/XdUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/service/impl/XdUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdBoughtUser/XdBoughtUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdBoughtUser/XdBoughtUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdBoughtUser/XdBoughtUserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdBoughtUser/XdBoughtUserExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdOrder/XdOrderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdOrder/XdOrderExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdServiceUser/XdServiceUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdServiceUser/XdServiceUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdServiceUser/XdServiceUserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdServiceUser/XdServiceUserExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdUser/XdUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/java/com/dt/xd/xdUser/XdUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/init.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/init.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdBoughtUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdBoughtUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdOrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdServiceUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdServiceUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdShoppingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdShoppingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/mybatis/mappers/XdUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/e-commerce_account.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/e-commerce_account.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/e-commerce_shoping-car.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/e-commerce_shoping-car.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_expenses.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_expenses.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_facilitator.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_facilitator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_orderform.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_orderform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_product.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_user.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/operator_user.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_expenses.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_expenses.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_orderform.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_orderform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_product.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_setting.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_setting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_store.css" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/css/service_store.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/e-commerce_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/e-commerce_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/e-commerce_evaluate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/e-commerce_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/e-commerce_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/e-commerce_order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_account.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_evaluate.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_evaluate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_findpassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_findpassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_login.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_product.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_register.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_settlement.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_settlement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_shoping-car.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/e-commerce_shoping-car.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_facilitator.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_facilitator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_login.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_orderform.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_orderform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_product.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_recommend.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_recommend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/operator_user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_findpassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_findpassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_login.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_orderform.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_orderform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_product.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_register.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_setting.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_setting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/js/service_store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/operator_expenses.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/operator_facilitator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/operator_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/operator_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/operator_orderform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/operator_product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/operator_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_expenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_expenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_orderform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_setting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/static/service_store.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/templates/e-commerce_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/templates/e-commerce_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-2/src/main/resources/templates/e-commerce_shoping-car.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-2/src/main/resources/templates/e-commerce_shoping-car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/bin/src/main/resources/mybatis/mappers/ShoppingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/bin/src/main/resources/mybatis/mappers/ShoppingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/java/com/datangedu/cn/Demo3Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/java/com/datangedu/cn/Demo3Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/java/com/datangedu/cn/dao/mapper/ShoppingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/java/com/datangedu/cn/dao/mapper/ShoppingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/mybatis/mappers/ShoppingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/mybatis/mappers/ShoppingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_account.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_findpasswoed.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_findpasswoed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_login.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_product.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_register.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_settlement.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_settlement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_shoping-car.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/e-commerce_shoping-car.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_facilitator.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_facilitator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_findpassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_findpassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_login.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_orderform.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_orderform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_product.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_recommend.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_recommend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/operator_user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/service_orderform.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/service_orderform.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/service_productplus.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/static/js/service_productplus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_evaluate.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_evaluate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_findpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_findpassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_shoping-car.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/e-commerce_shoping-car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_expenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_expenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_facilitator.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_facilitator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_findpassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_findpassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_orderform.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_orderform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_recommend.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_recommend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_store.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/operator_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_expenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_expenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_orderform.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_orderform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_productplus.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_productplus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_store.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-3/src/main/resources/templates/service_store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="27" />
+    <option name="y" value="23" />
+    <option name="width" value="1400" />
+    <option name="height" value="992" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b6bf7d0-6c10-4f93-bcdb-7aac2aa92716" name="Default Changelist" comment="" />
+      <created>1575618253077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575618253077</updated>
+      <workItem from="1575618274934" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+</project>

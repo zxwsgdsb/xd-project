@@ -2,7 +2,7 @@ var check = null;
 $(function() {
 //	location.href = "product"
 		$.ajax({
-			url:"/product/login",
+			url:"product/login",
 			type:"get",
 			success: function(data){
 				console.log("成功")
@@ -34,7 +34,7 @@ $(function() {
 				var name = sessionStorage.getItem("name");
 				var id = sessionStorage.getItem("id");
 				$(".username").text(name);
-				$("#aaa").attr("src","/headImg?id="+id);
+				$("#aaa").attr("src","./headImg?id="+id);
 			},
 			error: function(){
 				console.log("失败")
@@ -59,7 +59,7 @@ $(".up-line").on("click", function(){
 			str = str.substr(0,str.length-1);
 	}
 	$.ajax({
-		url:"/product/upall",
+		url:"product/upall",
 		type:"get",
 		data:{
 			str: str,
@@ -67,7 +67,7 @@ $(".up-line").on("click", function(){
 		success: function(data){
 			console.log(data.xx);
 			if(data.xx.indexOf("0") == -1){
-				location.href="/re?page=operator_product";
+				location.href="./re?page=operator_product";
 			}
 			else if(data.code == "false"){
 				alert("操作错误");
@@ -89,7 +89,7 @@ $(".down-line").on("click", function(){
 			str = str.substr(0,str.length-1);
 	}
 	$.ajax({
-		url:"/product/downall",
+		url:"product/downall",
 		type:"get",
 		data:{
 			str: str,
@@ -97,7 +97,7 @@ $(".down-line").on("click", function(){
 		success: function(data){
 			console.log(data.xx);
 			if(data.xx.indexOf("1") == -1){
-				location.href="/re?page=operator_product";
+				location.href="./re?page=operator_product";
 			}
 			else if(data.code == "false"){
 				alert("操作错误");
@@ -112,7 +112,7 @@ $(".down-line").on("click", function(){
 $(".fa-search").on("click", function(){
 	var text = $(".intext").val();
 	$.ajax({
-		url:"/product/search",
+		url:"product/search",
 		type:"get",
 		data:{
 			text: text,
@@ -161,13 +161,22 @@ $(".user-arrow-down").on("click", function() {
 })
 
 function downLine(id){
-	location.href="/product/downline?id="+id;
+	if(location.href="product/downline?id="+id){
+		//delay(0.1);
+		location.href="re?page=operator_product";
+	}
 }
 
 function deletel(id){
-	location.href="/product/deletel?id="+id;
+	if(location.href="product/deletel?id="+id){
+		//delay(0.1);
+		location.href="re?page=operator_product";
+	}
 }
 
 function upLine(id){
-	location.href="/product/upline?id="+id;
+	if(location.href="product/upline?id="+id){
+		//delay(0.1);
+		location.href="re?page=operator_product";
+	}
 }
