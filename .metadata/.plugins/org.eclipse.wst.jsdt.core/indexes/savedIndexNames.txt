@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.4+G:\zxw\xd-project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 3079441813.index
 2928898550.index
@@ -7,3 +8,6 @@ INDEX VERSION 1.4+G:\zxw\xd-project\.metadata\.plugins\org.eclipse.wst.jsdt.core
 1418993941.index
 1140247023.index
 3973935679.index
+=======
+INDEX VERSION 1.4+F:\пе╢О\xd-project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+>>>>>>> bab2212a4ed5f852d90fb69cfb906e526cbe2da6

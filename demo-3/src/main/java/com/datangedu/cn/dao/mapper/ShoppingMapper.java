@@ -40,5 +40,10 @@ public interface ShoppingMapper {
 
 	List<Shopping> selectdifferent(String productid,String buyuserid);
 
+<<<<<<< HEAD
 }
 
+=======
+
+}
+>>>>>>> bab2212a4ed5f852d90fb69cfb906e526cbe2da6
